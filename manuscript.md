@@ -1,5 +1,5 @@
 ---
-title: Manuscript Title
+title: Time Project
 keywords:
 - markdown
 - publishing
@@ -7,7 +7,7 @@ keywords:
 lang: en-US
 date-meta: '2022-09-06'
 author-meta:
-- Berkan Usta
+- John Doe
 - Jane Roe
 header-includes: |-
   <!--
@@ -15,10 +15,10 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Manuscript Title" />
-  <meta name="citation_title" content="Manuscript Title" />
-  <meta property="og:title" content="Manuscript Title" />
-  <meta property="twitter:title" content="Manuscript Title" />
+  <meta name="dc.title" content="Time Project" />
+  <meta name="citation_title" content="Time Project" />
+  <meta property="og:title" content="Time Project" />
+  <meta property="twitter:title" content="Time Project" />
   <meta name="dc.date" content="2022-09-06" />
   <meta name="citation_publication_date" content="2022-09-06" />
   <meta name="dc.language" content="en-US" />
@@ -27,13 +27,13 @@ header-includes: |-
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="Berkan Usta" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author" content="John Doe" />
+  <meta name="citation_author_institution" content="Asociacion Uruguaya de Caminos, Uruguay" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@donthave" />
+  <meta name="twitter:creator" content="@johndoe" />
   <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Transporation, University of Illinois at Urbana Champaign" />
-  <meta name="citation_author_institution" content="Department of Transportation, University of Illinois at Urbana Champaign" />
+  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <link rel="canonical" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta property="og:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76bb665932183e8befc2b14ddde9d86d6e0392ca/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76bb665932183e8befc2b14ddde9d86d6e0392ca/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76bb665932183e8befc2b14ddde9d86d6e0392ca/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c26f2ee046635265430e937563583767ec3c6e1f/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c26f2ee046635265430e937563583767ec3c6e1f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c26f2ee046635265430e937563583767ec3c6e1f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76bb665932183e8befc2b14ddde9d86d6e0392ca/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c26f2ee046635265430e937563583767ec3c6e1f/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@76bb665](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/76bb665932183e8befc2b14ddde9d86d6e0392ca)
+from [uiceds/cee-492-term-project-fall-2022-time@c26f2ee](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/c26f2ee046635265430e937563583767ec3c6e1f)
 on September 6, 2022.
 </em></small>
 
@@ -75,15 +75,15 @@ on September 6, 2022.
 
 
 
-+ **Berkan Usta**<br>
++ **John Doe**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [berkanusta](https://github.com/berkanusta)
+    [johndoe](https://github.com/johndoe)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [donthave](https://twitter.com/donthave)<br>
+    [johndoe](https://twitter.com/johndoe)<br>
   <small>
-     Department of Something, University of Whatever
+     Asociacion Uruguaya de Caminos, Uruguay
      · Funded by Grant XXXXXXXX
   </small>
 
@@ -93,7 +93,7 @@ on September 6, 2022.
     · ![GitHub icon](images/github.svg){.inline_icon}
     [janeroe](https://github.com/janeroe)<br>
   <small>
-     Department of Transporation, University of Illinois at Urbana Champaign; Department of Transportation, University of Illinois at Urbana Champaign
+     Department of Something, University of Whatever; Department of Whatever, University of Something
   </small>
 
 
