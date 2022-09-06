@@ -8,7 +8,7 @@ lang: en-US
 date-meta: '2022-09-06'
 author-meta:
 - Cecilia Karina Volpe Baridon
-- Cecilia Karina Volpe Baridon
+- Elie Roudiere
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -31,9 +31,9 @@ header-includes: |-
   <meta name="citation_author_institution" content="Asociacion Uruguaya de Caminos - Uruguay" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="twitter:creator" content="@johndoe" />
-  <meta name="citation_author" content="Cecilia Karina Volpe Baridon" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
+  <meta name="citation_author" content="Elie Roudiere" />
+  <meta name="citation_author_institution" content="Railway Group, KTH Royal Institute of Technology - Stockholm, Sweden" />
+  <meta name="citation_author_institution" content="Software Development, Latronix AB - Täby, Sweden" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <link rel="canonical" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta property="og:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c8f69e9afbcfc552cd2a45139794ede5161c36a0/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c8f69e9afbcfc552cd2a45139794ede5161c36a0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c8f69e9afbcfc552cd2a45139794ede5161c36a0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c4a1f97fcff5077485ce5cfab8b15cb7eed48d41/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c4a1f97fcff5077485ce5cfab8b15cb7eed48d41/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c4a1f97fcff5077485ce5cfab8b15cb7eed48d41/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c8f69e9afbcfc552cd2a45139794ede5161c36a0/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c4a1f97fcff5077485ce5cfab8b15cb7eed48d41/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@c8f69e9](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/c8f69e9afbcfc552cd2a45139794ede5161c36a0)
+from [uiceds/cee-492-term-project-fall-2022-time@c4a1f97](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/c4a1f97fcff5077485ce5cfab8b15cb7eed48d41)
 on September 6, 2022.
 </em></small>
 
@@ -87,13 +87,13 @@ on September 6, 2022.
      · Funded by Grant XXXXXXXX
   </small>
 
-+ **Cecilia Karina Volpe Baridon**<br>
++ **Elie Roudiere**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [cvolpebaridon](https://github.com/cvolpebaridon)<br>
+    [elieroudiere](https://github.com/elieroudiere)<br>
   <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+     Railway Group, KTH Royal Institute of Technology - Stockholm, Sweden; Software Development, Latronix AB - Täby, Sweden
   </small>
 
 
