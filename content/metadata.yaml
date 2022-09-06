@@ -24,3 +24,6 @@ authors:
     affiliations:
       - Department of Something, University of Whatever
       - Department of Whatever, University of Something
+git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+  
