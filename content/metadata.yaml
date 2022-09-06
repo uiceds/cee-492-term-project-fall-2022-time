@@ -1,19 +1,19 @@
 ---
-title: "Manuscript Title"
+title: "Time Project"
 keywords:
   - markdown
   - publishing
   - manubot
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
+  - github: cvolpebarido
+    name: Cecilia Karina Volpe Baridon
+    initials: CV
     orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+    twitter: N/A
+    email: ckv4@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
+      - Asociacion Uruguaya de Caminos, Uruguay
     funders:
       - Grant XXXXXXXX
   - github: janeroe
