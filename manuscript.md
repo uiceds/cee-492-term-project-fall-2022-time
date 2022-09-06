@@ -8,7 +8,7 @@ lang: en-US
 date-meta: '2022-09-06'
 author-meta:
 - Cecilia Karina Volpe Baridon
-- Jane Roe
+- Cecilia Karina Volpe Baridon
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -31,7 +31,7 @@ header-includes: |-
   <meta name="citation_author_institution" content="Asociacion Uruguaya de Caminos, Uruguay" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="twitter:creator" content="@johndoe" />
-  <meta name="citation_author" content="Jane Roe" />
+  <meta name="citation_author" content="Cecilia Karina Volpe Baridon" />
   <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
   <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c5b966e7ad986164e8f805b60ef80a47c104d08e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c5b966e7ad986164e8f805b60ef80a47c104d08e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c5b966e7ad986164e8f805b60ef80a47c104d08e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/547aeed3868bfcb5fc7fa57f96f14228da7e3efb/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/547aeed3868bfcb5fc7fa57f96f14228da7e3efb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/547aeed3868bfcb5fc7fa57f96f14228da7e3efb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c5b966e7ad986164e8f805b60ef80a47c104d08e/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/547aeed3868bfcb5fc7fa57f96f14228da7e3efb/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@c5b966e](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/c5b966e7ad986164e8f805b60ef80a47c104d08e)
+from [uiceds/cee-492-term-project-fall-2022-time@547aeed](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/547aeed3868bfcb5fc7fa57f96f14228da7e3efb)
 on September 6, 2022.
 </em></small>
 
@@ -87,11 +87,11 @@ on September 6, 2022.
      · Funded by Grant XXXXXXXX
   </small>
 
-+ **Jane Roe**<br>
++ **Cecilia Karina Volpe Baridon**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [janeroe](https://github.com/janeroe)<br>
+    [cvolpebaridon](https://github.com/cvolpebaridon)<br>
   <small>
      Department of Something, University of Whatever; Department of Whatever, University of Something
   </small>
