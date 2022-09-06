@@ -7,7 +7,7 @@ keywords:
 lang: en-US
 date-meta: '2022-09-06'
 author-meta:
-- John Doe
+- Berkan Usta
 - Jane Roe
 header-includes: |-
   <!--
@@ -27,13 +27,13 @@ header-includes: |-
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
+  <meta name="citation_author" content="Berkan Usta" />
   <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
+  <meta name="twitter:creator" content="@donthave" />
   <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
+  <meta name="citation_author_institution" content="Department of Transporation, University of Illinois at Urbana Champaign" />
+  <meta name="citation_author_institution" content="Department of Transportation, University of Illinois at Urbana Champaign" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <link rel="canonical" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta property="og:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/fac51261ad095df6eb67622381f6582eb9ec7230/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/fac51261ad095df6eb67622381f6582eb9ec7230/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/fac51261ad095df6eb67622381f6582eb9ec7230/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76bb665932183e8befc2b14ddde9d86d6e0392ca/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76bb665932183e8befc2b14ddde9d86d6e0392ca/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76bb665932183e8befc2b14ddde9d86d6e0392ca/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +65,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/fac51261ad095df6eb67622381f6582eb9ec7230/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76bb665932183e8befc2b14ddde9d86d6e0392ca/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@fac5126](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/fac51261ad095df6eb67622381f6582eb9ec7230)
+from [uiceds/cee-492-term-project-fall-2022-time@76bb665](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/76bb665932183e8befc2b14ddde9d86d6e0392ca)
 on September 6, 2022.
 </em></small>
 
@@ -75,13 +75,13 @@ on September 6, 2022.
 
 
 
-+ **John Doe**<br>
++ **Berkan Usta**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [johndoe](https://github.com/johndoe)
+    [berkanusta](https://github.com/berkanusta)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [johndoe](https://twitter.com/johndoe)<br>
+    [donthave](https://twitter.com/donthave)<br>
   <small>
      Department of Something, University of Whatever
      · Funded by Grant XXXXXXXX
@@ -93,7 +93,7 @@ on September 6, 2022.
     · ![GitHub icon](images/github.svg){.inline_icon}
     [janeroe](https://github.com/janeroe)<br>
   <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+     Department of Transporation, University of Illinois at Urbana Champaign; Department of Transportation, University of Illinois at Urbana Champaign
   </small>
 
 
