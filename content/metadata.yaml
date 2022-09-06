@@ -6,12 +6,12 @@ keywords:
   - manubot
 lang: en-US
 authors:
-  - github: cvolpebarido
-    name: Cecilia Karina Volpe Baridon
-    initials: CV
+  - github: johndoe
+    name: John Doe
+    initials: JD
     orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: N/A
-    email: ckv4@illinois.edu
+    twitter: johndoe
+    email: john.doe@something.com
     affiliations:
       - Asociacion Uruguaya de Caminos, Uruguay
     funders:
@@ -24,6 +24,3 @@ authors:
     affiliations:
       - Department of Something, University of Whatever
       - Department of Whatever, University of Something
-git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
-  
