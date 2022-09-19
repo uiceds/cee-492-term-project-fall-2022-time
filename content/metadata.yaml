@@ -16,19 +16,11 @@ authors:
       - Asociacion Uruguaya de Caminos - Uruguay
     funders:
       - Grant XXXXXXXX
-  - github: cvolpebaridon
-    name: Cecilia Karina Volpe Baridon
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: ckv4@illinois.edu
-    affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
-    github: elieroudiere
+  - github: elieroudiere
     name: Elie Roudiere
     initials: ER
     orcid: XXXX-XXXX-XXXX-XXXX
     email: elier2@illinois.edu
     affiliations:
-      - Railtec, UIUC, Urbana-Champaign IL
-      - KTH Railway Group, Stockholm, Sweden
+      - Railway Group, KTH Royal Institute of Technology - Stockholm, Sweden
+      - Software Development, Latronix AB - Täby, Sweden
