@@ -6,7 +6,10 @@ keywords:
 - Track Degradation
 lang: en-US
 date-meta: '2022-09-22'
-author-meta: []
+author-meta:
+- Cecilia Karina Volpe Baridon
+- Elie Roudiere
+- Berkan Usta
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -25,15 +28,20 @@ header-includes: |-
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
+  <meta name="citation_author" content="Cecilia Karina Volpe Baridon" />
+  <meta name="citation_author" content="Elie Roudiere" />
+  <meta name="citation_author_institution" content="Railway Group, KTH Royal Institute of Technology - Stockholm, Sweden" />
+  <meta name="citation_author" content="Berkan Usta" />
+  <meta name="citation_author_institution" content="/" />
   <link rel="canonical" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta property="og:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta property="twitter:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d8dc6c1788a8aeccecfdbd764bdf45d158e77977/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d8dc6c1788a8aeccecfdbd764bdf45d158e77977/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d8dc6c1788a8aeccecfdbd764bdf45d158e77977/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/4f8a45ef4ba059f887085ab46f294fb8622aebb3/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/4f8a45ef4ba059f887085ab46f294fb8622aebb3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/4f8a45ef4ba059f887085ab46f294fb8622aebb3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -55,15 +63,35 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d8dc6c1788a8aeccecfdbd764bdf45d158e77977/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/4f8a45ef4ba059f887085ab46f294fb8622aebb3/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@d8dc6c1](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/d8dc6c1788a8aeccecfdbd764bdf45d158e77977)
+from [uiceds/cee-492-term-project-fall-2022-time@4f8a45e](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/4f8a45ef4ba059f887085ab46f294fb8622aebb3)
 on September 22, 2022.
 </em></small>
 
 ## Authors
 
 
+
++ **Cecilia Karina Volpe Baridon**<br>
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [cvolpebaridon](https://github.com/cvolpebaridon)<br>
+  <small>
+  </small>
+
++ **Elie Roudiere**<br>
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [elieroudiere](https://github.com/elieroudiere)<br>
+  <small>
+     Railway Group, KTH Royal Institute of Technology - Stockholm, Sweden
+  </small>
+
++ **Berkan Usta**<br>
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [berkanusta](https://github.com/berkanusta)<br>
+  <small>
+     /
+  </small>
 
 
 
