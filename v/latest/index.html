@@ -4,6 +4,9 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Cecilia Karina Volpe Baridon" />
+  <meta name="author" content="Elie Roudiere" />
+  <meta name="author" content="Berkan Usta" />
   <meta name="dcterms.date" content="2022-09-22" />
   <meta name="keywords" content="Railroad Systems, Transportation Safety, Track Degradation" />
   <title>Safety assessment on Roslagsbanan Rail System, 2021-2022</title>
@@ -117,15 +120,20 @@
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
+  <meta name="citation_author" content="Cecilia Karina Volpe Baridon" />
+  <meta name="citation_author" content="Elie Roudiere" />
+  <meta name="citation_author_institution" content="Railway Group, KTH Royal Institute of Technology - Stockholm, Sweden" />
+  <meta name="citation_author" content="Berkan Usta" />
+  <meta name="citation_author_institution" content="/" />
   <link rel="canonical" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta property="og:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta property="twitter:url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d8dc6c1788a8aeccecfdbd764bdf45d158e77977/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d8dc6c1788a8aeccecfdbd764bdf45d158e77977/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d8dc6c1788a8aeccecfdbd764bdf45d158e77977/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/4f8a45ef4ba059f887085ab46f294fb8622aebb3/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/4f8a45ef4ba059f887085ab46f294fb8622aebb3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/4f8a45ef4ba059f887085ab46f294fb8622aebb3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -146,12 +154,31 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d8dc6c1788a8aeccecfdbd764bdf45d158e77977/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/4f8a45ef4ba059f887085ab46f294fb8622aebb3/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/d8dc6c1788a8aeccecfdbd764bdf45d158e77977">uiceds/cee-492-term-project-fall-2022-time@d8dc6c1</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/4f8a45ef4ba059f887085ab46f294fb8622aebb3">uiceds/cee-492-term-project-fall-2022-time@4f8a45e</a>
 on September 22, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
+<ul>
+<li><p><strong>Cecilia Karina Volpe Baridon</strong><br>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/cvolpebaridon">cvolpebaridon</a><br>
+<small>
+</small></p></li>
+<li><p><strong>Elie Roudiere</strong><br>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/elieroudiere">elieroudiere</a><br>
+<small>
+Railway Group, KTH Royal Institute of Technology - Stockholm, Sweden
+</small></p></li>
+<li><p><strong>Berkan Usta</strong><br>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/berkanusta">berkanusta</a><br>
+<small>
+/
+</small></p></li>
+</ul>
 <h1 id="dataset-decription">Dataset Decription</h1>
 <p>The Roslagsbanan is a railway system operating in Stockholm. As part of an improvement in the transportation system, Stockholm Municipality invested in a new fleet of trains switching from X10p trains to the new X15p. In order to analyze the safety of the new trains, brake tests were conducted. During those test runs the Latronix Track Measurement (LTM) system was mounted on the train. The LTM uses laser beams and an on-board computer to perform measurements over railroad track while the train drives on the track at normal speed.</p>
 <p>The data that will be used in this study was collected using the LTM system affixed to a Roslagsbanan vehicle. While the train was running over the sections, the level of each rail, alignment, curvature, cant, gauge and twist were measured every 256mm. The data was compiled in csv files and was collected between October 2021 and May 2022 with an approximate interval of one month. In other words, a given section of track typically has around six measurement files. The total amount of data is 60 CSV files of 30,000 to 80,000 rows each, for a total of 1.5GB of data.</p>
@@ -383,7 +410,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:e3f346e7-fe4c-4120-b64b-165f46e78187" class="tablenos">
+<div id="tbl:32cc7a32-5732-4f88-82fe-2807e4213dba" class="tablenos">
 <table id="tbl:">
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
