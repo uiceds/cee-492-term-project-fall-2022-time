@@ -5,7 +5,7 @@ keywords:
 - Transportation Safety
 - Track Degradation
 lang: en-US
-date-meta: '2022-09-20'
+date-meta: '2022-09-22'
 author-meta: []
 header-includes: |-
   <!--
@@ -17,8 +17,8 @@ header-includes: |-
   <meta name="citation_title" content="Safety assessment on Roslagsbanan Rail System, 2021-2022" />
   <meta property="og:title" content="Safety assessment on Roslagsbanan Rail System, 2021-2022" />
   <meta property="twitter:title" content="Safety assessment on Roslagsbanan Rail System, 2021-2022" />
-  <meta name="dc.date" content="2022-09-20" />
-  <meta name="citation_publication_date" content="2022-09-20" />
+  <meta name="dc.date" content="2022-09-22" />
+  <meta name="citation_publication_date" content="2022-09-22" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -31,9 +31,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3d5c9371296cca2a7940595e1364d1f413a4c8a1/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3d5c9371296cca2a7940595e1364d1f413a4c8a1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3d5c9371296cca2a7940595e1364d1f413a4c8a1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/25bf9501e2e9c63b4c6c49a694db406fb3b59658/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/25bf9501e2e9c63b4c6c49a694db406fb3b59658/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/25bf9501e2e9c63b4c6c49a694db406fb3b59658/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -55,10 +55,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3d5c9371296cca2a7940595e1364d1f413a4c8a1/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/25bf9501e2e9c63b4c6c49a694db406fb3b59658/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@3d5c937](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/3d5c9371296cca2a7940595e1364d1f413a4c8a1)
-on September 20, 2022.
+from [uiceds/cee-492-term-project-fall-2022-time@25bf950](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/25bf9501e2e9c63b4c6c49a694db406fb3b59658)
+on September 22, 2022.
 </em></small>
 
 ## Authors
@@ -383,7 +383,7 @@ The Roslagsbanan is a railway system operating in Stockholm. As part of an impro
 
 The data that will be used in this study was collected using the LTM system affixed to a Roslagsbanan vehicle. While the train was running over the sections, the level of each rail, alignment, curvature, cant, gauge and twist were measured every 256mm. The data was compiled in csv files and was collected between October 2021 and May 2022 with an approximate interval of one month. In other words, a given section of track typically has around six measurement files. The total amount of data is 60 CSV files of 30,000 to 80,000 rows each, for a total of 1.5GB of data. 
 
-*These data and measurements are property of Latronix AB of Sweden, and are used with their permission for researcxh and educational purposes only.*
+*These data and measurements are property of Latronix AB of Sweden, and are used with their permission for research and educational purposes only.*
 
 In the CSV files the structure of columns is as follows:
 

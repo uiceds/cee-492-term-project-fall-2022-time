@@ -68,7 +68,6 @@ content/03.introduction.md:4:CSV
 content/03.introduction.md:4:LTM
 content/03.introduction.md:4:Roslagsbanan
 content/03.introduction.md:6:Latronix
-content/03.introduction.md:6:researcxh
 content/03.introduction.md:8:CSV
 content/03.introduction.md:10:kilometre
 content/03.introduction.md:10:kilometre
