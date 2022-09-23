@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/13061ae0e2229b78b91e8d02bc4a979bc2280fdf/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/13061ae0e2229b78b91e8d02bc4a979bc2280fdf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/13061ae0e2229b78b91e8d02bc4a979bc2280fdf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d106b66fc1e57aaec173513f9ceb4c32c2ee3f3f/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d106b66fc1e57aaec173513f9ceb4c32c2ee3f3f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d106b66fc1e57aaec173513f9ceb4c32c2ee3f3f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/13061ae0e2229b78b91e8d02bc4a979bc2280fdf/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d106b66fc1e57aaec173513f9ceb4c32c2ee3f3f/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@13061ae](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/13061ae0e2229b78b91e8d02bc4a979bc2280fdf)
+from [uiceds/cee-492-term-project-fall-2022-time@d106b66](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/d106b66fc1e57aaec173513f9ceb4c32c2ee3f3f)
 on September 23, 2022.
 </em></small>
 
@@ -130,8 +130,3 @@ Finally, Track_name, Track_class, Station_flag and Link_name,Pos_unfiltered	Pos_
 The main goal of this project is to identify patterns in the data, especially the track degradation of certain sections, and thus to analyze the change in railway safety during this time. A first approach will be to define degradation trends, and build a model to process the data that finds them automatically. Then, the study will attempt to find external factors which caused the observed trends. The analysis will include graphics of the parameters over time as well as comparing them over the sections to provide a better understanding of the data visually.
 
 This research will help assess system performance, identify possible maintenance schedules, and provide useful data for further research in this area. The study also falls within the scope of developing predicitve maintenance in civil engineering and railways. Creating and improving analysis and predictive maintenance models such as this one can contribute to an increased safety of rail networks and a higher quality of service for passengers, They will benefit from fewer impromptu interruptions of service due to track maintenance, or even unsafe track causing line closures. 
-
-## References {.page_break_before}
-
-<!-- Explicitly insert bibliography here -->
-<div id="refs"></div>
