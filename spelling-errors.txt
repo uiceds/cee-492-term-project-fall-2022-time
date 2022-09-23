@@ -18,7 +18,6 @@ northing
 northings
 NTP
 Pos
-predicitve
 Roslagsbanan
 Roudiere
 Usta

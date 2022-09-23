@@ -18,4 +18,3 @@ content/03.introduction.md:12:northings
 content/03.introduction.md:28:versine
 content/03.introduction.md:30:versine
 content/03.introduction.md:30:versines
-content/03.introduction.md:37:predicitve
