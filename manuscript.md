@@ -5,7 +5,7 @@ keywords:
 - Transportation Safety
 - Track Degradation
 lang: en-US
-date-meta: '2022-09-23'
+date-meta: '2022-10-22'
 author-meta:
 - Cecilia Karina Volpe Baridon
 - Elie Roudiere
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
   <meta property="og:title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
   <meta property="twitter:title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
-  <meta name="dc.date" content="2022-09-23" />
-  <meta name="citation_publication_date" content="2022-09-23" />
+  <meta name="dc.date" content="2022-10-22" />
+  <meta name="citation_publication_date" content="2022-10-22" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c6e0689057956841dc9a4643e9d52c56daaa6ffc/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c6e0689057956841dc9a4643e9d52c56daaa6ffc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c6e0689057956841dc9a4643e9d52c56daaa6ffc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/9e91bad5bd184cd7c96eefc2d079d4e29ff589eb/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/9e91bad5bd184cd7c96eefc2d079d4e29ff589eb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/9e91bad5bd184cd7c96eefc2d079d4e29ff589eb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,10 +62,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c6e0689057956841dc9a4643e9d52c56daaa6ffc/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/9e91bad5bd184cd7c96eefc2d079d4e29ff589eb/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@c6e0689](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/c6e0689057956841dc9a4643e9d52c56daaa6ffc)
-on September 23, 2022.
+from [uiceds/cee-492-term-project-fall-2022-time@9e91bad](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/9e91bad5bd184cd7c96eefc2d079d4e29ff589eb)
+on October 22, 2022.
 </em></small>
 
 ## Authors
@@ -130,3 +130,17 @@ Finally, Track_name, Track_class, Station_flag and Link_name,Pos_unfiltered	Pos_
 The main goal of this project is to identify patterns in the data, especially the track degradation of certain sections, and thus to analyze the change in railway safety during this time. The first approach will be to define degradation trends and build a model to process the data that finds them automatically. Then, the study will attempt to find external factors which caused the observed trends. The analysis will include graphics of the parameters over time as well as comparing them over the sections to provide a better understanding of the data visually.
 
 This research will help assess system performance, identify possible maintenance schedules, and provide useful data for further research in this area. The study also falls within the scope of developing predictive maintenance in civil engineering and railways. Creating and improving analysis and predictive maintenance models such as this one can contribute to increase safety of rail networks and a higher quality of service for passengers. They will benefit from fewer unplanned service interruptions due to track maintenance and even fewer unsafe tracks causing line closures.
+
+# Exploratory Analysis
+Dataset description: 
+The main dataset is composed of 60 .csv files, dated between October 2021 and May 2022. These files correspond to measurements performed on a railway track forming part of the Roslagsbanan network in Stockholm, using a track measurement device affixed to a train running on the track during test runs.
+Each file corresponds to a certain measurement run, over a given section of track, and different sections of track have varying amounts of measurement runs. The reason for this is that the engineers monitoring the track wished to monitor certain areas more closely, thus doing more frequent measurements. 
+
+
+![Line map overview of the Roslagsbanan.](url_or_path_to_figure){#fig:example-id}
+In the files, the metrics listed in the introduction are recorded, but it should be noted that the files require cleaning as they comprise numerous N/A cells, as well as somewhat questionable datapoints (especially when the train was coming to a stop, some outliers seem to have been generated [plot showing what happens with 0 speed?]. 
+The date and time of the measurement is not hardcoded inside the csv but only mentioned in the file name, as such the code for analysing will have to take into account the name of the file when making comparisons. 
+Measurement runs are not perfectly synced with each other as shown on [figure], they will have to somehow be matched or correlated to clearly interpret the results. 
+
+[Stats summary about size, distance covered, frequency of measurements, others?]
+
