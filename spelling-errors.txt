@@ -2,7 +2,7 @@ analysing
 Baridon
 Berkan
 berkanusta
-CSV
+csv
 cvolpebaridon
 datapoints
 dataset
@@ -12,11 +12,13 @@ eastings
 Elie
 elieroudiere
 hardcoded
+Kårsta
 kilometre
 KTH
 latittude
 Latronix
 LTM
+modelling
 northing
 northings
 NTP

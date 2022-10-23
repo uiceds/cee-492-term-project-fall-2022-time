@@ -22,8 +22,12 @@ content/04.exploratory.md:2:Dataset
 content/04.exploratory.md:3:csv
 content/04.exploratory.md:3:dataset
 content/04.exploratory.md:3:Roslagsbanan
+content/04.exploratory.md:4:kilometre
+content/04.exploratory.md:7:Kårsta
 content/04.exploratory.md:7:Roslagsbanan
-content/04.exploratory.md:8:datapoints
-content/04.exploratory.md:9:analysing
-content/04.exploratory.md:9:csv
-content/04.exploratory.md:9:hardcoded
+content/04.exploratory.md:10:datapoints
+content/04.exploratory.md:11:analysing
+content/04.exploratory.md:11:csv
+content/04.exploratory.md:11:hardcoded
+content/04.exploratory.md:27:modelling
+content/04.exploratory.md:30:dataset

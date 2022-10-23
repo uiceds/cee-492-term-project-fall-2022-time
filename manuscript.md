@@ -5,7 +5,7 @@ keywords:
 - Transportation Safety
 - Track Degradation
 lang: en-US
-date-meta: '2022-10-22'
+date-meta: '2022-10-23'
 author-meta:
 - Cecilia Karina Volpe Baridon
 - Elie Roudiere
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
   <meta property="og:title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
   <meta property="twitter:title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
-  <meta name="dc.date" content="2022-10-22" />
-  <meta name="citation_publication_date" content="2022-10-22" />
+  <meta name="dc.date" content="2022-10-23" />
+  <meta name="citation_publication_date" content="2022-10-23" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/9e91bad5bd184cd7c96eefc2d079d4e29ff589eb/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/9e91bad5bd184cd7c96eefc2d079d4e29ff589eb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/9e91bad5bd184cd7c96eefc2d079d4e29ff589eb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/352fcb683651f487966eee0b2eb3d627ca2529db/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/352fcb683651f487966eee0b2eb3d627ca2529db/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/352fcb683651f487966eee0b2eb3d627ca2529db/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,10 +62,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/9e91bad5bd184cd7c96eefc2d079d4e29ff589eb/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/352fcb683651f487966eee0b2eb3d627ca2529db/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@9e91bad](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/9e91bad5bd184cd7c96eefc2d079d4e29ff589eb)
-on October 22, 2022.
+from [uiceds/cee-492-term-project-fall-2022-time@352fcb6](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/352fcb683651f487966eee0b2eb3d627ca2529db)
+on October 23, 2022.
 </em></small>
 
 ## Authors
@@ -134,13 +134,31 @@ This research will help assess system performance, identify possible maintenance
 # Exploratory Analysis
 Dataset description: 
 The main dataset is composed of 60 .csv files, dated between October 2021 and May 2022. These files correspond to measurements performed on a railway track forming part of the Roslagsbanan network in Stockholm, using a track measurement device affixed to a train running on the track during test runs.
-Each file corresponds to a certain measurement run, over a given section of track, and different sections of track have varying amounts of measurement runs. The reason for this is that the engineers monitoring the track wished to monitor certain areas more closely, thus doing more frequent measurements. 
+Each file corresponds to a certain measurement run, over a given section of track, and different sections of track have varying amounts of measurement runs. The reason for this is that the engineers monitoring the track wished to pay closer attention to certain areas, thus doing more frequent measurements. In particular the section between kilometre point 24 and 34 comprises over 20 distinct runs (often going northbound and then southbound on the same day, on this single track section)
 
 
-![Line map overview of the Roslagsbanan.](url_or_path_to_figure){#fig:example-id}
+![Line map overview of the Roslagsbanan. This study will focus on line 27 to Kårsta](https://github.com/uiceds/cee-492-term-project-fall-2022-time/blob/main/content/images/RB-sl-map.png){#fig:geo-map-1}
+
+
 In the files, the metrics listed in the introduction are recorded, but it should be noted that the files require cleaning as they comprise numerous N/A cells, as well as somewhat questionable datapoints (especially when the train was coming to a stop, some outliers seem to have been generated [plot showing what happens with 0 speed?]. 
 The date and time of the measurement is not hardcoded inside the csv but only mentioned in the file name, as such the code for analysing will have to take into account the name of the file when making comparisons. 
 Measurement runs are not perfectly synced with each other as shown on [figure], they will have to somehow be matched or correlated to clearly interpret the results. 
 
 [Stats summary about size, distance covered, frequency of measurements, others?]
 
+| Statistic | Value |
+|----------|----------|
+| Earliest measurement | 21st October 2021 |
+| Latest measurement | 10th May 2022 |
+| Line Length | 41.700 km (25.91 miles) |
+| Data points per file | 20,000 to over 100,000 |
+| File size |  |
+
+Table 1: Summary Table. {#tbl:sum-table-1}
+
+
+# Predictive modelling
+
+Due to the somewhat limited amount of independent variables already present inside the measurement set, there may be challenges. Correlation plots can help us determine links between variables and what model to create.  
+The first part of the predictive model will try and find locations where the track degradation seems to form a clear trend (typically a linear increase in a given direction) over time. Here, time is the independent variable. From an initial analysis of the dataset, it is likely this predictive model will yield some results (picture of a steady trend?)
+The second part of the predictive model we would like to create would take into account external factors, in particular temperature/weather changes and soil properties if obtainable. This could give us locations prone to developing trends in the short to medium term, which could be investigated by a maintenance team.  However we have envisioned some possible issues, namely that obtaining and translating soil data into something usable by the model may be a challenge, and no link is guaranteed to appear (what if all soils are similar?). A possible approach could be to grade soils based on properties, for example a very stable soil could get a score of 1 and a worse soil from the point of view of building a railway line could get a score of 4 (or higher/lower), with appropriate intermediate values. We could look into D30/D10/D60 values.  
