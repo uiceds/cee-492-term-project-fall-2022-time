@@ -2,7 +2,7 @@ analysing
 Baridon
 Berkan
 berkanusta
-csv
+CSV
 cvolpebaridon
 datapoints
 dataset

@@ -5,7 +5,7 @@ keywords:
 - Transportation Safety
 - Track Degradation
 lang: en-US
-date-meta: '2022-10-23'
+date-meta: '2022-10-24'
 author-meta:
 - Cecilia Karina Volpe Baridon
 - Elie Roudiere
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
   <meta property="og:title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
   <meta property="twitter:title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
-  <meta name="dc.date" content="2022-10-23" />
-  <meta name="citation_publication_date" content="2022-10-23" />
+  <meta name="dc.date" content="2022-10-24" />
+  <meta name="citation_publication_date" content="2022-10-24" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/352fcb683651f487966eee0b2eb3d627ca2529db/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/352fcb683651f487966eee0b2eb3d627ca2529db/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/352fcb683651f487966eee0b2eb3d627ca2529db/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/4abefb93f9e415e2c5cad9fde09661726673d170/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/4abefb93f9e415e2c5cad9fde09661726673d170/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/4abefb93f9e415e2c5cad9fde09661726673d170/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,10 +62,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/352fcb683651f487966eee0b2eb3d627ca2529db/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/4abefb93f9e415e2c5cad9fde09661726673d170/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@352fcb6](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/352fcb683651f487966eee0b2eb3d627ca2529db)
-on October 23, 2022.
+from [uiceds/cee-492-term-project-fall-2022-time@4abefb9](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/4abefb93f9e415e2c5cad9fde09661726673d170)
+on October 24, 2022.
 </em></small>
 
 ## Authors
@@ -137,7 +137,7 @@ The main dataset is composed of 60 .csv files, dated between October 2021 and Ma
 Each file corresponds to a certain measurement run, over a given section of track, and different sections of track have varying amounts of measurement runs. The reason for this is that the engineers monitoring the track wished to pay closer attention to certain areas, thus doing more frequent measurements. In particular the section between kilometre point 24 and 34 comprises over 20 distinct runs (often going northbound and then southbound on the same day, on this single track section)
 
 
-![Line map overview of the Roslagsbanan. This study will focus on line 27 to Kårsta](https://github.com/uiceds/cee-492-term-project-fall-2022-time/blob/main/content/images/RB-sl-map.png){#fig:geo-map-1}
+![Line map overview of the Roslagsbanan. This study will focus on line 27 to Kårsta](images/RB-sl-map.png){#fig:geo-map-1}
 
 
 In the files, the metrics listed in the introduction are recorded, but it should be noted that the files require cleaning as they comprise numerous N/A cells, as well as somewhat questionable datapoints (especially when the train was coming to a stop, some outliers seem to have been generated [plot showing what happens with 0 speed?]. 
