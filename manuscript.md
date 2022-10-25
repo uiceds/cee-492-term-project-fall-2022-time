@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0ef6def33071f39bd667e03d3735eb1076e4ff45/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0ef6def33071f39bd667e03d3735eb1076e4ff45/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0ef6def33071f39bd667e03d3735eb1076e4ff45/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b43122aaa4ea13875a43406a3018d10df4c48b7c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b43122aaa4ea13875a43406a3018d10df4c48b7c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b43122aaa4ea13875a43406a3018d10df4c48b7c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0ef6def33071f39bd667e03d3735eb1076e4ff45/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b43122aaa4ea13875a43406a3018d10df4c48b7c/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@0ef6def](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/0ef6def33071f39bd667e03d3735eb1076e4ff45)
+from [uiceds/cee-492-term-project-fall-2022-time@b43122a](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/b43122aaa4ea13875a43406a3018d10df4c48b7c)
 on October 25, 2022.
 </em></small>
 
@@ -146,7 +146,8 @@ Where E_e is balancing superelevation or cant, G (track gauge), g (gravity), and
 Similarly, twist describes the rate of change of cant over a certain distance, and thus close correllation between them is to be expected.  
 The date and time of the measurement is not hardcoded inside the csv but only mentioned in the file name, as such the code for analysing will have to take into account the name of the file when making comparisons. 
 Measurement runs are not perfectly synced with each other as shown on [figure], they will have to somehow be matched or correlated to clearly interpret the results. 
-![Plot showing the offset between measurement runs on three dates.](images/desync.png){#fig:desync width="5in"}
+
+![Plot showing the offset between measurement runs on three dates.](images/desync.png){#fig:desync-1 width="5in"}
 
 [Stats summary about size, distance covered, frequency of measurements, others?]
 
