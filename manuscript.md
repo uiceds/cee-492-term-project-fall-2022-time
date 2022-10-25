@@ -5,7 +5,7 @@ keywords:
 - Transportation Safety
 - Track Degradation
 lang: en-US
-date-meta: '2022-10-24'
+date-meta: '2022-10-25'
 author-meta:
 - Cecilia Karina Volpe Baridon
 - Elie Roudiere
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
   <meta property="og:title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
   <meta property="twitter:title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
-  <meta name="dc.date" content="2022-10-24" />
-  <meta name="citation_publication_date" content="2022-10-24" />
+  <meta name="dc.date" content="2022-10-25" />
+  <meta name="citation_publication_date" content="2022-10-25" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/4abefb93f9e415e2c5cad9fde09661726673d170/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/4abefb93f9e415e2c5cad9fde09661726673d170/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/4abefb93f9e415e2c5cad9fde09661726673d170/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/700d0bcb9b858e30dafb64c43fd96c99eaee91c8/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/700d0bcb9b858e30dafb64c43fd96c99eaee91c8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/700d0bcb9b858e30dafb64c43fd96c99eaee91c8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,10 +62,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/4abefb93f9e415e2c5cad9fde09661726673d170/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/700d0bcb9b858e30dafb64c43fd96c99eaee91c8/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@4abefb9](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/4abefb93f9e415e2c5cad9fde09661726673d170)
-on October 24, 2022.
+from [uiceds/cee-492-term-project-fall-2022-time@700d0bc](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/700d0bcb9b858e30dafb64c43fd96c99eaee91c8)
+on October 25, 2022.
 </em></small>
 
 ## Authors
@@ -124,7 +124,7 @@ In the CSV files the structure of columns is as follows:
 
 - Alignment_versine_left_10m, Alignment_versine_right_10m: Similarly to the versine level, this measure of alignment in mm uses versines over a 10m distance.
 
-Finally, Track_name, Track_class, Station_flag and Link_name,Pos_unfiltered	Pos_filtered	NTP_sync, Cant_D1, Std_level, Std_alignment, Std_cant, Quality_1 are mainly for internal use and not part of the analysis.
+Finally, Track_name, Track_class, Station_flag and Link_name,Pos_unfiltered	Pos_filtered, NTP_sync, Cant_D1, Std_level, Std_alignment, Std_cant, Quality_1 are mainly for internal use and not part of the analysis.
 			
 # Project Proposal
 The main goal of this project is to identify patterns in the data, especially the track degradation of certain sections, and thus to analyze the change in railway safety during this time. The first approach will be to define degradation trends and build a model to process the data that finds them automatically. Then, the study will attempt to find external factors which caused the observed trends. The analysis will include graphics of the parameters over time as well as comparing them over the sections to provide a better understanding of the data visually.
@@ -134,15 +134,19 @@ This research will help assess system performance, identify possible maintenance
 # Exploratory Analysis
 Dataset description: 
 The main dataset is composed of 60 .csv files, dated between October 2021 and May 2022. These files correspond to measurements performed on a railway track forming part of the Roslagsbanan network in Stockholm, using a track measurement device affixed to a train running on the track during test runs.
-Each file corresponds to a certain measurement run, over a given section of track, and different sections of track have varying amounts of measurement runs. The reason for this is that the engineers monitoring the track wished to pay closer attention to certain areas, thus doing more frequent measurements. In particular the section between kilometre point 24 and 34 comprises over 20 distinct runs (often going northbound and then southbound on the same day, on this single track section)
+Each file corresponds to a certain measurement run, over a given section of track, and different sections of track have varying amounts of measurement runs. The reason for this is that the engineers monitoring the track wished to pay closer attention to certain areas, thus doing more frequent measurements. In particular the section between kilometre point 27 and 38 comprises over 20 distinct runs (often going northbound and then southbound on the same day, on this single track section)
 
 
-![Line map overview of the Roslagsbanan. This study will focus on line 27 to Kårsta](images/RB-sl-map.png){#fig:geo-map-1}
+![Line map overview of the Roslagsbanan. This study will focus on line 27 to Kårsta.](images/RB-sl-map.png){#fig:geo-map-1}
 
 
-In the files, the metrics listed in the introduction are recorded, but it should be noted that the files require cleaning as they comprise numerous N/A cells, as well as somewhat questionable datapoints (especially when the train was coming to a stop, some outliers seem to have been generated [plot showing what happens with 0 speed?]. 
+In the files, the metrics listed in the introduction are recorded, but it should be noted that the files require cleaning as they comprise numerous N/A cells, as well as somewhat questionable datapoints at times (especially when the train was coming to a stop, some outliers seem to have been generated [plot showing what happens with 0 speed?]. 
+A very important property of the data which will gain relevance in the modelling steps is that some track parameters are directly related in a mathematical sense while some are not. For example the formula for cant is directly proportional to curvature - that is to say, when the track is built, this superelevation is calculated based on curvature at a given location as evidenced by the following equation: 𝐸_𝑒 ⁡= \frac{G*V^2}{gR}
+Where E_e is balancing superelevation or cant, G (track gauge), g (gravity), and V (line speed) are constants and R is curve radius, the inverse of curvature.[@https://railroads.dot.gov/elibrary/mixed-freight-and-higher-speed-passenger-trains-framework-superelevation-design] 
+Similarly, twist describes the rate of change of cant over a certain distance, and thus close correllation between them is to be expected.  
 The date and time of the measurement is not hardcoded inside the csv but only mentioned in the file name, as such the code for analysing will have to take into account the name of the file when making comparisons. 
 Measurement runs are not perfectly synced with each other as shown on [figure], they will have to somehow be matched or correlated to clearly interpret the results. 
+![Plot showing the offset between measurement runs on three dates.](images/desync.png){#fig:desync}
 
 [Stats summary about size, distance covered, frequency of measurements, others?]
 
