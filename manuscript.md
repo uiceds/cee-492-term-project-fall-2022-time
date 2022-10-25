@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/700d0bcb9b858e30dafb64c43fd96c99eaee91c8/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/700d0bcb9b858e30dafb64c43fd96c99eaee91c8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/700d0bcb9b858e30dafb64c43fd96c99eaee91c8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0ef6def33071f39bd667e03d3735eb1076e4ff45/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0ef6def33071f39bd667e03d3735eb1076e4ff45/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0ef6def33071f39bd667e03d3735eb1076e4ff45/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/700d0bcb9b858e30dafb64c43fd96c99eaee91c8/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0ef6def33071f39bd667e03d3735eb1076e4ff45/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@700d0bc](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/700d0bcb9b858e30dafb64c43fd96c99eaee91c8)
+from [uiceds/cee-492-term-project-fall-2022-time@0ef6def](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/0ef6def33071f39bd667e03d3735eb1076e4ff45)
 on October 25, 2022.
 </em></small>
 
@@ -137,7 +137,7 @@ The main dataset is composed of 60 .csv files, dated between October 2021 and Ma
 Each file corresponds to a certain measurement run, over a given section of track, and different sections of track have varying amounts of measurement runs. The reason for this is that the engineers monitoring the track wished to pay closer attention to certain areas, thus doing more frequent measurements. In particular the section between kilometre point 27 and 38 comprises over 20 distinct runs (often going northbound and then southbound on the same day, on this single track section)
 
 
-![Line map overview of the Roslagsbanan. This study will focus on line 27 to Kårsta.](images/RB-sl-map.png){#fig:geo-map-1}
+![Line map overview of the Roslagsbanan. This study will focus on line 27 to Kårsta.](images/RB-sl-map.png){#fig:geo-map-1 width="5in"}
 
 
 In the files, the metrics listed in the introduction are recorded, but it should be noted that the files require cleaning as they comprise numerous N/A cells, as well as somewhat questionable datapoints at times (especially when the train was coming to a stop, some outliers seem to have been generated [plot showing what happens with 0 speed?]. 
@@ -146,7 +146,7 @@ Where E_e is balancing superelevation or cant, G (track gauge), g (gravity), and
 Similarly, twist describes the rate of change of cant over a certain distance, and thus close correllation between them is to be expected.  
 The date and time of the measurement is not hardcoded inside the csv but only mentioned in the file name, as such the code for analysing will have to take into account the name of the file when making comparisons. 
 Measurement runs are not perfectly synced with each other as shown on [figure], they will have to somehow be matched or correlated to clearly interpret the results. 
-![Plot showing the offset between measurement runs on three dates.](images/desync.png){#fig:desync}
+![Plot showing the offset between measurement runs on three dates.](images/desync.png){#fig:desync width="5in"}
 
 [Stats summary about size, distance covered, frequency of measurements, others?]
 
