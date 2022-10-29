@@ -2,7 +2,7 @@ adipiscing
 aliqua
 aliquip
 amet
-analysing
+analyse
 anim
 aute
 Baridon
@@ -12,13 +12,11 @@ cillum
 commodo
 consectetur
 consequat
-correllation
 csv
 culpa
 cupidatat
 cvolpebaridon
-datapoints
-Dataset
+dataset
 Decription
 deserunt
 dolore
@@ -38,6 +36,7 @@ hardcoded
 incididunt
 ipsum
 irure
+Karsta
 Kårsta
 kilometre
 KTH
@@ -59,6 +58,7 @@ NTP
 nulla
 occaecat
 officia
+Ostra
 Pandoc’s
 pariatur
 Pos
