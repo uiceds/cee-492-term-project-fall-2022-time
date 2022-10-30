@@ -12,12 +12,12 @@ cillum
 commodo
 consectetur
 consequat
-CSV
+csv
 culpa
 cupidatat
 curv
 cvolpebaridon
-dataset
+Dataset
 Decription
 deserunt
 diag
