@@ -47,7 +47,8 @@ content/04.exploratory.md:63:Ostra
 content/04.exploratory.md:67:Karsta
 content/04.exploratory.md:67:Ostra
 content/04.exploratory.md:71:modelling
-content/04.exploratory.md:74:dataset
+content/04.exploratory.md:73:dataset
+content/04.exploratory.md:75:independant
 content/900.delete-me.md:44:adipiscing
 content/900.delete-me.md:44:aliqua
 content/900.delete-me.md:44:amet
