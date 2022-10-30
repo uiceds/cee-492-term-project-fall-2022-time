@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/98cd55ea96087ca16eef70be80d53e8794279248/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/98cd55ea96087ca16eef70be80d53e8794279248/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/98cd55ea96087ca16eef70be80d53e8794279248/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a4a546ec74b5059ef4a808c387cf1fba07e45e22/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a4a546ec74b5059ef4a808c387cf1fba07e45e22/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a4a546ec74b5059ef4a808c387cf1fba07e45e22/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/98cd55ea96087ca16eef70be80d53e8794279248/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a4a546ec74b5059ef4a808c387cf1fba07e45e22/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@98cd55e](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/98cd55ea96087ca16eef70be80d53e8794279248)
+from [uiceds/cee-492-term-project-fall-2022-time@a4a546e](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/a4a546ec74b5059ef4a808c387cf1fba07e45e22)
 on October 30, 2022.
 </em></small>
 
@@ -170,21 +170,19 @@ An important fact of the parameters considered is that some of them are directly
 
 Where E_e is balancing superelevation or cant, G (track gauge), g (gravity), and V (line speed) are constants and R is curve radius, the inverse of curvature.[1] 
 
-Similarly, twist describes the rate of change of cant over a certain distance, and thus a close correlation between them is expected. 
+Similarly, twist describes the rate of change of cant over a certain distance, and thus a close correlation between them is expected. These parameters are summarised in Figure @fig:cant_diag_1 below, courtesy of Kawasaki Track Technology:
 
-`COULD WE ADD A DRAWING WITH THE DIFFERENT PARAMETERS??? TO DESCRIBE THEM BETTER?`
+![Summary diagram of the parameters studied in this report. Source: Kawasaki Track Technology](images/CantEtcDiagram.png){#fig:cant_diag_1 width="5in"}
 
-`Figure XX` shows these relations among the parameters for the Karsta line. From the curvature and cant plots, it can be observed that there is a strong relationship between them, as both exhibit similar patterns. However, in the case of twist correlation with the other variables, similar patterns may not be very clear. More analysis might be done in this line. 
+Figure @fig:curv_cant_twist shows these relations among the parameters for the Karsta line. From the curvature and cant plots, it can be observed that there is a strong relationship between them, as both exhibit similar patterns. However, in the case of twist correlation with the other variables, similar patterns may not be very clear. More analysis might be done on this line. 
 
-![
-**A plot showing Curvature, Cant and twist relation vs Location Karsta.**](images/Karsta-Curv,Cant,Twist.png){`Fig#`:Ostra-Karsta line - Curvature, Cant and Twist vs Location}
+![**Ostra-Karsta line - Curvature, Cant and Twist vs Location.**](images/Karsta-Curv-Cant-Twist.PNG){#fig:curv_cant_twist}
 
-As for Gauge and Curvature, while there is no strict relationship between them when plotting the two parameters, it can be observed that at higher curvatures, the distance between tracks also increases. `Figure XX and XX` shows this fact. 
+As for Gauge and Curvature, while there is no strict relationship between them when plotting the two parameters, it can be observed that at higher curvatures, the distance between tracks also increases. Figure @fig:gauge-curve1 and Figure @fig:gauge-curve2 show this fact. 
 
-![
-**A plot showing Curvature, Cant and twist relation vs Location Karsta.**](images/Karsta_Gauge_Curvature.png){`Fig#`:Ostra-Karsta line - Curvature and Gauge vs Location}
-![
-**A plot showing Curvature, Cant and twist relation vs Location Karsta.**](images/Karsta_Gauge_Curvature2.png){`Fig#`:Ostra-Karsta line - Curvature vs Gauge}
+![**Ostra-Karsta line - Curvature and Gauge vs Location.**](images/Karsta_Gauge_Curvature.PNG){#fig:gauge-curve1 width="5in"}
+
+![**Ostra-Karsta line - Curvature vs Gauge.**](images/Karsta_Gauge_Curvature2.PNG){#fig:gauge-curve2 width="5in"}
 
 # Predictive modelling
 
