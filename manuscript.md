@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/05606a329afef6f18ebab71bf31f8b3c6a98bcf9/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/05606a329afef6f18ebab71bf31f8b3c6a98bcf9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/05606a329afef6f18ebab71bf31f8b3c6a98bcf9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/51b92149f5e8397272f1d74e815dffb4e93e2686/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/51b92149f5e8397272f1d74e815dffb4e93e2686/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/51b92149f5e8397272f1d74e815dffb4e93e2686/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/05606a329afef6f18ebab71bf31f8b3c6a98bcf9/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/51b92149f5e8397272f1d74e815dffb4e93e2686/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@05606a3](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/05606a329afef6f18ebab71bf31f8b3c6a98bcf9)
+from [uiceds/cee-492-term-project-fall-2022-time@51b9214](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/51b92149f5e8397272f1d74e815dffb4e93e2686)
 on October 30, 2022.
 </em></small>
 
@@ -166,7 +166,7 @@ Table 1: Summary Table. {#tbl:sum-table-1}
 ## Data Correlation:
 An important fact of the parameters considered is that some of them are directly related in a mathematical sense. For example, the parameter cant is proportional to the curvature, which means that when the track is being built, the superelevation is calculated based on the curvature at a given location, as follows:
 
-\(\frac{G*V^2}{gR})
+\frac{G*V^2}{gR}
 
 Where E_e is balancing superelevation or cant, G (track gauge), g (gravity), and V (line speed) are constants and R is curve radius, the inverse of curvature.[1] 
 
