@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a9ae6cab27200dcea943bde60040d170085303e5/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a9ae6cab27200dcea943bde60040d170085303e5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a9ae6cab27200dcea943bde60040d170085303e5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/578f46f3137979bba2dfde719f2e79608a4f38fe/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/578f46f3137979bba2dfde719f2e79608a4f38fe/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/578f46f3137979bba2dfde719f2e79608a4f38fe/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a9ae6cab27200dcea943bde60040d170085303e5/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/578f46f3137979bba2dfde719f2e79608a4f38fe/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@a9ae6ca](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/a9ae6cab27200dcea943bde60040d170085303e5)
+from [uiceds/cee-492-term-project-fall-2022-time@578f46f](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/578f46f3137979bba2dfde719f2e79608a4f38fe)
 on October 30, 2022.
 </em></small>
 
@@ -143,7 +143,7 @@ Each file corresponds to a specific measurement run, on a given part of the trac
 
 It should be noted that in some cases the data needs to be cleaned. For example, it contains many N/A cells, as well as some questionable data points, especially when the train was coming to a stop, which produced some outliers. `[plot showing what happens with 0 speed?]. I like this idea too`
 
-The date and time of the measurements are not hardcoded in the .csv file but only mentioned in the file name, as such the code for analyzing will have to take into account the name of the file when making comparisons. As shown in Figure {@fig:desync-1}, the measurement runs are not completely synchronized, they must match or correlate in some way to clearly interpret the results. 
+The date and time of the measurements are not hardcoded in the .csv document but only mentioned in the file name, as such the code for analyzing will have to take into account the name of the file when making comparisons. As shown in Figure {@fig:desync-1}, the measurement runs are not completely synchronized, they must match or correlate in some way to clearly interpret the results. 
 
 ![Plot showing the offset between measurement runs on three different dates.](images/desync.png){#fig:desync-1 width="5in"}
 
