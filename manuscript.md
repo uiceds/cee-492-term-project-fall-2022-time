@@ -1,5 +1,5 @@
 ---
-title: Safety Assessment on Roslagsbanan Rail System, 2021-2022
+title: Safety Assessment of Roslagsbanan Rail System, 2021-2022
 keywords:
 - Railroad Systems
 - Transportation Safety
@@ -16,10 +16,10 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
-  <meta name="citation_title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
-  <meta property="og:title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
-  <meta property="twitter:title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
+  <meta name="dc.title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
+  <meta name="citation_title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
+  <meta property="og:title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
+  <meta property="twitter:title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
   <meta name="dc.date" content="2022-10-30" />
   <meta name="citation_publication_date" content="2022-10-30" />
   <meta name="dc.language" content="en-US" />
@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/51b92149f5e8397272f1d74e815dffb4e93e2686/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/51b92149f5e8397272f1d74e815dffb4e93e2686/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/51b92149f5e8397272f1d74e815dffb4e93e2686/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/058736318ac0d6e661b3c812e4a8d04349559719/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/058736318ac0d6e661b3c812e4a8d04349559719/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/058736318ac0d6e661b3c812e4a8d04349559719/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/51b92149f5e8397272f1d74e815dffb4e93e2686/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/058736318ac0d6e661b3c812e4a8d04349559719/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@51b9214](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/51b92149f5e8397272f1d74e815dffb4e93e2686)
+from [uiceds/cee-492-term-project-fall-2022-time@0587363](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/058736318ac0d6e661b3c812e4a8d04349559719)
 on October 30, 2022.
 </em></small>
 
@@ -102,15 +102,15 @@ The data that will be used in this study was collected using the LTM system affi
 
 In the CSV files the structure of columns is as follows:
 
-- Marker and Marker_Offset: The kilometre post of the data point, where Marker is in km and Marker_offset is in m. In other words, if Marker=20 and MArker_offset=250.5, the kilometre post is 20,250.5 
+- Marker and Marker_Offset: The kilometre post of the data point, where Marker is in km and Marker_offset is in m. In other words, if Marker=20 and Marker_offset=250.5, the kilometre post is 20,250.5 
 
-- Coordinate_northing,Coordinate_easting, Latitude, Longitude: As their name suggests, they are the coordinates of the data point in northings and eastings, as well as latittude and longitude. 
+- Coordinate_northing,Coordinate_easting, Latittude, Longitude: As their name suggests, they are the coordinates of the data point in northings and eastings, as well as latittude and longitude. 
 
 - Speed: records the speed in km/h at which the measurement was taken. This is especially relevant as different operating speeds give different tolerances in terms of the measured properties. 
 
 - Level_left and Level_right D0, D1, D2, D3: The deviation of the longitudinal level (height) of the left and right rail in mm, compared to its reference position. D0, D1, D2, D3 correspond to different measurement wavelengths of the same data.
 
-- Alignment_left and Alignment_right D0, D1, D2, D3: The deviation in longitudinal alignment ("straightness")of the left and right rail in mm, compared to its reference position. D0, D1, D2, D3 correspond to different measurement wavelengths of the same data.
+- Alignment_left and Alignment_right D0, D1, D2, D3: The deviation in longitudinal alignment ("straightness") of the left and right rail in mm, compared to its reference position. D0, D1, D2, D3 correspond to different measurement wavelengths of the same data.
 
 - Track_gauge: The deviation in the spacing between the rails in mm, from a reference of 891mm.
 

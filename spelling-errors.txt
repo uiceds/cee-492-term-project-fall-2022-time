@@ -17,7 +17,7 @@ culpa
 cupidatat
 curv
 cvolpebaridon
-dataset
+Dataset
 Decription
 deserunt
 diag
@@ -45,7 +45,7 @@ KTH
 labore
 laboris
 laborum
-latittude
+Latittude
 Latronix
 Lorem
 LTM
