@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ad361cd6a3a914c27186d5f4031504bbea6c2af6/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ad361cd6a3a914c27186d5f4031504bbea6c2af6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ad361cd6a3a914c27186d5f4031504bbea6c2af6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/59f94530a2c111e3f3fafb1da347d8d29dc398ed/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/59f94530a2c111e3f3fafb1da347d8d29dc398ed/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/59f94530a2c111e3f3fafb1da347d8d29dc398ed/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ad361cd6a3a914c27186d5f4031504bbea6c2af6/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/59f94530a2c111e3f3fafb1da347d8d29dc398ed/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@ad361cd](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/ad361cd6a3a914c27186d5f4031504bbea6c2af6)
+from [uiceds/cee-492-term-project-fall-2022-time@59f9453](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/59f94530a2c111e3f3fafb1da347d8d29dc398ed)
 on October 30, 2022.
 </em></small>
 
@@ -104,7 +104,7 @@ In the CSV files the structure of columns is as follows:
 
 - Marker and Marker_Offset: The kilometre post of the data point, where Marker is in km and Marker_offset is in m. In other words, if Marker=20 and Marker_offset=250.5, the kilometre post is 20,250.5 
 
-- Coordinate_northing,Coordinate_easting, Latittude, Longitude: As their name suggests, they are the coordinates of the data point in northings and eastings, as well as latittude and longitude. 
+- Coordinate_northing,Coordinate_easting, Latitude, Longitude: As their name suggests, they are the coordinates of the data point in northings and eastings, as well as latitude and longitude. 
 
 - Speed: records the speed in km/h at which the measurement was taken. This is especially relevant as different operating speeds give different tolerances in terms of the measured properties. 
 

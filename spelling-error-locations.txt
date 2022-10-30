@@ -13,8 +13,6 @@ content/03.introduction.md:8:CSV
 content/03.introduction.md:10:kilometre
 content/03.introduction.md:10:kilometre
 content/03.introduction.md:12:eastings
-content/03.introduction.md:12:latittude
-content/03.introduction.md:12:Latittude
 content/03.introduction.md:12:northings
 content/03.introduction.md:28:versine
 content/03.introduction.md:30:versine
