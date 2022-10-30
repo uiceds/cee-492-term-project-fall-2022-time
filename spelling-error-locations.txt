@@ -27,7 +27,10 @@ content/04.exploratory.md:7:analyse
 content/04.exploratory.md:9:Kårsta
 content/04.exploratory.md:9:Roslagsbanan
 content/04.exploratory.md:13:csv
+content/04.exploratory.md:13:desync
 content/04.exploratory.md:13:hardcoded
+content/04.exploratory.md:15:desync
+content/04.exploratory.md:15:desync
 content/04.exploratory.md:34:superelevation
 content/04.exploratory.md:38:superelevation
 content/04.exploratory.md:40:summarised

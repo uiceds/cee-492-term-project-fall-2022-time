@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/058736318ac0d6e661b3c812e4a8d04349559719/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/058736318ac0d6e661b3c812e4a8d04349559719/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/058736318ac0d6e661b3c812e4a8d04349559719/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/e7884e65236ff57bebed3e4ace1bc8455a2524de/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/e7884e65236ff57bebed3e4ace1bc8455a2524de/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/e7884e65236ff57bebed3e4ace1bc8455a2524de/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/058736318ac0d6e661b3c812e4a8d04349559719/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/e7884e65236ff57bebed3e4ace1bc8455a2524de/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@0587363](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/058736318ac0d6e661b3c812e4a8d04349559719)
+from [uiceds/cee-492-term-project-fall-2022-time@e7884e6](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/e7884e65236ff57bebed3e4ace1bc8455a2524de)
 on October 30, 2022.
 </em></small>
 
@@ -135,7 +135,7 @@ This research will help assess system performance, identify possible maintenance
 ## General Dataset Description: 
 The main dataset is composed of 60 .csv files of measurements taken on part of the railway tracks of the Roslagsbanan network in Stockholm. They are dated from October 2021 to May 2022 and the measurements were made using track measuring equipment installed on the trains and working during the trial run.
 
-Each file corresponds to a specific measurement run, on a given part of the track. Additionally, each section of the track has a different number of measurement runs, depending on the importance of the sections. For example, the segment between the 27 and 38 km points comprises more than 20 different runs (usually traveling north and then south on the same day) while other sections do not have such a number of measurements. `Figure 1` shows a map with the lines that are taken into account in this document. `(we should cite all the Figures in the text, I don't know how to do that automatic)`
+Each file corresponds to a specific measurement run, on a given part of the track. Additionally, each section of the track has a different number of measurement runs, depending on how important the measurement crew considered the section. For example, the segment between approximately the 27 and 38 km points comprises more than 20 different runs (usually traveling north and then south on the same day) while other sections do not have such a number of measurements. Figure {@fig:geo-map-1} below shows a map with the lines that are taken into account in this document.
 
 ``. `It looks interesting to analyse`
 
@@ -143,9 +143,9 @@ Each file corresponds to a specific measurement run, on a given part of the trac
 
 It should be noted that in some cases the data needs to be cleaned. For example, it contains many N/A cells, as well as some questionable data points, especially when the train was coming to a stop, which produced some outliers. `[plot showing what happens with 0 speed?]. I like this idea too`
 
-The date and time of the measurements are not hardcoded in the .csv file but only mentioned in the file name, as such the code for analyzing will have to take into account the name of the file when making comparisons. As shown in `Figure 2`, the measurement runs are not completely synchronized, they must match or correlate in some way to clearly interpret the results. `(WHAT IS X AND Y IN THE FIGURE?). I think that the letter is too small, maybe we could make it bigger`
+The date and time of the measurements are not hardcoded in the .csv file but only mentioned in the file name, as such the code for analyzing will have to take into account the name of the file when making comparisons. As shown in Figure {@fig:desync-1}, the measurement runs are not completely synchronized, they must match or correlate in some way to clearly interpret the results. 
 
-![Plot showing the offset between measurement runs on three dates.](images/desync.png){#fig:desync-1 width="5in"}
+![Plot showing the offset between measurement runs on three different dates.](images/desync.png){#fig:desync-1 width="5in"}
 
 ## Statistics Analysis:
 [Stats summary about size, distance covered, frequency of measurements, others?]
@@ -164,9 +164,9 @@ Table 1: Summary Table. {#tbl:sum-table-1}
 `We could include in this section the mean and standard deviation of the columns, for instance, gauge, alignment, height (that wee know they should be the same in the entire longitude)`
 
 ## Data Correlation:
-An important fact of the parameters considered is that some of them are directly related in a mathematical sense. For example, the parameter cant is proportional to the curvature, which means that when the track is being built, the superelevation is calculated based on the curvature at a given location, as follows:
+An important fact of the parameters considered is that some of them are directly related in a mathematical sense. For example, the parameter cant is proportional to the curvature, which means that when the track is being built, the superelevation is calculated based on the curvature at a given location, as shown by equation {@eq:cant}:
 
-\frac{G*V^2}{gR}
+$$\frac{G*V^2}{gR}$$ {eq:cant}
 
 Where E_e is balancing superelevation or cant, G (track gauge), g (gravity), and V (line speed) are constants and R is curve radius, the inverse of curvature.[1] 
 
