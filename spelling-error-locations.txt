@@ -21,7 +21,6 @@ content/04.exploratory.md:2:Dataset
 content/04.exploratory.md:3:csv
 content/04.exploratory.md:3:dataset
 content/04.exploratory.md:3:Roslagsbanan
-content/04.exploratory.md:7:analyse
 content/04.exploratory.md:9:Kårsta
 content/04.exploratory.md:9:Roslagsbanan
 content/04.exploratory.md:13:csv
@@ -43,6 +42,7 @@ content/04.exploratory.md:52:Karsta
 content/04.exploratory.md:52:Ostra
 content/04.exploratory.md:54:modelling
 content/04.exploratory.md:57:dataset
+content/04.exploratory.md:59:independant
 content/900.delete-me.md:44:adipiscing
 content/900.delete-me.md:44:aliqua
 content/900.delete-me.md:44:amet
