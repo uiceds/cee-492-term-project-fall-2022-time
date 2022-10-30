@@ -5,7 +5,7 @@ keywords:
 - Transportation Safety
 - Track Degradation
 lang: en-US
-date-meta: '2022-10-29'
+date-meta: '2022-10-30'
 author-meta:
 - Cecilia Karina Volpe Baridon
 - Elie Roudiere
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
   <meta property="og:title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
   <meta property="twitter:title" content="Safety Assessment on Roslagsbanan Rail System, 2021-2022" />
-  <meta name="dc.date" content="2022-10-29" />
-  <meta name="citation_publication_date" content="2022-10-29" />
+  <meta name="dc.date" content="2022-10-30" />
+  <meta name="citation_publication_date" content="2022-10-30" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/cc0682a248174aa4af29e5f6a594bcf723d95f84/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/cc0682a248174aa4af29e5f6a594bcf723d95f84/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/cc0682a248174aa4af29e5f6a594bcf723d95f84/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/98cd55ea96087ca16eef70be80d53e8794279248/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/98cd55ea96087ca16eef70be80d53e8794279248/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/98cd55ea96087ca16eef70be80d53e8794279248/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,10 +62,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/cc0682a248174aa4af29e5f6a594bcf723d95f84/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/98cd55ea96087ca16eef70be80d53e8794279248/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@cc0682a](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/cc0682a248174aa4af29e5f6a594bcf723d95f84)
-on October 29, 2022.
+from [uiceds/cee-492-term-project-fall-2022-time@98cd55e](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/98cd55ea96087ca16eef70be80d53e8794279248)
+on October 30, 2022.
 </em></small>
 
 ## Authors
