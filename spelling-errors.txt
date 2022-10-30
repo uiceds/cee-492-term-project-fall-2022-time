@@ -12,7 +12,7 @@ cillum
 commodo
 consectetur
 consequat
-CSV
+csv
 culpa
 cupidatat
 curv
@@ -46,7 +46,7 @@ KTH
 labore
 laboris
 laborum
-Latittude
+latittude
 Latronix
 Lorem
 LTM

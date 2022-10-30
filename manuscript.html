@@ -130,9 +130,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/e7884e65236ff57bebed3e4ace1bc8455a2524de/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/e7884e65236ff57bebed3e4ace1bc8455a2524de/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/e7884e65236ff57bebed3e4ace1bc8455a2524de/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ad361cd6a3a914c27186d5f4031504bbea6c2af6/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ad361cd6a3a914c27186d5f4031504bbea6c2af6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ad361cd6a3a914c27186d5f4031504bbea6c2af6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -153,9 +153,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/e7884e65236ff57bebed3e4ace1bc8455a2524de/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ad361cd6a3a914c27186d5f4031504bbea6c2af6/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/e7884e65236ff57bebed3e4ace1bc8455a2524de">uiceds/cee-492-term-project-fall-2022-time@e7884e6</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/ad361cd6a3a914c27186d5f4031504bbea6c2af6">uiceds/cee-492-term-project-fall-2022-time@ad361cd</a>
 on October 30, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -202,7 +202,7 @@ Railway Group, KTH Royal Institute of Technology - Stockholm, Sweden
 <h1 id="exploratory-analysis">Exploratory Analysis</h1>
 <h2 id="general-dataset-description">General Dataset Description:</h2>
 <p>The main dataset is composed of 60 .csv files of measurements taken on part of the railway tracks of the Roslagsbanan network in Stockholm. They are dated from October 2021 to May 2022 and the measurements were made using track measuring equipment installed on the trains and working during the trial run.</p>
-<p>Each file corresponds to a specific measurement run, on a given part of the track. Additionally, each section of the track has a different number of measurement runs, depending on how important the measurement crew considered the section. For example, the segment between approximately the 27 and 38 km points comprises more than 20 different runs (usually traveling north and then south on the same day) while other sections do not have such a number of measurements. Figure <a href="#fig:geo-map-1">1</a> below shows a map with the lines that are taken into account in this document.</p>
+<p>Each file corresponds to a specific measurement run, on a given part of the track. Additionally, each section of the track has a different number of measurement runs, depending on how important the measurement crew considered the section. For example, the segment between approximately the 27 and 38 km points comprises more than 20 different runs (usually traveling north and then south on the same day) while other sections do not have such a number of measurements. Figure <a href="#fig:geo-map-1">1</a> below shows a map with the lines that will be studied in this document.</p>
 <p>`<code>.</code>It looks interesting to analyse`</p>
 <div id="fig:geo-map-1" class="fignos">
 <figure>
@@ -252,8 +252,8 @@ Railway Group, KTH Royal Institute of Technology - Stockholm, Sweden
 <p><code>Something is weird with the title of this table, it appears something else in the pdf version</code>
 <code>We could include in this section the mean and standard deviation of the columns, for instance, gauge, alignment, height (that wee know they should be the same in the entire longitude)</code></p>
 <h2 id="data-correlation">Data Correlation:</h2>
-<p>An important fact of the parameters considered is that some of them are directly related in a mathematical sense. For example, the parameter cant is proportional to the curvature, which means that when the track is being built, the superelevation is calculated based on the curvature at a given location, as shown by equation ??:</p>
-<p><span class="math display">\[\frac{G*V^2}{gR}\]</span> </p>
+<p>An important fact of the parameters considered is that some of them are directly related in a mathematical sense. For example, the parameter cant is proportional to the curvature, which means that when the track is being built, the superelevation is calculated based on the curvature at a given location, as shown by Equation <a href="#eq:cant">1</a> below:</p>
+<p><span id="eq:cant" class="eqnos"><span class="math display">\[\frac{G*V^2}{gR}\]</span><span class="eqnos-number">(1)</span></span> </p>
 <p>Where E_e is balancing superelevation or cant, G (track gauge), g (gravity), and V (line speed) are constants and R is curve radius, the inverse of curvature.[1]</p>
 <p>Similarly, twist describes the rate of change of cant over a certain distance, and thus a close correlation between them is expected. These parameters are summarised in Figure <a href="#fig:cant_diag_1">3</a> below, courtesy of Kawasaki Track Technology:</p>
 <div id="fig:cant_diag_1" class="fignos">
@@ -264,7 +264,7 @@ Railway Group, KTH Royal Institute of Technology - Stockholm, Sweden
 <p>Figure <a href="#fig:curv_cant_twist">4</a> shows these relations among the parameters for the Karsta line. From the curvature and cant plots, it can be observed that there is a strong relationship between them, as both exhibit similar patterns. However, in the case of twist correlation with the other variables, similar patterns may not be very clear. More analysis might be done on this line.</p>
 <div id="fig:curv_cant_twist" class="fignos">
 <figure>
-<img src="images/Karsta-Curv-Cant-Twist.PNG" alt="Figure 4: Ostra-Karsta line - Curvature, Cant and Twist vs Location." /><figcaption aria-hidden="true"><span>Figure 4:</span> <strong>Ostra-Karsta line - Curvature, Cant and Twist vs Location.</strong></figcaption>
+<img src="images/Karsta-Curv-Cant-Twist.PNG" style="width:5in" alt="Figure 4: Ostra-Karsta line - Curvature, Cant and Twist vs Location." /><figcaption aria-hidden="true"><span>Figure 4:</span> <strong>Ostra-Karsta line - Curvature, Cant and Twist vs Location.</strong></figcaption>
 </figure>
 </div>
 <p>As for Gauge and Curvature, while there is no strict relationship between them when plotting the two parameters, it can be observed that at higher curvatures, the distance between tracks also increases. Figure <a href="#fig:gauge-curve1">5</a> and Figure <a href="#fig:gauge-curve2">6</a> show this fact.</p>
@@ -364,8 +364,8 @@ Manubot plugins provide easier, more convenient visualization of and navigation 
 <p>Figure <a href="#fig:tall-image">9</a></p>
 <p>Figure <a href="#fig:vector-image">10</a></p>
 <p>Table <a href="#tbl:bowling-scores">1</a></p>
-<p>Equation <a href="#eq:regular-equation">1</a></p>
-<p>Equation <a href="#eq:long-equation">2</a></p>
+<p>Equation <a href="#eq:regular-equation">2</a></p>
+<p>Equation <a href="#eq:long-equation">3</a></p>
 <h2 id="quotes-and-code">Quotes and code</h2>
 <blockquote>
 <p>Quoted text</p>
@@ -491,7 +491,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:5f2c8a57-ead9-4206-a2ff-6b08e099f001" class="tablenos">
+<div id="tbl:0ae0ab65-892a-4815-acd0-1029a923672d" class="tablenos">
 <table id="tbl:">
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
@@ -523,9 +523,9 @@ White background specified to serve as a backdrop for transparent sections of th
 </div>
 <h2 id="equations">Equations</h2>
 <p>A LaTeX equation:</p>
-<p><span id="eq:regular-equation" class="eqnos"><span class="math display">\[\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\]</span><span class="eqnos-number">(1)</span></span> </p>
+<p><span id="eq:regular-equation" class="eqnos"><span class="math display">\[\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\]</span><span class="eqnos-number">(2)</span></span> </p>
 <p>An equation too long to fit within page:</p>
-<p><span id="eq:long-equation" class="eqnos"><span class="math display">\[x = a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9\]</span><span class="eqnos-number">(2)</span></span> </p>
+<p><span id="eq:long-equation" class="eqnos"><span class="math display">\[x = a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9\]</span><span class="eqnos-number">(3)</span></span> </p>
 <h2 id="special">Special</h2>
 <p><i class="fas fa-exclamation-triangle"></i> <span class="semibold">WARNING</span> <em>The following features are only supported and intended for <code>.html</code> and <code>.pdf</code> exports.</em>
 <em>Journals are not likely to support them, and they may not display correctly when converted to other formats such as <code>.docx</code>.</em></p>

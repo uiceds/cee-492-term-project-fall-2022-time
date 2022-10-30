@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/e7884e65236ff57bebed3e4ace1bc8455a2524de/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/e7884e65236ff57bebed3e4ace1bc8455a2524de/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/e7884e65236ff57bebed3e4ace1bc8455a2524de/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ad361cd6a3a914c27186d5f4031504bbea6c2af6/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ad361cd6a3a914c27186d5f4031504bbea6c2af6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ad361cd6a3a914c27186d5f4031504bbea6c2af6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/e7884e65236ff57bebed3e4ace1bc8455a2524de/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ad361cd6a3a914c27186d5f4031504bbea6c2af6/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@e7884e6](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/e7884e65236ff57bebed3e4ace1bc8455a2524de)
+from [uiceds/cee-492-term-project-fall-2022-time@ad361cd](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/ad361cd6a3a914c27186d5f4031504bbea6c2af6)
 on October 30, 2022.
 </em></small>
 
@@ -135,7 +135,7 @@ This research will help assess system performance, identify possible maintenance
 ## General Dataset Description: 
 The main dataset is composed of 60 .csv files of measurements taken on part of the railway tracks of the Roslagsbanan network in Stockholm. They are dated from October 2021 to May 2022 and the measurements were made using track measuring equipment installed on the trains and working during the trial run.
 
-Each file corresponds to a specific measurement run, on a given part of the track. Additionally, each section of the track has a different number of measurement runs, depending on how important the measurement crew considered the section. For example, the segment between approximately the 27 and 38 km points comprises more than 20 different runs (usually traveling north and then south on the same day) while other sections do not have such a number of measurements. Figure {@fig:geo-map-1} below shows a map with the lines that are taken into account in this document.
+Each file corresponds to a specific measurement run, on a given part of the track. Additionally, each section of the track has a different number of measurement runs, depending on how important the measurement crew considered the section. For example, the segment between approximately the 27 and 38 km points comprises more than 20 different runs (usually traveling north and then south on the same day) while other sections do not have such a number of measurements. Figure @fig:geo-map-1 below shows a map with the lines that will be studied in this document.
 
 ``. `It looks interesting to analyse`
 
@@ -164,9 +164,9 @@ Table 1: Summary Table. {#tbl:sum-table-1}
 `We could include in this section the mean and standard deviation of the columns, for instance, gauge, alignment, height (that wee know they should be the same in the entire longitude)`
 
 ## Data Correlation:
-An important fact of the parameters considered is that some of them are directly related in a mathematical sense. For example, the parameter cant is proportional to the curvature, which means that when the track is being built, the superelevation is calculated based on the curvature at a given location, as shown by equation {@eq:cant}:
+An important fact of the parameters considered is that some of them are directly related in a mathematical sense. For example, the parameter cant is proportional to the curvature, which means that when the track is being built, the superelevation is calculated based on the curvature at a given location, as shown by Equation @eq:cant below:
 
-$$\frac{G*V^2}{gR}$$ {eq:cant}
+$$\frac{G*V^2}{gR}$$ {#eq:cant}
 
 Where E_e is balancing superelevation or cant, G (track gauge), g (gravity), and V (line speed) are constants and R is curve radius, the inverse of curvature.[1] 
 
@@ -176,7 +176,7 @@ Similarly, twist describes the rate of change of cant over a certain distance, a
 
 Figure @fig:curv_cant_twist shows these relations among the parameters for the Karsta line. From the curvature and cant plots, it can be observed that there is a strong relationship between them, as both exhibit similar patterns. However, in the case of twist correlation with the other variables, similar patterns may not be very clear. More analysis might be done on this line. 
 
-![**Ostra-Karsta line - Curvature, Cant and Twist vs Location.**](images/Karsta-Curv-Cant-Twist.PNG){#fig:curv_cant_twist}
+![**Ostra-Karsta line - Curvature, Cant and Twist vs Location.**](images/Karsta-Curv-Cant-Twist.PNG){#fig:curv_cant_twist width="5in"}
 
 As for Gauge and Curvature, while there is no strict relationship between them when plotting the two parameters, it can be observed that at higher curvatures, the distance between tracks also increases. Figure @fig:gauge-curve1 and Figure @fig:gauge-curve2 show this fact. 
 
