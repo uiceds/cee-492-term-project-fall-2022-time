@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/1d9fd15bb610bc77d40ce325d4d0f2b6ee99ce38/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/1d9fd15bb610bc77d40ce325d4d0f2b6ee99ce38/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/1d9fd15bb610bc77d40ce325d4d0f2b6ee99ce38/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3799168b8fadaa1442033faa632d6bca70247637/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3799168b8fadaa1442033faa632d6bca70247637/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3799168b8fadaa1442033faa632d6bca70247637/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/1d9fd15bb610bc77d40ce325d4d0f2b6ee99ce38/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3799168b8fadaa1442033faa632d6bca70247637/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@1d9fd15](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/1d9fd15bb610bc77d40ce325d4d0f2b6ee99ce38)
+from [uiceds/cee-492-term-project-fall-2022-time@3799168](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/3799168b8fadaa1442033faa632d6bca70247637)
 on October 30, 2022.
 </em></small>
 
@@ -133,21 +133,23 @@ This research will help assess system performance, identify possible maintenance
 
 # Exploratory Analysis
 ## General Dataset Description: 
-The primary dataset for line 27 is made up of sixty.csv files, each of which contains a collection of measurements that were collected from a specific section of the Roslagsbanan network in Stockholm. The measurements were taken with track measuring equipment that was mounted on the trains and operating during the trial run. The dates on them range from October 2021 to May 2022.
+This document will concentrate primarily on line 27, which travels between Ostra and Karsta. This is because the analysis of the railroad lines would be the same for all of them. The reason that line 27 was chosen is because it has the most data out of the other three lines in the list. The primary dataset for line 27 is comprised of sixty.csv files, each of which includes a collection of measurements that were gathered from a particular segment of the Roslagsbanan network in Stockholm. These measurements were collected at various points along the network. Track measuring equipment, which was mounted on the trains and operated while the trial run was being conducted, was used to take the measurements.The dates on them range from October 2021 to May 2022.
 
-Each file corresponds to a specific measurement run, on a given part of the track. Additionally, each section of the track has a different number of measurement runs, depending on the importance of the sections. For example, the segment between the 27 and 38 km points comprises more than 20 different runs (usually traveling north and then south on the same day) while other sections do not have such a number of measurements. @fig:geo-map-1 below shows a map with the lines that are taken into account in this document. 
-``. `It looks interesting to analyse`
+ 
+
+Every file represents a unique measurement run that was performed on a particular section of the track. In addition, the number of measurement runs that are performed on each sector of the track is differentiated from one another according to the relative importance of the sectors. For instance, the section of the track that extends between 27 and 38 kilometers has been measured in more than twenty different time points, whereas other sections do not have such a high number of runs. The map of the lines can be seen below in the @fig:geo-map-1. Line 27 is the line that will be considered in this document.
 
 ![Line map overview of the Roslagsbanan. This study will focus on line 27 to Kårsta.](images/RB-sl-map.png){#fig:geo-map-1 width="4in"}
 
-It should be noted that in some cases the data needs to be cleaned. For example, it contains many N/A cells, as well as some questionable data points, especially when the train was coming to a stop, which produced some outliers. `[plot showing what happens with 0 speed?]. I like this idea too`
+It is important to keep in mind that the data may require cleaning in some instances. For instance, it has a lot of NA cells that say "N/A". It also has some questionable data points, particularly during the time when the train was slowing down to a stop, which caused some outliers. `[plot showing what happens with 0 speed?]. I like this idea too`
 
 The date and time of the measurements are not hardcoded in the .csv document but only mentioned in the file name, as such the code for analyzing will have to take into account the name of the file when making comparisons. As shown in `Figure 2`, the measurement runs are not completely synchronized, they must match or correlate in some way to clearly interpret the results. 
 
 ![Plot showing the offset between measurement runs on three dates.](images/desync.png){#fig:desync-1 width="5in"}
 
 ## Statistics Analysis:
-Due to the analysis of the railroad lines would be the same for all of them, this document will focus mainly in the line 27 that runs from Ostra to Karsta. `Table 1` shows the main properties of the measurement files. 
+In this section, we will discuss the science of data mining, which is the process of analyzing, and presenting large amounts of data in order to find hidden patterns and trends.
+ `Table 1` shows the main properties of the measurement files. 
 
 
 | Properties | Value |
@@ -177,7 +179,7 @@ Table 2: Statistical analysis of the parameters for the Ostra-Karsta line, measu
 ## Data Correlation:
 An important fact of the parameters considered is that some of them are directly related in a mathematical sense. For example, the parameter cant is proportional to the curvature, which means that when the track is being built, the superelevation is calculated based on the curvature at a given location, as follows:
 
-$$\frac{G*V^2}{gR}$$
+$$E_e=\frac{G*V^2}{gR}$$
 
 Where E_e is balancing superelevation or cant, G (track gauge), g (gravity), and V (line speed) are constants and R is curve radius, the inverse of curvature.[1] 
 
@@ -186,6 +188,8 @@ Similarly, twist describes the rate of change of cant over a certain distance, a
 ![Summary diagram of the parameters studied in this report. Source: Kawasaki Track Technology](images/CantEtcDiagram.png){#fig:cant_diag_1 width="5in"}
 
 Figure @fig:curv_cant_twist shows these relations among the parameters for the Karsta line. From the curvature and cant plots, it can be observed that there is a strong relationship between them, as both exhibit similar patterns. However, in the case of twist correlation with the other variables, similar patterns may not be very clear. More analysis might be done on this line. 
+
+These relationships between the Karsta line's parameters are illustrated in the figure with the identifier @fig:curv_cant_twist. As a result of the similarities in the patterns that both the curvature plot and the cant plot display, it is possible to deduce that there is a close connection between the two variables. On the other hand, when considering the twist correlation with the other variables, it's possible that similar patterns won't be very obvious. In spite of the fact that it is known to be mathematically correlated, additional investigation may be required in order to discern the pattern. On this particular line, additional research might be conducted.
 
 ![**Ostra-Karsta line - Curvature, Cant and Twist vs Location.**](images/Karsta-Curv,Cant,Twist.PNG){#fig:curv_cant_twist}
 

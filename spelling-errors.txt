@@ -2,7 +2,6 @@ adipiscing
 aliqua
 aliquip
 amet
-analyse
 anim
 aute
 Baridon
@@ -12,12 +11,12 @@ cillum
 commodo
 consectetur
 consequat
-csv
+CSV
 culpa
 cupidatat
 curv
 cvolpebaridon
-dataset
+Dataset
 Decription
 deserunt
 diag
