@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ed755ace0d3eb6ce2be6697ea730e1b7cee33cda/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ed755ace0d3eb6ce2be6697ea730e1b7cee33cda/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ed755ace0d3eb6ce2be6697ea730e1b7cee33cda/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5fa44f32f9ced2a771bef54315faa58c38448e9f/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5fa44f32f9ced2a771bef54315faa58c38448e9f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5fa44f32f9ced2a771bef54315faa58c38448e9f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ed755ace0d3eb6ce2be6697ea730e1b7cee33cda/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5fa44f32f9ced2a771bef54315faa58c38448e9f/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@ed755ac](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/ed755ace0d3eb6ce2be6697ea730e1b7cee33cda)
+from [uiceds/cee-492-term-project-fall-2022-time@5fa44f3](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/5fa44f32f9ced2a771bef54315faa58c38448e9f)
 on October 30, 2022.
 </em></small>
 
@@ -135,11 +135,10 @@ This research will help assess system performance, identify possible maintenance
 ## General Dataset Description: 
 The main dataset is composed of 60 .csv files of measurements taken on part of the railway tracks of the Roslagsbanan network in Stockholm. They are dated from October 2021 to May 2022 and the measurements were made using track measuring equipment installed on the trains and working during the trial run.
 
-Each file corresponds to a specific measurement run, on a given part of the track. Additionally, each section of the track has a different number of measurement runs, depending on the importance of the sections. For example, the segment between the 27 and 38 km points comprises more than 20 different runs (usually traveling north and then south on the same day) while other sections do not have such a number of measurements. `Figure 1` shows a map with the lines that are taken into account in this document. `(we should cite all the Figures in the text, I don't know how to do that automatic)`
-
+Each file corresponds to a specific measurement run, on a given part of the track. Additionally, each section of the track has a different number of measurement runs, depending on the importance of the sections. For example, the segment between the 27 and 38 km points comprises more than 20 different runs (usually traveling north and then south on the same day) while other sections do not have such a number of measurements. @fig:geo-map-1 below shows a map with the lines that are taken into account in this document. 
 ``. `It looks interesting to analyse`
 
-![Line map overview of the Roslagsbanan. This study will focus on line 27 to Kårsta.](images/RB-sl-map.png){#fig:geo-map-1 width="5in"}
+![Line map overview of the Roslagsbanan. This study will focus on line 27 to Kårsta.](images/RB-sl-map.png){#fig:geo-map-1 width="4in"}
 
 It should be noted that in some cases the data needs to be cleaned. For example, it contains many N/A cells, as well as some questionable data points, especially when the train was coming to a stop, which produced some outliers. `[plot showing what happens with 0 speed?]. I like this idea too`
 
