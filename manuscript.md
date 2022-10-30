@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/59f94530a2c111e3f3fafb1da347d8d29dc398ed/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/59f94530a2c111e3f3fafb1da347d8d29dc398ed/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/59f94530a2c111e3f3fafb1da347d8d29dc398ed/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d960248591501ba1c81d89c7065beacee98d38ac/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d960248591501ba1c81d89c7065beacee98d38ac/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d960248591501ba1c81d89c7065beacee98d38ac/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/59f94530a2c111e3f3fafb1da347d8d29dc398ed/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d960248591501ba1c81d89c7065beacee98d38ac/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@59f9453](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/59f94530a2c111e3f3fafb1da347d8d29dc398ed)
+from [uiceds/cee-492-term-project-fall-2022-time@d960248](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/d960248591501ba1c81d89c7065beacee98d38ac)
 on October 30, 2022.
 </em></small>
 
@@ -176,7 +176,7 @@ Similarly, twist describes the rate of change of cant over a certain distance, a
 
 Figure @fig:curv_cant_twist shows these relations among the parameters for the Karsta line. From the curvature and cant plots, it can be observed that there is a strong relationship between them, as both exhibit similar patterns. However, in the case of twist correlation with the other variables, similar patterns may not be very clear. More analysis might be done on this line. 
 
-![**Ostra-Karsta line - Curvature, Cant and Twist vs Location.**](images/Karsta-Curv-Cant-Twist.PNG){#fig:curv_cant_twist width="5in"}
+![**Ostra-Karsta line - Curvature, Cant and Twist vs Location.**](images/Karsta-Curv,Cant,Twist.PNG){#fig:curv_cant_twist width="5in"}
 
 As for Gauge and Curvature, while there is no strict relationship between them when plotting the two parameters, it can be observed that at higher curvatures, the distance between tracks also increases. Figure @fig:gauge-curve1 and Figure @fig:gauge-curve2 show this fact. 
 
