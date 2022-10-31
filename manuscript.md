@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/fc6c1ed4b299c08cb2cd3e2711c4399e67f03329/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/fc6c1ed4b299c08cb2cd3e2711c4399e67f03329/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/fc6c1ed4b299c08cb2cd3e2711c4399e67f03329/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8f5939acc9b08ed60cfc433fb1f9a7863a2de15e/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8f5939acc9b08ed60cfc433fb1f9a7863a2de15e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8f5939acc9b08ed60cfc433fb1f9a7863a2de15e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/fc6c1ed4b299c08cb2cd3e2711c4399e67f03329/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8f5939acc9b08ed60cfc433fb1f9a7863a2de15e/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@fc6c1ed](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/fc6c1ed4b299c08cb2cd3e2711c4399e67f03329)
+from [uiceds/cee-492-term-project-fall-2022-time@8f5939a](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/8f5939acc9b08ed60cfc433fb1f9a7863a2de15e)
 on October 31, 2022.
 </em></small>
 
@@ -149,7 +149,8 @@ As shown in Figure @fig:desync-1, the measurement runs are also not completely s
 In this section, we will discuss the science of data mining, which is the process of analyzing, and presenting large amounts of data in order to find hidden patterns and trends.
 Table 1 shows the general properties of the measurement files. 
 
-**Table 1**: Summary of general properties. 
+**Table 1**: Summary of general properties.
+
 | Properties | Value |
 |----------|----------|
 | Earliest measurement | 21st October 2021 |
@@ -159,7 +160,10 @@ Table 1 shows the general properties of the measurement files.
 
 
 
-Table 2 shows the statistical analysis of certain measured parameters in order to show the typical range, mean, median and standard deviation of the values we will use. 
+Table 2 shows the statistical analysis of certain measured parameters in order to show the typical range, mean, median and standard deviation of the values that will be used. 
+
+**Table 2**: Statistical analysis of the parameters for the Ostra-Karsta line, measurement date 02/08/2022. 
+
 
 | Variable | Mean | Min | Median | Max | Standard Deviation |
 |----------|----------|----------|----------|----------|----------|
@@ -170,7 +174,6 @@ Table 2 shows the statistical analysis of certain measured parameters in order t
 | Alignment Versine (Right) (mm)|  -0.043 | -51.756 | -0.005 |38.235 |2.575|
 | Level Versine (Right) (mm) |  -0.003 | -11.951 | 0.039|11.808 |1.348|
 
-**Table 2**: Statistical analysis of the parameters for the Ostra-Karsta line, measurement date 02/08/2022. 
 
 It can be observed that the mean and median values are close to 0, which is in accordance with the concept of a railway track having localised imperfections but being smooth on a more global scale. The standard deviation gives some insight as to how the data tends to vary throughout, compared to the generally low mean values. 
 

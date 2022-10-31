@@ -1,10 +1,10 @@
 Baridon
 Berkan
 berkanusta
-CSV
+csv
 curv
 cvolpebaridon
-dataset
+Dataset
 Decription
 desync
 diag
