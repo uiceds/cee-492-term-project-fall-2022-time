@@ -130,9 +130,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/289f160f909cd0649012ea11c7081c0dcaa4aacd/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/289f160f909cd0649012ea11c7081c0dcaa4aacd/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/289f160f909cd0649012ea11c7081c0dcaa4aacd/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5b7538e1dbb97d6de670e7c9257908f30b174a84/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5b7538e1dbb97d6de670e7c9257908f30b174a84/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5b7538e1dbb97d6de670e7c9257908f30b174a84/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -153,9 +153,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/289f160f909cd0649012ea11c7081c0dcaa4aacd/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5b7538e1dbb97d6de670e7c9257908f30b174a84/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/289f160f909cd0649012ea11c7081c0dcaa4aacd">uiceds/cee-492-term-project-fall-2022-time@289f160</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/5b7538e1dbb97d6de670e7c9257908f30b174a84">uiceds/cee-492-term-project-fall-2022-time@5b7538e</a>
 on October 31, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -201,15 +201,16 @@ Railway Group, KTH Royal Institute of Technology - Stockholm, Sweden
 <p>This research will help assess system performance, identify possible maintenance schedules, and provide useful data for further research in this area. The study also falls within the scope of developing predictive maintenance in civil engineering and railways. Creating and improving analysis and predictive maintenance models such as this one can contribute to increase safety of rail networks and a higher quality of service for passengers. They will benefit from fewer unplanned service interruptions due to track maintenance and even fewer unsafe tracks causing line closures.</p>
 <h1 id="exploratory-analysis">Exploratory Analysis</h1>
 <h2 id="general-dataset-description">General Dataset Description:</h2>
-<p>This document will concentrate primarily on line 27, which travels between Ostra and Karsta. This is because the analysis of the railroad lines would be the same for all of them. The reason that line 27 was chosen is because it has the most data out of the other three lines in the list. The primary dataset for line 27 is comprised of sixty.csv files, each of which includes a collection of measurements that were gathered from a particular segment of the Roslagsbanan network in Stockholm. These measurements were collected at various points along the network. Track measuring equipment, which was mounted on the trains and operated while the trial run was being conducted, was used to take the measurements.The dates on them range from October 2021 to May 2022.</p>
-<p>Every file represents a unique measurement run that was performed on a particular section of the track. In addition, the number of measurement runs that are performed on each sector of the track is differentiated from one another according to the relative importance of the sectors. For instance, the section of the track that extends between 27 and 38 kilometers has been measured in more than twenty different time points, whereas other sections do not have such a high number of runs. The map of the lines can be seen below in the <a href="#fig:geo-map-1">1</a>. Line 27 is the line that will be considered in this document.</p>
+<p>This document will concentrate on Line 27 of the Roslagsbanan, which links Stockholms Ostra and Karsta. The reason that line 27 was chosen is because it has the most data out of the three line. The primary dataset for line 27 is comprised of sixty “.csv” files, each of which includes a collection of measurements that were gathered from all, or a particular segment of, the line. Track measuring equipment, which was mounted on the trains and operated while the trial run was being conducted, was used to take the measurements. The dates of the measurements range from October 2021 to May 2022.
+In addition, the number of measurement runs that are performed on each sector of the track is differentiated from one another according to the relative importance of the sectors. For instance, the section of the track that extends between 27 and 38 kilometers has been measured in more than twenty different time points, whereas other sections do not have such a high number of runs. The map of the lines can be seen below in Figure <a href="#fig:geo-map-1">1</a>.</p>
 <div id="fig:geo-map-1" class="fignos">
 <figure>
 <img src="images/RB-sl-map.png" style="width:4in" alt="Figure 1: Line map overview of the Roslagsbanan. This study will focus on line 27 to Kårsta." /><figcaption aria-hidden="true"><span>Figure 1:</span> Line map overview of the Roslagsbanan. This study will focus on line 27 to Kårsta.</figcaption>
 </figure>
 </div>
-<p>It is important to keep in mind that the data may require cleaning in some instances. For instance, it has a lot of NA cells that say “N/A”. It also has some questionable data points, particularly during the time when the train was slowing down to a stop, which caused some outliers. <code>[plot showing what happens with 0 speed?]. I like this idea too</code></p>
-<p>The date and time of the measurements are not hardcoded in the .csv document but only mentioned in the file name, as such the code for analyzing will have to take into account the name of the file when making comparisons. As shown in <code>Figure 2</code>, the measurement runs are not completely synchronized, they must match or correlate in some way to clearly interpret the results.</p>
+<p>It is important to keep in mind that the data may require cleaning in some instances. For example, it has numerous NA cells. It also has some questionable data points, particularly during the time when the train was slowing down to a stop or starting to accelerate (i.e. close to 0 speed), which caused some outliers.</p>
+<p>The date and time of the measurements are not hardcoded in the .csv document but only mentioned in the file name, as such the code for analyzing will have to take into account the name of the file when making comparisons.
+As shown in Figure <a href="#fig:desync-1">2</a>, the measurement runs are also not completely synchronized, they must be matched or correlated in some way to build a relible model.</p>
 <div id="fig:desync-1" class="fignos">
 <figure>
 <img src="images/desync.png" style="width:5in" alt="Figure 2: Plot showing the offset between measurement runs on three dates." /><figcaption aria-hidden="true"><span>Figure 2:</span> Plot showing the offset between measurement runs on three dates.</figcaption>
@@ -245,7 +246,7 @@ Table ?? shows the general properties of the measurement files.</p>
 </tbody>
 </table>
 <p>Table 1: Summary of general properties. {#tbl:sum-table-1}</p>
-<p>Table 2 shows the statistical analysis of the measured parameters in order to show the range, mean, median and standard deviation of the values we will use.</p>
+<p>Table ?? shows the statistical analysis of certain measured parameters in order to show the typical range, mean, median and standard deviation of the values we will use.</p>
 <table>
 <thead>
 <tr class="header">
@@ -254,12 +255,12 @@ Table ?? shows the general properties of the measurement files.</p>
 <th>Min</th>
 <th>Median</th>
 <th>Max</th>
-<th>St Deviation</th>
+<th>Standard Deviation</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Curvature</td>
+<td>Curvature (1/m)</td>
 <td>4.995e-5</td>
 <td>-0.004</td>
 <td>2.310e-6</td>
@@ -267,7 +268,7 @@ Table ?? shows the general properties of the measurement files.</p>
 <td>0.001</td>
 </tr>
 <tr class="even">
-<td>Cant</td>
+<td>Cant (mm)</td>
 <td>1.629</td>
 <td>-96.630</td>
 <td>-0.490</td>
@@ -283,7 +284,7 @@ Table ?? shows the general properties of the measurement files.</p>
 <td>1.172</td>
 </tr>
 <tr class="even">
-<td>Track Gauge</td>
+<td>Track Gauge Deviation (mm)</td>
 <td>2.010</td>
 <td>-7.989</td>
 <td>1.779</td>
@@ -291,7 +292,7 @@ Table ?? shows the general properties of the measurement files.</p>
 <td>1.721</td>
 </tr>
 <tr class="odd">
-<td>Alignment Versine Right</td>
+<td>Alignment Versine (Right) (mm)</td>
 <td>-0.043</td>
 <td>-51.756</td>
 <td>-0.005</td>
@@ -299,7 +300,7 @@ Table ?? shows the general properties of the measurement files.</p>
 <td>2.575</td>
 </tr>
 <tr class="even">
-<td>Level Versine Right</td>
+<td>Level Versine (Right) (mm)</td>
 <td>-0.003</td>
 <td>-11.951</td>
 <td>0.039</td>
@@ -309,24 +310,25 @@ Table ?? shows the general properties of the measurement files.</p>
 </tbody>
 </table>
 <p>Table 2: Statistical analysis of the parameters for the Ostra-Karsta line, measurement date 02/08/2022. {#tbl:sum-table-2}</p>
+<p>It can be observed that the mean and median values are close to 0, which is in accordance with the concept of a railway track having localised imperfections but being smooth on a more global scale. The standard deviation gives some insight as to how the data tends to vary throughout, compared to the generally low mean values.</p>
 <h2 id="data-correlation">Data Correlation:</h2>
-<p>An important fact of the parameters considered is that some of them are directly related in a mathematical sense. For example, the parameter cant is proportional to the curvature, which means that when the track is being built, the superelevation is calculated based on the curvature at a given location, as follows:</p>
-<p><span class="math display">\[E_e=\frac{G*V^2}{gR}\]</span></p>
-<p>Where E_e is balancing superelevation or cant, G (track gauge), g (gravity), and V (line speed) are constants and R is curve radius, the inverse of curvature.[1]</p>
-<p>Similarly, twist describes the rate of change of cant over a certain distance, and thus a close correlation between them is expected. These parameters are summarised in Figure <a href="#fig:cant_diag_1">3</a> below, courtesy of Kawasaki Track Technology:</p>
+<p>An important fact of the parameters considered is that some of them are directly related in a mathematical sense. For example, cant or superelevation is proportional to the curvature, which means that when the track is being built, the superelevation is calculated based on the curvature at a given location, as follows:</p>
+<p><span class="math display">\[E_e=\frac{G*V^2*R}{g}\]</span></p>
+<p>Where E_e is balancing superelevation or cant, G (track gauge), g (gravity), and V (line speed) are constants and R is curvature.[1]</p>
+<p>Similarly, twist describes the rate of change of cant over a certain distance, and thus a close link between them is expected.</p>
+<p>These parameters are summarised in Figure <a href="#fig:cant_diag_1">3</a> below, courtesy of Kawasaki Track Technology:</p>
 <div id="fig:cant_diag_1" class="fignos">
 <figure>
 <img src="images/CantEtcDiagram.png" style="width:5in" alt="Figure 3: Summary diagram of the parameters studied in this report. Source: Kawasaki Track Technology" /><figcaption aria-hidden="true"><span>Figure 3:</span> Summary diagram of the parameters studied in this report. Source: Kawasaki Track Technology</figcaption>
 </figure>
 </div>
-<p>Figure <a href="#fig:curv_cant_twist">4</a> shows these relations among the parameters for the Karsta line. From the curvature and cant plots, it can be observed that there is a strong relationship between them, as both exhibit similar patterns. However, in the case of twist correlation with the other variables, similar patterns may not be very clear. More analysis might be done on this line.</p>
-<p>These relationships between the Karsta line’s parameters are illustrated in the figure with the identifier <a href="#fig:curv_cant_twist">4</a>. As a result of the similarities in the patterns that both the curvature plot and the cant plot display, it is possible to deduce that there is a close connection between the two variables. On the other hand, when considering the twist correlation with the other variables, it’s possible that similar patterns won’t be very obvious. In spite of the fact that it is known to be mathematically correlated, additional investigation may be required in order to discern the pattern. On this particular line, additional research might be conducted.</p>
+<p>Figure <a href="#fig:curv_cant_twist">4</a> shows these relations among the parameters for the track studied. From the curvature and cant plots, it can be observed that there is a strong relationship between them, as both exhibit similar patterns of variation. However, in the case of twist, similar patterns are not as clear. In spite of the fact that it is known to be mathematically correlated, additional investigation may be required in order to discern the pattern.</p>
 <div id="fig:curv_cant_twist" class="fignos">
 <figure>
 <img src="images/Karsta-Curv,Cant,Twist.PNG" alt="Figure 4: Ostra-Karsta line - Curvature, Cant and Twist vs Location." /><figcaption aria-hidden="true"><span>Figure 4:</span> <strong>Ostra-Karsta line - Curvature, Cant and Twist vs Location.</strong></figcaption>
 </figure>
 </div>
-<p>As for Gauge and Curvature, while there is no strict relationship between them when plotting the two parameters, it can be observed that at higher curvatures, the distance between tracks also increases. Figure <a href="#fig:gauge-curve1">5</a> and Figure <a href="#fig:gauge-curve2">7</a> show this fact.</p>
+<p>As for the link between gauge and curvature, while there is no strict relationship between them when plotting the two parameters, a somewhat common pattern of variation can be observed. The plots indicate that at higher curvatures, deviation from the original gauge also increases. Figure <a href="#fig:gauge-curve1">5</a> and Figure <a href="#fig:gauge-curve2">6</a> evidence this fact.</p>
 <div id="fig:gauge-curve1" class="fignos">
 <figure>
 <img src="images/Karsta_Gauge_Curvature.PNG" style="width:5in" alt="Figure 5: Ostra-Karsta line - Curvature and Gauge vs Location." /><figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Ostra-Karsta line - Curvature and Gauge vs Location.</strong></figcaption>
@@ -337,17 +339,19 @@ Table ?? shows the general properties of the measurement files.</p>
 <img src="images/Karsta_Gauge_Curvature2.PNG" style="width:5in" alt="Figure 6: Ostra-Karsta line - Curvature vs Gauge." /><figcaption aria-hidden="true"><span>Figure 6:</span> <strong>Ostra-Karsta line - Curvature vs Gauge.</strong></figcaption>
 </figure>
 </div>
-<p>Finally, <code>Figure XX</code> includes the variation of the Alignment along the whole line.’</p>
-<div id="fig:gauge-curve2" class="fignos">
+<p>In particular, on Figure <a href="#fig:gauge-curve2">6</a>, a general trend resembling an absolute value function can be discerned. Point density is very high around the point (0,0) of the graph, corresponding to straight track and intact gauge. As curvature increases (in the negative or positive), gauge also increases (only in the positive), seemingly showing that the rails tend to be stretched apart from one another in curved sections. This observation could play an important part in the predictive model.</p>
+<p>Finally, Figure ?? the variation of the Alignment along the whole line.</p>
+<div id="fig:alignment" class="fignos">
 <figure>
 <img src="images/Alignment.png" style="width:5in" alt="Figure 7: Ostra-Karsta line - Curvature vs Gauge." /><figcaption aria-hidden="true"><span>Figure 7:</span> <strong>Ostra-Karsta line - Curvature vs Gauge.</strong></figcaption>
 </figure>
 </div>
-<h1 id="predictive-modelling">Predictive modelling</h1>
-<p>Due to the somewhat limited amount of independent variables already present inside the measurement set, there may be challenges. Correlation plots can help us determine links between variables and what model to create.<br />
-The first part of the predictive model will try and find locations where the track degradation seems to form a clear trend (typically a linear increase in a given direction) over time. Here, time is the independent variable. From an initial analysis of the dataset and knowledge of railway track engineering, it is likely this predictive model will yield some results.
-The second part of the predictive model we would like to create would take into account external factors, in particular temperature/weather changes and soil properties if obtainable. This could give us locations prone to developing trends in the short to medium term, which could be investigated by a maintenance team. However we have envisioned some possible issues, namely that obtaining and translating soil data into something usable by the model may be a challenge, and no link is guaranteed to appear (what if all soils are similar?). A possible approach could be to grade soils based on properties, for example a very stable soil could get a score of 1 and a worse soil from the point of view of building a railway line could get a score of 4 (or higher/lower), with appropriate intermediate values. To resolve this, we could look into D30/D10/D60 soil values.
-Finally another research path for a predictive model would be to investigate more in depth the link between measured variables which are not mathematically correlated, but seem to exhibit some kind of relationship, such as gauge and curvature earlier (although both are meant to be completely independant from a civil engineering point of view). The finality of this is being able to predict the state of certain properties of the track which are complex to measure, using knowledge of established properties which do not require special measuring gear. In this example, curvature of track is well known and extremely stable, but small gauge variations necessitate state-of-the-art apparatus to measure.</p>
+<p>Here it is intersting to note the outliers at the start and end points. At these locations the train was starting and stopping respectively, thus with a speed close to 0. This leads to unrealistic values which will need to be removed when exploiting the data in a model.</p>
+<h1 id="predictive-model-considerations">Predictive model considerations</h1>
+<p>Due to the somewhat limited amount of independent variables already present inside the measurement set, there may be challenges when making a predictive model. Further evaluation of links between variables in the data will likely be necessary when making the model.
+Notwithstanding, the first part of the predictive model will try and find locations where the track degradation seems to form a clear trend (typically a linear increase in a given direction) over time. Here, time is the independent variable. From an initial analysis of the dataset and general knowledge of railway track engineering, it is likely this predictive model will yield exploitable results.</p>
+<p>The second part of the predictive model could take into account external factors, in particular temperature/weather changes and soil properties if obtainable. This could give us locations prone to developing trends in the short to medium term, which could be investigated by a maintenance team. However we have envisioned some possible issues, namely that obtaining and translating soil data into something usable by the model may be a challenge, and no link is guaranteed to appear (what if all soils along the line are similar?). A possible approach could be to grade soils based on properties, for example a very stable soil could get a score of 1 and a “worse” soil from the point of view of building a railway line could get a high score, with appropriate intermediate values. However, obtaining soil data reliably for these locations is proving to be a challenge and may not be an option</p>
+<p>Finally another research path for a predictive model would be to investigate more in depth the link between measured variables which are not mathematically correlated, but seem to exhibit some kind of relationship, such as gauge and curvature earlier (although both are meant to be completely independant from a civil engineering point of view). The finality of this is being able to predict the state of certain properties of the track which are complex to measure, using knowledge of established properties which do not require special measuring gear. In this example, curvature of track is well known and extremely stable, but small gauge variations necessitate state-of-the-art apparatus to measure hence the advantage of having a predictive model.</p>
 <p>This manuscript is a template (aka “rootstock”) for <a href="https://manubot.org/" title="Manubot">Manubot</a>, a tool for writing scholarly manuscripts.
 Use this template as a starting point for your manuscript.</p>
 <p>The rest of this document is a full list of formatting elements/features supported by Manubot.
@@ -557,7 +561,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:c5310613-7bff-45a3-beef-41fe3d259ae8" class="tablenos">
+<div id="tbl:07d48555-5c36-430d-8720-1cc9b0179544" class="tablenos">
 <table id="tbl:">
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
