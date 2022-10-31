@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/7b3fae49196d177ed7dd1d4c35f2967e4cb76ca0/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/7b3fae49196d177ed7dd1d4c35f2967e4cb76ca0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/7b3fae49196d177ed7dd1d4c35f2967e4cb76ca0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/658c88bc93c150b1de13ce0c810996ddc9b4fb7d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/658c88bc93c150b1de13ce0c810996ddc9b4fb7d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/658c88bc93c150b1de13ce0c810996ddc9b4fb7d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/7b3fae49196d177ed7dd1d4c35f2967e4cb76ca0/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/658c88bc93c150b1de13ce0c810996ddc9b4fb7d/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@7b3fae4](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/7b3fae49196d177ed7dd1d4c35f2967e4cb76ca0)
+from [uiceds/cee-492-term-project-fall-2022-time@658c88b](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/658c88bc93c150b1de13ce0c810996ddc9b4fb7d)
 on October 31, 2022.
 </em></small>
 
@@ -147,8 +147,9 @@ As shown in Figure @fig:desync-1, the measurement runs are also not completely s
 
 ## Summary Statistics:
 In this section, we will discuss the science of data mining, which is the process of analyzing, and presenting large amounts of data in order to find hidden patterns and trends.
-Table @tbl:sum-table-1 shows the general properties of the measurement files. 
+Table 1 shows the general properties of the measurement files. 
 
+**Table 1**: Summary of general properties. 
 | Properties | Value |
 |----------|----------|
 | Earliest measurement | 21st October 2021 |
@@ -156,9 +157,9 @@ Table @tbl:sum-table-1 shows the general properties of the measurement files.
 | Line Length | 41.700 km (25.91 miles) |
 | Data points per file | 20,000 to over 100,000 |
 
-Table 1: Summary of general properties. {#tbl:sum-table-1}
 
-Table @tbl:sum-table-2 shows the statistical analysis of certain measured parameters in order to show the typical range, mean, median and standard deviation of the values we will use. 
+
+Table 2 shows the statistical analysis of certain measured parameters in order to show the typical range, mean, median and standard deviation of the values we will use. 
 
 | Variable | Mean | Min | Median | Max | Standard Deviation |
 |----------|----------|----------|----------|----------|----------|
@@ -169,7 +170,7 @@ Table @tbl:sum-table-2 shows the statistical analysis of certain measured parame
 | Alignment Versine (Right) (mm)|  -0.043 | -51.756 | -0.005 |38.235 |2.575|
 | Level Versine (Right) (mm) |  -0.003 | -11.951 | 0.039|11.808 |1.348|
 
-Table 2: Statistical analysis of the parameters for the Ostra-Karsta line, measurement date 02/08/2022. {#tbl:sum-table-2}
+**Table 2**: Statistical analysis of the parameters for the Ostra-Karsta line, measurement date 02/08/2022. 
 
 It can be observed that the mean and median values are close to 0, which is in accordance with the concept of a railway track having localised imperfections but being smooth on a more global scale. The standard deviation gives some insight as to how the data tends to vary throughout, compared to the generally low mean values. 
 
@@ -178,29 +179,29 @@ An important fact of the parameters considered is that some of them are directly
 
 $$E_e=\frac{G*V^2*R}{g}$$
 
-Where E_e is balancing superelevation or cant, G (track gauge), g (gravity), and V (line speed) are constants and R is curvature.[1] 
+Where E_e is balancing superelevation or cant, G (track gauge), g (gravity), and V (line speed) are constants and R is curvature.[@{https://railroads.dot.gov/sites/fra.dot.gov/files/2019-12/Superelevation-Guidance_pdfa.pdf}] 
 
 Similarly, twist describes the rate of change of cant over a certain distance, and thus a close link between them is expected. 
 
-These parameters are summarised in Figure @fig:cant_diag_1 below, courtesy of Kawasaki Track Technology:
+These parameters are summarised in Figure @fig:cant_diag_1 below, courtesy of Kawasaki Track Technology[@{https://www.kawasaki-track.com/pdf/Kawasaki%20LATGMS%20Brochure.pdf}]:
 
-![Summary diagram of the parameters studied in this report. Source: Kawasaki Track Technology](images/CantEtcDiagram.png){#fig:cant_diag_1 width="5in"}
+![Summary diagram of the parameters studied in this report. Source: Kawasaki Track Technology LATGMS brochure.](images/CantEtcDiagram.png){#fig:cant_diag_1 width="5in"}
 
 Figure @fig:curv_cant_twist shows these relations among the parameters for the track studied. From the curvature and cant plots, it can be observed that there is a strong relationship between them, as both exhibit similar patterns of variation. However, in the case of twist, similar patterns are not as clear. In spite of the fact that it is known to be mathematically correlated, additional investigation may be required in order to discern the pattern.
 
-![**Ostra-Karsta line - Curvature, Cant and Twist vs Location.**](images/Karsta-Curv,Cant,Twist.PNG){#fig:curv_cant_twist}
+![Ostra-Karsta line - Curvature, Cant and Twist vs Location.](images/Karsta-Curv,Cant,Twist.PNG){#fig:curv_cant_twist}
 
 As for the link between gauge and curvature, while there is no strict relationship between them when plotting the two parameters, a somewhat common pattern of variation can be observed. The plots indicate that at higher curvatures, deviation from the original gauge also increases. Figure @fig:gauge-curve1 and Figure @fig:gauge-curve2 evidence this fact. 
 
-![**Ostra-Karsta line - Curvature and Gauge vs Location.**](images/Karsta_Gauge_Curvature.PNG){#fig:gauge-curve1 width="5in"}
+![Ostra-Karsta line - Curvature and Gauge vs Location.](images/Karsta_Gauge_Curvature.PNG){#fig:gauge-curve1 width="5in"}
 
-![**Ostra-Karsta line - Curvature vs Gauge.**](images/Karsta_Gauge_Curvature2.PNG){#fig:gauge-curve2 width="5in"}
+![Ostra-Karsta line - Curvature vs Gauge.](images/Karsta_Gauge_Curvature2.PNG){#fig:gauge-curve2 width="5in"}
 
 In particular, on Figure @fig:gauge-curve2, a general trend resembling an absolute value function can be discerned. Point density is very high around the point (0,0) of the graph, corresponding to straight track and intact gauge. As curvature increases (in the negative or positive), gauge also increases (only in the positive), seemingly showing that the rails tend to be stretched apart from one another in curved sections. This observation could play an important part in the predictive model. 
 
-Finally, Figure @fig:alignmentshows the variation of the Alignment along the whole line.
+Finally, Figure @fig:alignment shows the variation of the Alignment along the whole line.
 
-![**Ostra-Karsta line - Curvature vs Gauge.**](images/Alignment.png){#fig:alignment width="5in"}
+![Ostra-Karsta line - Curvature vs Gauge.](images/Alignment.png){#fig:alignment width="5in"}
 
 Here it is intersting to note the outliers at the start and end points. At these locations the train was starting and stopping respectively, thus with a speed close to 0. This leads to unrealistic values which will need to be removed when exploiting the data in a model. 
 
