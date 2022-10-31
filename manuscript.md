@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/226977c22e01ebf801f6c82d7bbc8b50637983cc/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/226977c22e01ebf801f6c82d7bbc8b50637983cc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/226977c22e01ebf801f6c82d7bbc8b50637983cc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/1d4d65272730761159ec58ee4e7586f61129ae93/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/1d4d65272730761159ec58ee4e7586f61129ae93/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/1d4d65272730761159ec58ee4e7586f61129ae93/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/226977c22e01ebf801f6c82d7bbc8b50637983cc/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/1d4d65272730761159ec58ee4e7586f61129ae93/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@226977c](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/226977c22e01ebf801f6c82d7bbc8b50637983cc)
+from [uiceds/cee-492-term-project-fall-2022-time@1d4d652](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/1d4d65272730761159ec58ee4e7586f61129ae93)
 on October 31, 2022.
 </em></small>
 
@@ -218,6 +218,6 @@ Finally, another research path for a predictive model would be to investigate mo
 
 # References
 
-# References
+
 
 
