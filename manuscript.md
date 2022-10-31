@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8f5939acc9b08ed60cfc433fb1f9a7863a2de15e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8f5939acc9b08ed60cfc433fb1f9a7863a2de15e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8f5939acc9b08ed60cfc433fb1f9a7863a2de15e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/6308978187faad427c735acb17b085ed9d7f229e/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/6308978187faad427c735acb17b085ed9d7f229e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/6308978187faad427c735acb17b085ed9d7f229e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8f5939acc9b08ed60cfc433fb1f9a7863a2de15e/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/6308978187faad427c735acb17b085ed9d7f229e/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@8f5939a](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/8f5939acc9b08ed60cfc433fb1f9a7863a2de15e)
+from [uiceds/cee-492-term-project-fall-2022-time@6308978](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/6308978187faad427c735acb17b085ed9d7f229e)
 on October 31, 2022.
 </em></small>
 
@@ -204,7 +204,7 @@ In particular, on Figure @fig:gauge-curve2, a general trend resembling an absolu
 
 Finally, Figure @fig:alignment shows the variation of the Alignment along the whole line.
 
-![Ostra-Karsta line - Curvature vs Gauge.](images/Alignment.png){#fig:alignment width="5in"}
+![Ostra-Karsta line - Curvature vs Gauge.](images/Alignment.png){#fig:alignment width="4.5in"}
 
 Here it is intersting to note the outliers at the start and end points. At these locations the train was starting and stopping respectively, thus with a speed close to 0. This leads to unrealistic values which will need to be removed when exploiting the data in a model. 
 
@@ -216,3 +216,4 @@ The second part of the predictive model could take into account external factors
 
 Finally, another research path for a predictive model would be to investigate more in depth the link between measured variables that are not mathematically correlated but seem to exhibit some kind of relationship, such as gauge and curvature earlier (although both are meant to be completely independent of a civil engineering point of view). The finality of this is being able to predict the state of certain properties of the track which are complex to measure, using knowledge of established properties that do not require special measuring gear. In this example, the curvature of the track is well-known and extremely stable, but small gauge variations necessitate state-of-the-art apparatus to measure hence the advantage of having a predictive model.
 
+# References
