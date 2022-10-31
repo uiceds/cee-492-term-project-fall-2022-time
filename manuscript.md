@@ -5,7 +5,7 @@ keywords:
 - Transportation Safety
 - Track Degradation
 lang: en-US
-date-meta: '2022-10-30'
+date-meta: '2022-10-31'
 author-meta:
 - Cecilia Karina Volpe Baridon
 - Elie Roudiere
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
   <meta property="og:title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
   <meta property="twitter:title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
-  <meta name="dc.date" content="2022-10-30" />
-  <meta name="citation_publication_date" content="2022-10-30" />
+  <meta name="dc.date" content="2022-10-31" />
+  <meta name="citation_publication_date" content="2022-10-31" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3799168b8fadaa1442033faa632d6bca70247637/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3799168b8fadaa1442033faa632d6bca70247637/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3799168b8fadaa1442033faa632d6bca70247637/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/289f160f909cd0649012ea11c7081c0dcaa4aacd/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/289f160f909cd0649012ea11c7081c0dcaa4aacd/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/289f160f909cd0649012ea11c7081c0dcaa4aacd/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,10 +62,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3799168b8fadaa1442033faa632d6bca70247637/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/289f160f909cd0649012ea11c7081c0dcaa4aacd/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@3799168](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/3799168b8fadaa1442033faa632d6bca70247637)
-on October 30, 2022.
+from [uiceds/cee-492-term-project-fall-2022-time@289f160](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/289f160f909cd0649012ea11c7081c0dcaa4aacd)
+on October 31, 2022.
 </em></small>
 
 ## Authors
@@ -147,10 +147,9 @@ The date and time of the measurements are not hardcoded in the .csv document but
 
 ![Plot showing the offset between measurement runs on three dates.](images/desync.png){#fig:desync-1 width="5in"}
 
-## Statistics Analysis:
+## Summary Statistics:
 In this section, we will discuss the science of data mining, which is the process of analyzing, and presenting large amounts of data in order to find hidden patterns and trends.
- `Table 1` shows the main properties of the measurement files. 
-
+ Table @tbl:sum-table-1 shows the general properties of the measurement files. 
 
 | Properties | Value |
 |----------|----------|
@@ -159,10 +158,9 @@ In this section, we will discuss the science of data mining, which is the proces
 | Line Length | 41.700 km (25.91 miles) |
 | Data points per file | 20,000 to over 100,000 |
 
+Table 1: Summary of general properties. {#tbl:sum-table-1}
 
-Table 1: Summary Table. {#tbl:sum-table-1}
-
-`Table 2` shows the statistical analysis of the measured parameters in order to show the range, mean, median and standard deviation of the values we will use. 
+Table 2 shows the statistical analysis of the measured parameters in order to show the range, mean, median and standard deviation of the values we will use. 
 
 | Variable | Mean | Min | Median | Max | St Deviation |
 |----------|----------|----------|----------|----------|----------|
@@ -173,7 +171,7 @@ Table 1: Summary Table. {#tbl:sum-table-1}
 | Alignment Versine Right|  -0.043 | -51.756 | -0.005 |38.235 |2.575|
 | Level Versine Right |  -0.003 | -11.951 | 0.039|11.808 |1.348|
 
-Table 2: Statistical analysis of the parameters for the Ostra-Karsta line, measurement date 02/08/2022. {#tbl:sum-table-1}
+Table 2: Statistical analysis of the parameters for the Ostra-Karsta line, measurement date 02/08/2022. {#tbl:sum-table-2}
 
 
 ## Data Correlation:
