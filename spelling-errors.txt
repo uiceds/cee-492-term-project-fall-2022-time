@@ -12,12 +12,12 @@ cillum
 commodo
 consectetur
 consequat
-CSV
+csv
 culpa
 cupidatat
 curv
 cvolpebaridon
-Dataset
+dataset
 Decription
 deserunt
 desync
@@ -37,7 +37,6 @@ exercitation
 fugiat
 hardcoded
 incididunt
-independant
 intersting
 ipsum
 irure

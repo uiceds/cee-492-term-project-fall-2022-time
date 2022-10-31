@@ -54,7 +54,6 @@ content/04.exploratory.md:70:Karsta
 content/04.exploratory.md:70:Ostra
 content/04.exploratory.md:72:intersting
 content/04.exploratory.md:76:dataset
-content/04.exploratory.md:80:independant
 content/900.delete-me.md:44:adipiscing
 content/900.delete-me.md:44:aliqua
 content/900.delete-me.md:44:amet
