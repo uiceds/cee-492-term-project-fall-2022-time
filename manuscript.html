@@ -130,9 +130,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8e8bfe90eb03435cb93f0d5e3e8ed1439903c485/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8e8bfe90eb03435cb93f0d5e3e8ed1439903c485/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8e8bfe90eb03435cb93f0d5e3e8ed1439903c485/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0d5f9e15d358b650f8e232138c498e0c85512710/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0d5f9e15d358b650f8e232138c498e0c85512710/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0d5f9e15d358b650f8e232138c498e0c85512710/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -153,9 +153,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8e8bfe90eb03435cb93f0d5e3e8ed1439903c485/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0d5f9e15d358b650f8e232138c498e0c85512710/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/8e8bfe90eb03435cb93f0d5e3e8ed1439903c485">uiceds/cee-492-term-project-fall-2022-time@8e8bfe9</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/0d5f9e15d358b650f8e232138c498e0c85512710">uiceds/cee-492-term-project-fall-2022-time@0d5f9e1</a>
 on November 18, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -353,7 +353,7 @@ Notwithstanding, the first part of the predictive model will try and find locati
 <p>The second part of the predictive model could take into account external factors, in particular, temperature/weather changes and soil properties if obtainable. This could give us locations prone to developing trends in the short to medium term, which could be investigated by a maintenance team. However we have envisioned some possible issues, namely that obtaining and translating soil data into something usable by the model may be a challenge, and no link is guaranteed to appear (what if all soils along the line are similar?). A possible approach could be to grade soils based on properties, for example, a very stable soil could get a score of 1, and a “worse” soil from the point of view of building a railway line could get a high score, with appropriate intermediate values. However, obtaining soil data reliably for these locations is proving to be a challenge and may not be an option</p>
 <p>Finally, another research path for a predictive model would be to investigate more in depth the link between measured variables that are not mathematically correlated but seem to exhibit some kind of relationship, such as gauge and curvature earlier (although both are meant to be completely independent of a civil engineering point of view). The finality of this is being able to predict the state of certain properties of the track which are complex to measure, using knowledge of established properties that do not require special measuring gear. In this example, the curvature of the track is well-known and extremely stable, but small gauge variations necessitate state-of-the-art apparatus to measure hence the advantage of having a predictive model.</p>
 <h1 id="references">References</h1>
-<h1 id="preliminary-predictive-modeling">Preliminary Predictive Modeling</h1>
+<h1 id="predictive-modeling">Predictive Modeling</h1>
 <h2 id="gauge-vs-curvature-predictive-modeling">Gauge vs Curvature Predictive Modeling</h2>
 <p>As shown in Figure <a href="#fig:gauge-curve2">6</a>, the Gauge and Curvature variables seem to be related. Since gauge measurements are not as easy to obtain as curvature measurements, finding the relationship between gauge and curvature could give technicians a way to measure gauge indirectly.</p>
 <p>To start analyzing a model that fits the data, first, it can be observed that the data exhibit some symmetry around the curvature = 0 axis. Figure <a href="#fig:gaugecurv_abs">8</a> shows the absolute values of curvature, and reflects how the positive and negative values are close in shape.</p>
@@ -365,8 +365,8 @@ Notwithstanding, the first part of the predictive model will try and find locati
 <p>Then, the method used to predict a model for this relationship was linear regression.
 Since it was unclear which model structure would best fit the data, two structures were assumed and compared to determine the best one.
 The two model structures used were,</p>
-<p>$ _{linear}= β_1*X+ β_2 $</p>
-<p>$ _{exp}= β_1*X_{exp}+ β_2 $ where $ X_{exp}= e^x $</p>
+<p><span class="math inline">\(\hat{y}_{linear}= β_1*X+ β_2\)</span></p>
+<p><span class="math inline">\(\hat{y}_{exp}= β_1*X_{exp}+ β_2\)</span> where <span class="math inline">\(X_{exp}= e^x\)</span></p>
 <p><span class="math inline">\(\hat{y}_{linear}\)</span> and <span class="math inline">\(\hat{y}_{exp}\)</span> is the model prediction, the gauge prediction.
 <span class="math inline">\(X\)</span> is the independent variable, the curvature. <span class="math inline">\(β_1\)</span> and <span class="math inline">\(β_2\)</span> are the paramenters that are learnt using gradient descent.</p>
 <p>In order to allow the gradient descent to work properly, the curvature data were normalized by subtracting the mean and dividing by the standard deviation.</p>
@@ -437,22 +437,52 @@ The two model structures used were,</p>
 </table>
 <p>Considering the above methodology and the average of <span class="math inline">\(β_1\)</span> and <span class="math inline">\(β_2\)</span>, the models found for the gauge-curvature relation were:</p>
 <p><strong>Linear Model:</strong></p>
-$ Gauge_{linear} = 
-<span class="math display">\[\begin{array}{c} 1.309*Curvature + 1.201~~~~~~~~when~ Curvature \geq 0\\ -1.309*Curvature + 1.201~~~~~~~~when~ Curvature &lt; 0 \end{array}\]</span>
-<p>.$</p>
+<p><span class="math inline">\(Gauge_{linear} = \left\lbrace\begin{array}{c} 1.309*Curvature + 1.201~~~~~~~~when~ Curvature \geq 0\\ -1.309*Curvature + 1.201~~~~~~~~when~ Curvature &lt; 0 \end{array}\right.\)</span></p>
 <p><strong>Linear Exponential:</strong></p>
-$ Gauge_{exp} = 
-<span class="math display">\[\begin{array}{c} 0.273*e^{Curvature} + 1.247~~~~~~~~when~ Curvature \geq 0\\ 0.273*e^{-Curvature} + 1.24~~~~~~~~when~ Curvature &lt; 0 \end{array}\]</span>
-<p>.$</p>
+<p><span class="math inline">\(Gauge_{exp} = \left\lbrace\begin{array}{c} 0.273*e^{Curvature} + 1.247~~~~~~~~when~ Curvature \geq 0\\ 0.273*e^{-Curvature} + 1.24~~~~~~~~when~ Curvature &lt; 0 \end{array}\right.\)</span></p>
 <p>The RMSE found for each model were:</p>
 <p><span class="math inline">\(RMSE_{linear} = 1.379\)</span></p>
 <p><span class="math inline">\(RMSE_{exp} = 1.434\)</span></p>
 <p>The RMSEs are very close, but linear model is bit more accurate than the exponential one.</p>
-<p>Figure <a href="#fig:gaugecurv_abs_model">11</a> shows the data for negative and positive curvature values and the linear predicting model.</p>
+<p>Figure <a href="#fig:gaugecurv_abs_model">11</a> shows the data for negative and positive curvature values and the linear predicting model. Although the model is reliable and fits the data well as a whole, it seems to be rather difficult to capture the upper values.</p>
 <div id="fig:gaugecurv_abs_model" class="fignos">
 <figure>
 <img src="images/gauge_curvature_abs_model.PNG" style="width:5in" alt="Figure 11: Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model." /><figcaption aria-hidden="true"><span>Figure 11:</span> Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.</figcaption>
 </figure>
+</div>
+<h2 class="page_break_before" id="references-1">References</h2>
+<!-- Explicitly insert bibliography here -->
+<div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-IRGRwTBU" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><a href="https://railroads.dot.gov/sites/fra.dot.gov/files/2019-12/Superelevation-Guidance_pdfa.pdf">https://railroads.dot.gov/sites/fra.dot.gov/files/2019-12/Superelevation-Guidance_pdfa.pdf</a></div>
+</div>
+<div id="ref-19S6gMYY7" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline"><a href="https://www.kawasaki-track.com/pdf/Kawasaki%20LATGMS%20Brochure.pdf">https://www.kawasaki-track.com/pdf/Kawasaki%20LATGMS%20Brochure.pdf</a></div>
+</div>
+<div id="ref-IhliSZDo" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Sci-Hub provides access to nearly all scholarly literature</strong> <div class="csl-block">Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene</div> <em>eLife</em> (2018-03-01) <a href="https://doi.org/ckcj">https://doi.org/ckcj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7554/elife.32822">10.7554/elife.32822</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29424689">29424689</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5832410">PMC5832410</a></div></div>
+</div>
+<div id="ref-mSMVRkoc" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Reproducibility of computational workflows is automated using continuous analysis</strong> <div class="csl-block">Brett K Beaulieu-Jones, Casey S Greene</div> <em>Nature biotechnology</em> (2017-04) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nbt.3780">10.1038/nbt.3780</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28288103">28288103</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790">PMC6103790</a></div></div>
+</div>
+<div id="ref-126Wi5Us4" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Bitcoin for the biological literature.</strong> <div class="csl-block">Douglas Heaven</div> <em>Nature</em> (2019-02) <a href="https://www.ncbi.nlm.nih.gov/pubmed/30718888">https://www.ncbi.nlm.nih.gov/pubmed/30718888</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-019-00447-9">10.1038/d41586-019-00447-9</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30718888">30718888</a></div></div>
+</div>
+<div id="ref-QhC8yJ7V" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>Plan S: Accelerating the transition to full and immediate Open Access to scientific publications</strong> <div class="csl-block">cOAlition S</div> (2018-09-04) <a href="https://www.wikidata.org/wiki/Q56458321">https://www.wikidata.org/wiki/Q56458321</a></div>
+</div>
+<div id="ref-zBPP9YKu" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>Open access</strong> <div class="csl-block">Peter Suber</div> <em>MIT Press</em> (2012) <div class="csl-block">ISBN: 9780262517638</div></div>
+</div>
+<div id="ref-1GGGHdsew" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>Manubot</em> (2020-05-25) <a href="https://greenelab.github.io/meta-review/">https://greenelab.github.io/meta-review/</a></div>
+</div>
+<div id="ref-PZMP42Ak" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>Opportunities and obstacles for deep learning in biology and medicine</strong> <div class="csl-block">Travers Ching, Daniel S Himmelstein, Brett K Beaulieu-Jones, Alexandr A Kalinin, Brian T Do, Gregory P Way, Enrico Ferrero, Paul-Michael Agapow, Michael Zietz, Michael M Hoffman, … Casey S Greene</div> <em>Journal of The Royal Society Interface</em> (2018-04) <a href="https://doi.org/gddkhn">https://doi.org/gddkhn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1098/rsif.2017.0387">10.1098/rsif.2017.0387</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29618526">29618526</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5938574">PMC5938574</a></div></div>
+</div>
+<div id="ref-YuJbg3zO" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></div></div>
+</div>
 </div>
 <p>This manuscript is a template (aka “rootstock”) for <a href="https://manubot.org/" title="Manubot">Manubot</a>, a tool for writing scholarly manuscripts.
 Use this template as a starting point for your manuscript.</p>
@@ -663,7 +693,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:47cbfe44-ce04-4f25-8cfe-2bb85fda5cc2" class="tablenos">
+<div id="tbl:c1be5221-c87e-4ac3-b00c-8d77a2687d3f" class="tablenos">
 <table id="tbl:">
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
@@ -744,38 +774,6 @@ useful for <em>general information</em> - <a href="https://manubot.org/">manubot
 useful for <em>important information</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
 <p><span class="banner lightred"><i class="fas fa-ban fa-lg"></i> <strong>Light Red Banner</strong><br>
 useful for <em>warnings</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
-<div id="refs" class="references csl-bib-body" role="doc-bibliography">
-<div id="ref-IRGRwTBU" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline"><a href="https://railroads.dot.gov/sites/fra.dot.gov/files/2019-12/Superelevation-Guidance_pdfa.pdf">https://railroads.dot.gov/sites/fra.dot.gov/files/2019-12/Superelevation-Guidance_pdfa.pdf</a></div>
-</div>
-<div id="ref-19S6gMYY7" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline"><a href="https://www.kawasaki-track.com/pdf/Kawasaki%20LATGMS%20Brochure.pdf">https://www.kawasaki-track.com/pdf/Kawasaki%20LATGMS%20Brochure.pdf</a></div>
-</div>
-<div id="ref-IhliSZDo" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Sci-Hub provides access to nearly all scholarly literature</strong> <div class="csl-block">Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene</div> <em>eLife</em> (2018-03-01) <a href="https://doi.org/ckcj">https://doi.org/ckcj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7554/elife.32822">10.7554/elife.32822</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29424689">29424689</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5832410">PMC5832410</a></div></div>
-</div>
-<div id="ref-mSMVRkoc" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Reproducibility of computational workflows is automated using continuous analysis</strong> <div class="csl-block">Brett K Beaulieu-Jones, Casey S Greene</div> <em>Nature biotechnology</em> (2017-04) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nbt.3780">10.1038/nbt.3780</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28288103">28288103</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790">PMC6103790</a></div></div>
-</div>
-<div id="ref-126Wi5Us4" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Bitcoin for the biological literature.</strong> <div class="csl-block">Douglas Heaven</div> <em>Nature</em> (2019-02) <a href="https://www.ncbi.nlm.nih.gov/pubmed/30718888">https://www.ncbi.nlm.nih.gov/pubmed/30718888</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-019-00447-9">10.1038/d41586-019-00447-9</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30718888">30718888</a></div></div>
-</div>
-<div id="ref-QhC8yJ7V" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>Plan S: Accelerating the transition to full and immediate Open Access to scientific publications</strong> <div class="csl-block">cOAlition S</div> (2018-09-04) <a href="https://www.wikidata.org/wiki/Q56458321">https://www.wikidata.org/wiki/Q56458321</a></div>
-</div>
-<div id="ref-zBPP9YKu" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>Open access</strong> <div class="csl-block">Peter Suber</div> <em>MIT Press</em> (2012) <div class="csl-block">ISBN: 9780262517638</div></div>
-</div>
-<div id="ref-1GGGHdsew" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>Manubot</em> (2020-05-25) <a href="https://greenelab.github.io/meta-review/">https://greenelab.github.io/meta-review/</a></div>
-</div>
-<div id="ref-PZMP42Ak" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>Opportunities and obstacles for deep learning in biology and medicine</strong> <div class="csl-block">Travers Ching, Daniel S Himmelstein, Brett K Beaulieu-Jones, Alexandr A Kalinin, Brian T Do, Gregory P Way, Enrico Ferrero, Paul-Michael Agapow, Michael Zietz, Michael M Hoffman, … Casey S Greene</div> <em>Journal of The Royal Society Interface</em> (2018-04) <a href="https://doi.org/gddkhn">https://doi.org/gddkhn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1098/rsif.2017.0387">10.1098/rsif.2017.0387</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29618526">29618526</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5938574">PMC5938574</a></div></div>
-</div>
-<div id="ref-YuJbg3zO" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></div></div>
-</div>
-</div>
 <!-- default theme -->
 
 <style>

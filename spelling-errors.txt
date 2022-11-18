@@ -11,7 +11,7 @@ cillum
 commodo
 consectetur
 consequat
-CSV
+csv
 culpa
 cupidatat
 curv

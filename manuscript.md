@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8e8bfe90eb03435cb93f0d5e3e8ed1439903c485/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8e8bfe90eb03435cb93f0d5e3e8ed1439903c485/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8e8bfe90eb03435cb93f0d5e3e8ed1439903c485/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0d5f9e15d358b650f8e232138c498e0c85512710/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0d5f9e15d358b650f8e232138c498e0c85512710/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0d5f9e15d358b650f8e232138c498e0c85512710/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8e8bfe90eb03435cb93f0d5e3e8ed1439903c485/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0d5f9e15d358b650f8e232138c498e0c85512710/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@8e8bfe9](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/8e8bfe90eb03435cb93f0d5e3e8ed1439903c485)
+from [uiceds/cee-492-term-project-fall-2022-time@0d5f9e1](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/0d5f9e15d358b650f8e232138c498e0c85512710)
 on November 18, 2022.
 </em></small>
 
@@ -219,7 +219,7 @@ Finally, another research path for a predictive model would be to investigate mo
 
 # References
 
-# Preliminary Predictive Modeling
+# Predictive Modeling
 ## Gauge vs Curvature Predictive Modeling 
 As shown in Figure @fig:gauge-curve2, the Gauge and Curvature variables seem to be related. Since gauge measurements are not as easy to obtain as curvature measurements, finding the relationship between gauge and curvature could give technicians a way to measure gauge indirectly.
 
@@ -231,9 +231,9 @@ Then, the method used to predict a model for this relationship was linear regres
 Since it was unclear which model structure would best fit the data, two structures were assumed and compared to determine the best one. 
 The two model structures used were,
 
-$ \hat{y}_{linear}= β_1*X+ β_2 $
+$\hat{y}_{linear}= β_1*X+ β_2$
 
-$ \hat{y}_{exp}= β_1*X_{exp}+ β_2 $ where $ X_{exp}= e^x $
+$\hat{y}_{exp}= β_1*X_{exp}+ β_2$ where $X_{exp}= e^x$
 
 $\hat{y}_{linear}$ and $\hat{y}_{exp}$ is the model prediction, the gauge prediction.
 $X$ is the independent variable, the curvature. $β_1$ and $β_2$ are the paramenters that are learnt using gradient descent.
@@ -271,11 +271,11 @@ Considering the above methodology and the average of $β_1$ and $β_2$, the mode
 
 **Linear Model:**
 
-$ Gauge_{linear} = \left\lbrace\begin{array}{c} 1.309*Curvature + 1.201~~~~~~~~when~ Curvature \geq 0\\ -1.309*Curvature + 1.201~~~~~~~~when~ Curvature < 0 \end{array}\right.$
+$Gauge_{linear} = \left\lbrace\begin{array}{c} 1.309*Curvature + 1.201~~~~~~~~when~ Curvature \geq 0\\ -1.309*Curvature + 1.201~~~~~~~~when~ Curvature < 0 \end{array}\right.$
 
 **Linear Exponential:**
 
-$ Gauge_{exp} = \left\lbrace\begin{array}{c} 0.273*e^{Curvature} + 1.247~~~~~~~~when~ Curvature \geq 0\\ 0.273*e^{-Curvature} + 1.24~~~~~~~~when~ Curvature < 0 \end{array}\right.$
+$Gauge_{exp} = \left\lbrace\begin{array}{c} 0.273*e^{Curvature} + 1.247~~~~~~~~when~ Curvature \geq 0\\ 0.273*e^{-Curvature} + 1.24~~~~~~~~when~ Curvature < 0 \end{array}\right.$
 
 The RMSE found for each model were:
 
@@ -285,11 +285,16 @@ $RMSE_{exp} = 1.434$
 
 The RMSEs are very close, but linear model is bit more accurate than the exponential one. 
 
-Figure @fig:gaugecurv_abs_model shows the data for negative and positive curvature values and the linear predicting model. 
+Figure @fig:gaugecurv_abs_model shows the data for negative and positive curvature values and the linear predicting model. Although the model is reliable and fits the data well as a whole, it seems to be rather difficult to capture the upper values. 
 
 ![Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.](images/gauge_curvature_abs_model.PNG){#fig:gaugecurv_abs_model width="5in"}
 
 
+
+## References {.page_break_before}
+
+<!-- Explicitly insert bibliography here -->
+<div id="refs"></div>
 
 
 
