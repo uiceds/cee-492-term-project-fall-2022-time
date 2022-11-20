@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/36187a1e6e6c526022e75be34ba771a2aad66e85/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/36187a1e6e6c526022e75be34ba771a2aad66e85/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/36187a1e6e6c526022e75be34ba771a2aad66e85/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b9465a6a7c5eb9a0ab5ac4cde662b2ee444dde0d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b9465a6a7c5eb9a0ab5ac4cde662b2ee444dde0d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b9465a6a7c5eb9a0ab5ac4cde662b2ee444dde0d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/36187a1e6e6c526022e75be34ba771a2aad66e85/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b9465a6a7c5eb9a0ab5ac4cde662b2ee444dde0d/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@36187a1](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/36187a1e6e6c526022e75be34ba771a2aad66e85)
+from [uiceds/cee-492-term-project-fall-2022-time@b9465a6](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/b9465a6a7c5eb9a0ab5ac4cde662b2ee444dde0d)
 on November 20, 2022.
 </em></small>
 
@@ -317,16 +317,16 @@ In terms of accuracy, out of the hundred points picked up by the model, only eig
 
 **Table 4** Key locations as found by the model and sorted.
 
-|     Figure    |     Position    |     Trend (mm/month)    |     Period        |
+|     Figure    |     Position (km)    |     Trend (mm/month)    |     Measurement Period        |
 |---------------|-----------------|-------------------------|-------------------|
 | @fig:track27  | 27+636          | +0.5                    | 03/01/22-10/05/22 |
-| @fig:track29  | 29+750          | +0.5                    | 03/01/22-10/05/22 |
-| @fig:track32  | 32+030          | +1.7                    | 03/01/22-10/05/22 |
-| @fig:track33  | 33+290          | +0.7                    | 03/01/22-10/05/22 |
-| @fig:track34  | 34+840          | +0.5                    | 03/01/22-10/05/22 |
-| @fig:track38  | 38+207          | +0.6                    | 03/01/22-10/05/22 |
+| @fig:track29  | 29+750          | -0.5                    | 03/01/22-10/05/22 |
+| @fig:track32  | 32+030          | -1.7                    | 03/01/22-10/05/22 |
+| @fig:track33  | 33+290          | -0.7                    | 03/01/22-10/05/22 |
+| @fig:track34  | 34+840          | -0.5                    | 03/01/22-10/05/22 |
+| @fig:track38  | 38+207          | -0.6                    | 03/01/22-10/05/22 |
 | @fig:track7   | 7+968           | +0.8                    | 14/02/22-10/05/22 |
-| @fig:track8   | 8+530           | +1.0                    | 14/02/22-10/05/22 |
+| @fig:track8   | 8+530           | -1.0                    | 14/02/22-10/05/22 |
 
 The results are displayed in more detail in Figure @fig:track27 to Figure @fig:track8. For each figure, the upper graph shows the amplitude of the parameter along a short section of track, spanning approximately one hundred meters with the key location in the centre. The lower degradation graph shows the evolution of the parameter value at the key location, to judge its change over time. For clarity, the graphs are plotted only for the left side rail in the cases where the trend in level was identical for both the left and right side rails.
 

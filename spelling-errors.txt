@@ -12,7 +12,7 @@ cillum
 commodo
 consectetur
 consequat
-CSV
+csv
 culpa
 cupidatat
 curv
@@ -101,7 +101,7 @@ ullamco
 Usta
 velit
 veniam
-Versine
+versine
 versines
 Volpe
 voluptate
