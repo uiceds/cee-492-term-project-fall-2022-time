@@ -130,9 +130,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b06f48393b033d1ec0cd75a237b618df817f03e5/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b06f48393b033d1ec0cd75a237b618df817f03e5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b06f48393b033d1ec0cd75a237b618df817f03e5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/36187a1e6e6c526022e75be34ba771a2aad66e85/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/36187a1e6e6c526022e75be34ba771a2aad66e85/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/36187a1e6e6c526022e75be34ba771a2aad66e85/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -153,9 +153,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b06f48393b033d1ec0cd75a237b618df817f03e5/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/36187a1e6e6c526022e75be34ba771a2aad66e85/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/b06f48393b033d1ec0cd75a237b618df817f03e5">uiceds/cee-492-term-project-fall-2022-time@b06f483</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/36187a1e6e6c526022e75be34ba771a2aad66e85">uiceds/cee-492-term-project-fall-2022-time@36187a1</a>
 on November 20, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -374,7 +374,7 @@ The two model structures used were,</p>
 <p>In order to avoid overfitting, the data is tested by the cross-validation method. Curvature values are divided into 6 groups, one part is used to predict the model, and the other part is used to evaluate it.</p>
 <p>Finally, it calculated the root mean square error (RMSE) to compare which model gives more accurate results,</p>
 <p><span class="math inline">\(RMSE = \sqrt{\sum_{i=0}^{n} \frac{(\hat{y}_{i}-y_i)^{2}}{n}}\)</span></p>
-<p>Figure <a href="#fig:cross_linear">9</a> and Figure <a href="#fig:cross_exp">10</a> show the graphs of the 6 data split groups for each model, detailing data training, data evaluation, and model prediction. The <span class="math inline">\(β_1\)</span> and <span class="math inline">\(β_2\)</span> values of the two models are shown in Table XX.</p>
+<p>Figure <a href="#fig:cross_linear">9</a> and Figure <a href="#fig:cross_exp">10</a> show the graphs of the 6 data split groups for each model, detailing data training, data evaluation, and model prediction. The <span class="math inline">\(β_1\)</span> and <span class="math inline">\(β_2\)</span> values of the two models are shown in Table 3.</p>
 <div id="fig:cross_linear" class="fignos">
 <figure>
 <img src="images/cross_linear.PNG" style="width:5in" alt="Figure 9: Ostra-Karsta line - Cross Validation in Linear Model for Gauge vs Curvature." /><figcaption aria-hidden="true"><span>Figure 9:</span> Ostra-Karsta line - Cross Validation in Linear Model for Gauge vs Curvature.</figcaption>
@@ -462,8 +462,124 @@ Then, for each data file, the software finds peaks in the rail longitudinal leve
 <p>All these peaks and their respective position and time of measurement are assembled in a table and compared through a correlation analysis. The correlation function of MATLAB is used to compare the maximum value of peaks at the same location over a certain timespan, to show any possible trends. Only the locations where a certain threshold of correlation (typically 0.75, but this parameter was also adjusted during the analysis) is exceeded across at least four points of data are kept by the model for user review. Finally, this allows the model to output a shortlist of locations which display a spike or a sag with a degradation trend. The model also outputs a R^2 value to reflect the goodness of linear fit, and a crude estimate of when Alert C would be exceeded at this rate. While not absolute, perfect metrics these give a general idea of the rate of degradation and the criticality of the problem, and on a more macro level the relevance of the model output.
 After various adjustments to the parameters with a correlation threshold of 0.8 and peak spacing of 4m, the model output 100 points (including positive and negative trends). As could be expected from a physical perspective, twice as many negative (i.e., sinking) trends than positive trends appeared, possibly due to settlement and rail traffic. This gives some credibility to the algorithm.</p>
 <p>In general, the model fulfilled its role and did find locations of clear, steady degradation over time which would have taken a human weeks of going over graphs and data manually – even for a domain professional. However not all results were satisfactory. In particular the model struggled with two aspects:
-- Measurement on double track sections with each track having a different level of degradation, as shown on figure [double track bad graph], tricked the model into seeing a trend which does not exist (as measurements were taken in both directions).
-- Locations which do show a trend but of extremely minute, though steady, variation. For example on figure [slowvar], following this trend the level of the track would reach a concerning value after a decade or more. This is not so relevant for the engineer.</p>
+- Measurement on double track sections with each track having a different level of degradation, as shown on figure <a href="#fig:twotracks">12</a>, tricked the model into seeing a trend which does not exist (as measurements were taken in both directions).</p>
+<div id="fig:twotracks" class="fignos">
+<figure>
+<img src="images/two_tracks.png" style="width:5in" alt="Figure 12: Example of a location with 2 separate tracks interfering with the predictive model" /><figcaption aria-hidden="true"><span>Figure 12:</span> Example of a location with 2 separate tracks interfering with the predictive model</figcaption>
+</figure>
+</div>
+<ul>
+<li>Locations which do show a trend but of extremely minute, though steady, variation. For example on figure <a href="#fig:tiny_trend">13</a>, following this trend the level of the track would reach a concerning value after a decade or more. This is not so relevant for the engineer. This was the most common issue.</li>
+</ul>
+<div id="fig:tiny_trend" class="fignos">
+<figure>
+<img src="images/tiny_trend.png" style="width:5in" alt="Figure 13: Example of a location with a trend of less than a millimeter per year" /><figcaption aria-hidden="true"><span>Figure 13:</span> Example of a location with a trend of less than a millimeter per year</figcaption>
+</figure>
+</div>
+<p>In terms of accuracy, out of the hundred points picked up by the model, only eight of them could be considered to exhibit a trend necessitating urgent maintenance. This may seem catastrophic at first but it must be kept in mind that this is across fourty kilometers of line on sixty files, so narrowing down the result to just a hundred locations is already powerful. The locations highlighted are summed up in Table 4.</p>
+<p><strong>Table 4</strong> Key locations as found by the model and sorted.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Figure</th>
+<th>Position</th>
+<th>Trend (mm/month)</th>
+<th>Period</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="#fig:track27">21</a></td>
+<td>27+636</td>
+<td>+0.5</td>
+<td>03/01/22-10/05/22</td>
+</tr>
+<tr class="even">
+<td><a href="#fig:track29">15</a></td>
+<td>29+750</td>
+<td>+0.5</td>
+<td>03/01/22-10/05/22</td>
+</tr>
+<tr class="odd">
+<td>??</td>
+<td>32+030</td>
+<td>+1.7</td>
+<td>03/01/22-10/05/22</td>
+</tr>
+<tr class="even">
+<td>??</td>
+<td>33+290</td>
+<td>+0.7</td>
+<td>03/01/22-10/05/22</td>
+</tr>
+<tr class="odd">
+<td>??</td>
+<td>34+840</td>
+<td>+0.5</td>
+<td>03/01/22-10/05/22</td>
+</tr>
+<tr class="even">
+<td>??</td>
+<td>38+207</td>
+<td>+0.6</td>
+<td>03/01/22-10/05/22</td>
+</tr>
+<tr class="odd">
+<td>??</td>
+<td>7+968</td>
+<td>+0.8</td>
+<td>14/02/22-10/05/22</td>
+</tr>
+<tr class="even">
+<td>??</td>
+<td>8+530</td>
+<td>+1.0</td>
+<td>14/02/22-10/05/22</td>
+</tr>
+</tbody>
+</table>
+<p>The results are displayed in more detail in Figure <a href="#fig:track27">21</a> to Figure ??. For each figure, the upper graph shows the amplitude of the parameter along a short section of track, spanning approximately one hundred meters with the key location in the centre. The lower degradation graph shows the evolution of the parameter value at the key location, to judge its change over time. For clarity, the graphs are plotted only for the left side rail in the cases where the trend in level was identical for both the left and right side rails.</p>
+<div id="fig:track27" class="fignos">
+<figure>
+<img src="images/track27.png" style="width:5in" alt="Figure 14: Kilometer 27" /><figcaption aria-hidden="true"><span>Figure 14:</span> Kilometer 27</figcaption>
+</figure>
+</div>
+<div id="fig:track29" class="fignos">
+<figure>
+<img src="images/track29.png" style="width:5in" alt="Figure 15: Kilometer 29" /><figcaption aria-hidden="true"><span>Figure 15:</span> Kilometer 29</figcaption>
+</figure>
+</div>
+<div id="fig:track27" class="fignos">
+<figure>
+<img src="images/track32.png" style="width:5in" alt="Figure 16: Kilometer 32" /><figcaption aria-hidden="true"><span>Figure 16:</span> Kilometer 32</figcaption>
+</figure>
+</div>
+<div id="fig:track27" class="fignos">
+<figure>
+<img src="images/track33.png" style="width:5in" alt="Figure 17: Kilometer 33" /><figcaption aria-hidden="true"><span>Figure 17:</span> Kilometer 33</figcaption>
+</figure>
+</div>
+<div id="fig:track27" class="fignos">
+<figure>
+<img src="images/track34.png" style="width:5in" alt="Figure 18: Kilometer 34" /><figcaption aria-hidden="true"><span>Figure 18:</span> Kilometer 34</figcaption>
+</figure>
+</div>
+<div id="fig:track27" class="fignos">
+<figure>
+<img src="images/track38.png" style="width:5in" alt="Figure 19: Kilometer 38" /><figcaption aria-hidden="true"><span>Figure 19:</span> Kilometer 38</figcaption>
+</figure>
+</div>
+<div id="fig:track27" class="fignos">
+<figure>
+<img src="images/track7.png" style="width:5in" alt="Figure 20: Kilometer 7" /><figcaption aria-hidden="true"><span>Figure 20:</span> Kilometer 7</figcaption>
+</figure>
+</div>
+<div id="fig:track27" class="fignos">
+<figure>
+<img src="images/track8.png" style="width:5in" alt="Figure 21: Kilometer 8" /><figcaption aria-hidden="true"><span>Figure 21:</span> Kilometer 8</figcaption>
+</figure>
+</div>
+<p>All in all, this model represents a serviceable tool for use in the track measurement industry. Its accuracy leaves somewhat to be desired, as a relatively portion of its output could be considered “incorrect” or “irrelevant” by an engineer looking to find critical degradation trends. The adjustment of inputs parameters may also affect the results significantly, but any kind of analysis is likely to require well-thought out input and critical thinking from the engineer. The problem at hand does not have an absolute truth or precise correct answer, and different engineers may judge the quality of this output differently themselves. Globally the model was successful in identifying key locations thousands of times faster than a human expert could, and the saying still seems to hold true: the quality of a machine depends largely on its user.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
@@ -575,10 +691,10 @@ two spaces at end of line.</p>
 Manubot plugins provide easier, more convenient visualization of and navigation between citations <span class="citation" data-cites="YuJbg3zO 126Wi5Us4 mSMVRkoc PZMP42Ak">[<a href="#ref-mSMVRkoc" role="doc-biblioref">4</a>,<a href="#ref-126Wi5Us4" role="doc-biblioref">5</a>,<a href="#ref-PZMP42Ak" role="doc-biblioref">9</a>,<a href="#ref-YuJbg3zO" role="doc-biblioref">10</a>]</span>.</p>
 <p>Citation tags (i.e. aliases) can be defined in their own paragraphs using Markdown’s reference link syntax:</p>
 <h2 id="referencing-figures-tables-equations">Referencing figures, tables, equations</h2>
-<p>Figure <a href="#fig:square-image">12</a></p>
-<p>Figure <a href="#fig:wide-image">13</a></p>
-<p>Figure <a href="#fig:tall-image">14</a></p>
-<p>Figure <a href="#fig:vector-image">15</a></p>
+<p>Figure <a href="#fig:square-image">22</a></p>
+<p>Figure <a href="#fig:wide-image">23</a></p>
+<p>Figure <a href="#fig:tall-image">24</a></p>
+<p>Figure <a href="#fig:vector-image">25</a></p>
 <p>Table <a href="#tbl:bowling-scores">1</a></p>
 <p>Equation <a href="#eq:regular-equation">1</a></p>
 <p>Equation <a href="#eq:long-equation">2</a></p>
@@ -607,25 +723,25 @@ Exporting PDF manuscript</code></pre>
 <h2 id="figures">Figures</h2>
 <div id="fig:square-image" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png" alt="Figure 12: A square image at actual size and with a bottom caption. Loaded from the latest version of image on GitHub." /><figcaption aria-hidden="true"><span>Figure 12:</span> <strong>A square image at actual size and with a bottom caption.</strong>
+<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png" alt="Figure 22: A square image at actual size and with a bottom caption. Loaded from the latest version of image on GitHub." /><figcaption aria-hidden="true"><span>Figure 22:</span> <strong>A square image at actual size and with a bottom caption.</strong>
 Loaded from the latest version of image on GitHub.</figcaption>
 </figure>
 </div>
 <div id="fig:wide-image" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/wide.png" alt="Figure 13: An image too wide to fit within page at full size. Loaded from a specific (hashed) version of the image on GitHub." /><figcaption aria-hidden="true"><span>Figure 13:</span> <strong>An image too wide to fit within page at full size.</strong>
+<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/wide.png" alt="Figure 23: An image too wide to fit within page at full size. Loaded from a specific (hashed) version of the image on GitHub." /><figcaption aria-hidden="true"><span>Figure 23:</span> <strong>An image too wide to fit within page at full size.</strong>
 Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
 </figure>
 </div>
 <div id="fig:tall-image" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/tall.png" style="height:3in" alt="Figure 14: A tall image with a specified height. Loaded from a specific (hashed) version of the image on GitHub." /><figcaption aria-hidden="true"><span>Figure 14:</span> <strong>A tall image with a specified height.</strong>
+<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/tall.png" style="height:3in" alt="Figure 24: A tall image with a specified height. Loaded from a specific (hashed) version of the image on GitHub." /><figcaption aria-hidden="true"><span>Figure 24:</span> <strong>A tall image with a specified height.</strong>
 Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
 </figure>
 </div>
 <div id="fig:vector-image" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/manubot/resources/main/test/vector.svg?sanitize=true" class="white" style="height:2.5in" alt="Figure 15: A vector .svg image loaded from GitHub. The parameter sanitize=true is necessary to properly load SVGs hosted via GitHub URLs. White background specified to serve as a backdrop for transparent sections of the image." /><figcaption aria-hidden="true"><span>Figure 15:</span> <strong>A vector <code>.svg</code> image loaded from GitHub.</strong>
+<img src="https://raw.githubusercontent.com/manubot/resources/main/test/vector.svg?sanitize=true" class="white" style="height:2.5in" alt="Figure 25: A vector .svg image loaded from GitHub. The parameter sanitize=true is necessary to properly load SVGs hosted via GitHub URLs. White background specified to serve as a backdrop for transparent sections of the image." /><figcaption aria-hidden="true"><span>Figure 25:</span> <strong>A vector <code>.svg</code> image loaded from GitHub.</strong>
 The parameter <code>sanitize=true</code> is necessary to properly load SVGs hosted via GitHub URLs.
 White background specified to serve as a backdrop for transparent sections of the image.</figcaption>
 </figure>
@@ -707,7 +823,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:9eb6d154-debc-4c64-baeb-762fff447039" class="tablenos">
+<div id="tbl:bba2e733-a3b0-43c8-9408-528bf0f7d051" class="tablenos">
 <table id="tbl:">
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
