@@ -5,7 +5,7 @@ keywords:
 - Transportation Safety
 - Track Degradation
 lang: en-US
-date-meta: '2022-11-18'
+date-meta: '2022-11-20'
 author-meta:
 - Cecilia Karina Volpe Baridon
 - Elie Roudiere
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
   <meta property="og:title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
   <meta property="twitter:title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
-  <meta name="dc.date" content="2022-11-18" />
-  <meta name="citation_publication_date" content="2022-11-18" />
+  <meta name="dc.date" content="2022-11-20" />
+  <meta name="citation_publication_date" content="2022-11-20" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5eb726a4b645ce7a95f392bf5fa5176cc67740f9/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5eb726a4b645ce7a95f392bf5fa5176cc67740f9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5eb726a4b645ce7a95f392bf5fa5176cc67740f9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b06f48393b033d1ec0cd75a237b618df817f03e5/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b06f48393b033d1ec0cd75a237b618df817f03e5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b06f48393b033d1ec0cd75a237b618df817f03e5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,10 +62,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5eb726a4b645ce7a95f392bf5fa5176cc67740f9/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b06f48393b033d1ec0cd75a237b618df817f03e5/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@5eb726a](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/5eb726a4b645ce7a95f392bf5fa5176cc67740f9)
-on November 18, 2022.
+from [uiceds/cee-492-term-project-fall-2022-time@b06f483](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/b06f48393b033d1ec0cd75a237b618df817f03e5)
+on November 20, 2022.
 </em></small>
 
 ## Authors
@@ -286,6 +286,28 @@ The RMSEs are very close, but linear model is bit more accurate than the exponen
 Figure @fig:gaugecurv_abs_model shows the data for negative and positive curvature values and the linear predicting model. Although the model is reliable and fits the data well as a whole, it seems to be rather difficult to capture the upper values. 
 
 ![Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.](images/gauge_curvature_abs_model.PNG){#fig:gaugecurv_abs_model width="5in"}
+
+## Time vs Longitudinal Level Predictive Modeling
+Because of greater familiarity with the software, MATLAB was used for this part of the predictive modelling. The main tasks to be addressed were:
+1)	Find a way to import and manage the large quantity of .csv files;
+2)	Clean the files of NA data as well as unrelated measurements, and associate them with a measurement date;
+3)	Match or synchronize the different measurement runs as explained in the Exploratory Analysis;
+4)	Find a reasonable method for detecting locations showing steady and significant degradation of longitudinal level;
+5)	Aggregate those so that the person performing the analysis can judge the relevance of these locations
+
+To address the first point, a starting idea was to use a loop of the “readtable” feature, importing one file at a time, and performing the desired operations on it. However, as a result of further research and speed concerns, the software uses the recent “datastore” feature of MATLAB, which can efficiently import, clean, and sort a very large amount of data, even beyond what can fit in memory. While Roslagsbanan data were still reasonable in size (60 files with a total size of approximately 1GB), this significantly increased the speed of the model compared to a more traditional “readtable” based loop and makes the method applicable to any size data set in the future. With this function, the desired columns (i.e., variables) can be selected and imported from the get-go, as opposed to bloating the memory with all the data and dropping large parts of it after the fact. 
+
+This brings on the second point, where the dropna() function was used to delete rows with N/A values easily. Then, a short custom function using “fileparts()” is capable of extracting the date of measurements from the file name and convert it to a date value usable by matlab – which will have its importance. 
+Then, for each data file, the software finds peaks in the rail longitudinal level so long as they exceed alert level A (4mm), and they are spaced by a set distance, by means of the findpeaks() function. The distance was tweaked during the modelling to reach a satisfactory result, in the manner of a hyperparameter. A smaller distance shows more points but potentially more unwanted peaks while a larger distance is more restrictive but also could lead to missed locations.  This process aims to reduce the number of analyzed points to only keep significant spikes in the positive or negative. 
+
+All these peaks and their respective position and time of measurement are assembled in a table and compared through a correlation analysis. The correlation function of MATLAB is used to compare the maximum value of peaks at the same location over a certain timespan, to show any possible trends. Only the locations where a certain threshold of correlation (typically 0.75, but this parameter was also adjusted during the analysis) is exceeded across at least four points of data are kept by the model for user review. Finally, this allows the model to output a shortlist of locations which display a spike or a sag with a degradation trend. The model also outputs a R^2 value to reflect the goodness of linear fit, and a crude estimate of when Alert C would be exceeded at this rate. While not absolute, perfect metrics these give a general idea of the rate of degradation and the criticality of the problem, and on a more macro level the relevance of the model output.
+After various adjustments to the parameters with a correlation threshold of 0.8 and peak spacing of 4m, the model output 100 points (including positive and negative trends). As could be expected from a physical perspective, twice as many negative (i.e., sinking) trends than positive trends appeared, possibly due to settlement and rail traffic. This gives some credibility to the algorithm.
+
+
+In general, the model fulfilled its role and did find locations of clear, steady degradation over time which would have taken a human weeks of going over graphs and data manually – even for a domain professional. However not all results were satisfactory. In particular the model struggled with two aspects:
+-	Measurement on double track sections with each track having a different level of degradation, as shown on figure ![double track bad graph], tricked the model into seeing a trend which does not exist (as measurements were taken in both directions).
+-	Locations which do show a trend but of extremely minute, though steady, variation. For example on figure ![slowvar], following this trend the level of the track would reach a concerning value after a decade or more. This is not so relevant for the engineer. 
+
 
 
 

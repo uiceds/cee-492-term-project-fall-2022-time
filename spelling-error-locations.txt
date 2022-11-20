@@ -72,6 +72,19 @@ content/05.Predictive modeling.md:59:RMSE
 content/05.Predictive modeling.md:65:RMSEs
 content/05.Predictive modeling.md:69:Karsta
 content/05.Predictive modeling.md:69:Ostra
+content/05.Predictive modeling.md:72:modelling
+content/05.Predictive modeling.md:73:csv
+content/05.Predictive modeling.md:79:datastore
+content/05.Predictive modeling.md:79:readtable
+content/05.Predictive modeling.md:79:readtable
+content/05.Predictive modeling.md:79:Roslagsbanan
+content/05.Predictive modeling.md:81:dropna
+content/05.Predictive modeling.md:81:fileparts
+content/05.Predictive modeling.md:82:findpeaks
+content/05.Predictive modeling.md:82:hyperparameter
+content/05.Predictive modeling.md:82:modelling
+content/05.Predictive modeling.md:84:timespan
+content/05.Predictive modeling.md:90:slowvar
 content/900.delete-me.md:44:adipiscing
 content/900.delete-me.md:44:aliqua
 content/900.delete-me.md:44:amet
