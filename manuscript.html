@@ -130,9 +130,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c8d7c2548c6a304367a0274b78789953560633a9/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c8d7c2548c6a304367a0274b78789953560633a9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c8d7c2548c6a304367a0274b78789953560633a9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0e40a2d5420ce843494b2fb0e7bf1753c6cc8966/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0e40a2d5420ce843494b2fb0e7bf1753c6cc8966/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0e40a2d5420ce843494b2fb0e7bf1753c6cc8966/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -153,9 +153,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c8d7c2548c6a304367a0274b78789953560633a9/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0e40a2d5420ce843494b2fb0e7bf1753c6cc8966/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/c8d7c2548c6a304367a0274b78789953560633a9">uiceds/cee-492-term-project-fall-2022-time@c8d7c25</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/0e40a2d5420ce843494b2fb0e7bf1753c6cc8966">uiceds/cee-492-term-project-fall-2022-time@0e40a2d</a>
 on November 21, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -457,26 +457,9 @@ The two model structures used were,</p>
 <li><p>Find a way to import and manage the large quantity of .csv files;</p></li>
 <li><p>Clean the files of NA data as well as unrelated measurements, and associate them with a measurement date;</p></li>
 <li><p>Match or synchronize the different measurement runs as explained in the Exploratory Analysis;</p></li>
-<li><p>Find a reasonable method for detecting locations showing steady and significant degradation of longitudinal level;
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-=======</p></li>
+<li><p>Find a reasonable method for detecting locations showing steady and significant degradation of longitudinal level;</p></li>
+<li><p>Aggregate those so that the person performing the analysis can judge the relevance of these locations.</p></li>
 </ol>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>8223b6c7b90f6414324d01d63888e76c1a203d3e
-5) Aggregate those so that the person performing the analysis can judge the relevance of these locations.</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 <p>To address the first point, a starting idea was to use a loop of the “readtable” feature, importing one file at a time, and performing the desired operations on it. However, as a result of further research and speed concerns, the software uses the recent “datastore” feature of MATLAB, which can efficiently import, clean, and sort a very large amount of data, even beyond what can fit in memory. While Roslagsbanan data were still reasonable in size (60 files with a total size of approximately 1GB), this significantly increased the speed of the model compared to a more traditional “readtable” based loop and makes the method applicable to any size data set in the future. With this function, the desired columns (i.e., variables) can be selected and imported from the get-go, as opposed to bloating the memory with all the data and dropping large parts of it after the fact.</p>
 <p>This brings on the second point, where the dropna() function was used to delete rows with N/A values easily. Then, a short custom function using “fileparts()” is capable of extracting the date of measurements from the file name and convert it to a date value usable by matlab – which will have its importance.
 Then, for each data file, the software finds peaks in the rail longitudinal level so long as they exceed alert level A (4mm), and they are spaced by a set distance, by means of the findpeaks() function. The distance was tweaked during the modelling to reach a satisfactory result, in the manner of a hyperparameter. A smaller distance shows more points but potentially more unwanted peaks while a larger distance is more restrictive but also could lead to missed locations. This process aims to reduce the number of analyzed points to only keep significant spikes in the positive or negative.</p>
@@ -510,126 +493,96 @@ After various adjustments to the parameters with a correlation threshold of 0.8 
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="#fig:track27">20</a></td>
+<td><a href="#fig:track27">14</a></td>
 <td>27+636</td>
 <td>+0.5</td>
 <td>03/01/22-10/05/22</td>
 </tr>
 <tr class="even">
-<td><a href="#fig:track29">21</a></td>
+<td><a href="#fig:track29">15</a></td>
 <td>29+750</td>
 <td>-0.5</td>
 <td>03/01/22-10/05/22</td>
 </tr>
 <tr class="odd">
-<td><a href="#fig:track32">22</a></td>
+<td><a href="#fig:track32">16</a></td>
 <td>32+030</td>
 <td>-1.7</td>
 <td>03/01/22-10/05/22</td>
 </tr>
 <tr class="even">
-<td><a href="#fig:track33">23</a></td>
+<td><a href="#fig:track33">17</a></td>
 <td>33+290</td>
 <td>-0.7</td>
 <td>03/01/22-10/05/22</td>
 </tr>
 <tr class="odd">
-<td><a href="#fig:track34">24</a></td>
+<td><a href="#fig:track34">18</a></td>
 <td>34+840</td>
 <td>-0.5</td>
 <td>03/01/22-10/05/22</td>
 </tr>
 <tr class="even">
-<td><a href="#fig:track38">25</a></td>
+<td><a href="#fig:track38">19</a></td>
 <td>38+207</td>
 <td>-0.6</td>
 <td>03/01/22-10/05/22</td>
 </tr>
 <tr class="odd">
-<td><a href="#fig:track7">26</a></td>
+<td><a href="#fig:track7">20</a></td>
 <td>7+968</td>
 <td>+0.8</td>
 <td>14/02/22-10/05/22</td>
 </tr>
 <tr class="even">
-<td>??</td>
+<td><a href="#fig:track8">21</a></td>
 <td>8+530</td>
 <td>-1.0</td>
 <td>14/02/22-10/05/22</td>
 </tr>
 </tbody>
 </table>
-<p>The results are displayed in more detail in Figure <a href="#fig:track27">20</a> to Figure ??. For each figure, the upper graph shows the amplitude of the parameter along a short section of track, spanning approximately one hundred meters with the key location in the centre. The lower degradation graph shows the evolution of the parameter value at the key location, to judge its change over time. For clarity, the graphs are plotted only for the left side rail in the cases where the trend in level was identical for both the left and right side rails.</p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-<img src="images/track27.png" id="fig:track27" style="width:5in" alt="Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 27" /></p>
-<div id="fig:track29" class="fignos">
-<figure>
-<img src="images/track29.png" style="width:5in" alt="Figure 14: Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 29" /><figcaption aria-hidden="true"><span>Figure 14:</span> Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 29</figcaption>
-</figure>
-</div>
-<div id="fig:track32" class="fignos">
-<figure>
-<img src="images/track32.png" style="width:5in" alt="Figure 15: Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 32" /><figcaption aria-hidden="true"><span>Figure 15:</span> Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 32</figcaption>
-</figure>
-</div>
-<div id="fig:track33" class="fignos">
-<figure>
-<img src="images/track33.png" style="width:5in" alt="Figure 16: Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 33" /><figcaption aria-hidden="true"><span>Figure 16:</span> Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 33</figcaption>
-</figure>
-</div>
-<div id="fig:track34" class="fignos">
-<figure>
-<img src="images/track34.png" style="width:5in" alt="Figure 17: Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 34" /><figcaption aria-hidden="true"><span>Figure 17:</span> Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 34</figcaption>
-</figure>
-</div>
-<div id="fig:track38" class="fignos">
-<figure>
-<img src="images/track38.png" style="width:5in" alt="Figure 18: Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 38" /><figcaption aria-hidden="true"><span>Figure 18:</span> Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 38</figcaption>
-</figure>
-</div>
-<div id="fig:track7" class="fignos">
-<figure>
-<img src="images/track7.png" style="width:5in" alt="Figure 19: Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 7" /><figcaption aria-hidden="true"><span>Figure 19:</span> Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 7</figcaption>
-</figure>
-</div>
-<h1 id="time-vs-longitudinal-level-predictive-modeling-for-ostra-karsta-line---kilometer-8"><img src="images/track8.png" id="fig:track8" style="width:5in" alt="Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 8" /></h1>
+<p>The results are displayed in more detail in Figure <a href="#fig:track27">14</a> to Figure <a href="#fig:track8">21</a>. For each figure, the upper graph shows the amplitude of the parameter along a short section of track, spanning approximately one hundred meters with the key location in the centre. The lower degradation graph shows the evolution of the parameter value at the key location, to judge its change over time. For clarity, the graphs are plotted only for the left side rail in the cases where the trend in level was identical for both the left and right side rails.</p>
 <div id="fig:track27" class="fignos">
 <figure>
-<img src="images/track27.png" style="width:5in" alt="Figure 20: Kilometer 27 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 20:</span> Kilometer 27 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
+<img src="images/track27.png" style="width:5in" alt="Figure 14: Kilometer 27 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 14:</span> Kilometer 27 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
 </figure>
 </div>
 <div id="fig:track29" class="fignos">
 <figure>
-<img src="images/track29.png" style="width:5in" alt="Figure 21: Kilometer 29 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 21:</span> Kilometer 29 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
+<img src="images/track29.png" style="width:5in" alt="Figure 15: Kilometer 29 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 15:</span> Kilometer 29 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
 </figure>
 </div>
 <div id="fig:track32" class="fignos">
 <figure>
-<img src="images/track32.png" style="width:5in" alt="Figure 22: Kilometer 32 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 22:</span> Kilometer 32 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
+<img src="images/track32.png" style="width:5in" alt="Figure 16: Kilometer 32 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 16:</span> Kilometer 32 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
 </figure>
 </div>
 <div id="fig:track33" class="fignos">
 <figure>
-<img src="images/track33.png" style="width:5in" alt="Figure 23: Kilometer 33 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 23:</span> Kilometer 33 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
+<img src="images/track33.png" style="width:5in" alt="Figure 17: Kilometer 33 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 17:</span> Kilometer 33 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
 </figure>
 </div>
 <div id="fig:track34" class="fignos">
 <figure>
-<img src="images/track34.png" style="width:5in" alt="Figure 24: Kilometer 34 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 24:</span> Kilometer 34 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
+<img src="images/track34.png" style="width:5in" alt="Figure 18: Kilometer 34 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 18:</span> Kilometer 34 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
 </figure>
 </div>
 <div id="fig:track38" class="fignos">
 <figure>
-<img src="images/track38.png" style="width:5in" alt="Figure 25: Kilometer 38 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 25:</span> Kilometer 38 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
+<img src="images/track38.png" style="width:5in" alt="Figure 19: Kilometer 38 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 19:</span> Kilometer 38 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
 </figure>
 </div>
 <div id="fig:track7" class="fignos">
 <figure>
-<img src="images/track7.png" style="width:5in" alt="Figure 26: Kilometer 7 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 26:</span> Kilometer 7 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
+<img src="images/track7.png" style="width:5in" alt="Figure 20: Kilometer 7 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 20:</span> Kilometer 7 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
 </figure>
 </div>
-<p><img src="images/track8.png" id="fig:track8" style="width:5in" alt="Kilometer 8 - Longituinal level (top) and trend of degradation over time (bottom)" />
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; 8223b6c7b90f6414324d01d63888e76c1a203d3e</p>
+<div id="fig:track8" class="fignos">
+<figure>
+<img src="images/track8.png" style="width:5in" alt="Figure 21: Kilometer 8 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 21:</span> Kilometer 8 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
+</figure>
+</div>
 <p>All in all, this model represents a serviceable tool for use in the track measurement industry. Its accuracy leaves somewhat to be desired, as a relatively portion of its output could be considered “incorrect” or “irrelevant” by an engineer looking to find critical degradation trends. The adjustment of inputs parameters may also affect the results significantly, but any kind of analysis is likely to require well-thought out input and critical thinking from the engineer. The problem at hand does not have an absolute truth or precise correct answer, and different engineers may judge the quality of this output differently themselves. Globally the model was successful in identifying key locations thousands of times faster than a human expert could, and the saying still seems to hold true: the quality of a machine depends largely on its user.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
@@ -742,10 +695,10 @@ two spaces at end of line.</p>
 Manubot plugins provide easier, more convenient visualization of and navigation between citations <span class="citation" data-cites="YuJbg3zO 126Wi5Us4 mSMVRkoc PZMP42Ak">[<a href="#ref-mSMVRkoc" role="doc-biblioref">4</a>,<a href="#ref-126Wi5Us4" role="doc-biblioref">5</a>,<a href="#ref-PZMP42Ak" role="doc-biblioref">9</a>,<a href="#ref-YuJbg3zO" role="doc-biblioref">10</a>]</span>.</p>
 <p>Citation tags (i.e. aliases) can be defined in their own paragraphs using Markdown’s reference link syntax:</p>
 <h2 id="referencing-figures-tables-equations">Referencing figures, tables, equations</h2>
-<p>Figure <a href="#fig:square-image">27</a></p>
-<p>Figure <a href="#fig:wide-image">28</a></p>
-<p>Figure <a href="#fig:tall-image">29</a></p>
-<p>Figure <a href="#fig:vector-image">30</a></p>
+<p>Figure <a href="#fig:square-image">22</a></p>
+<p>Figure <a href="#fig:wide-image">23</a></p>
+<p>Figure <a href="#fig:tall-image">24</a></p>
+<p>Figure <a href="#fig:vector-image">25</a></p>
 <p>Table <a href="#tbl:bowling-scores">1</a></p>
 <p>Equation <a href="#eq:regular-equation">1</a></p>
 <p>Equation <a href="#eq:long-equation">2</a></p>
@@ -774,25 +727,25 @@ Exporting PDF manuscript</code></pre>
 <h2 id="figures">Figures</h2>
 <div id="fig:square-image" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png" alt="Figure 27: A square image at actual size and with a bottom caption. Loaded from the latest version of image on GitHub." /><figcaption aria-hidden="true"><span>Figure 27:</span> <strong>A square image at actual size and with a bottom caption.</strong>
+<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png" alt="Figure 22: A square image at actual size and with a bottom caption. Loaded from the latest version of image on GitHub." /><figcaption aria-hidden="true"><span>Figure 22:</span> <strong>A square image at actual size and with a bottom caption.</strong>
 Loaded from the latest version of image on GitHub.</figcaption>
 </figure>
 </div>
 <div id="fig:wide-image" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/wide.png" alt="Figure 28: An image too wide to fit within page at full size. Loaded from a specific (hashed) version of the image on GitHub." /><figcaption aria-hidden="true"><span>Figure 28:</span> <strong>An image too wide to fit within page at full size.</strong>
+<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/wide.png" alt="Figure 23: An image too wide to fit within page at full size. Loaded from a specific (hashed) version of the image on GitHub." /><figcaption aria-hidden="true"><span>Figure 23:</span> <strong>An image too wide to fit within page at full size.</strong>
 Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
 </figure>
 </div>
 <div id="fig:tall-image" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/tall.png" style="height:3in" alt="Figure 29: A tall image with a specified height. Loaded from a specific (hashed) version of the image on GitHub." /><figcaption aria-hidden="true"><span>Figure 29:</span> <strong>A tall image with a specified height.</strong>
+<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/tall.png" style="height:3in" alt="Figure 24: A tall image with a specified height. Loaded from a specific (hashed) version of the image on GitHub." /><figcaption aria-hidden="true"><span>Figure 24:</span> <strong>A tall image with a specified height.</strong>
 Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
 </figure>
 </div>
 <div id="fig:vector-image" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/manubot/resources/main/test/vector.svg?sanitize=true" class="white" style="height:2.5in" alt="Figure 30: A vector .svg image loaded from GitHub. The parameter sanitize=true is necessary to properly load SVGs hosted via GitHub URLs. White background specified to serve as a backdrop for transparent sections of the image." /><figcaption aria-hidden="true"><span>Figure 30:</span> <strong>A vector <code>.svg</code> image loaded from GitHub.</strong>
+<img src="https://raw.githubusercontent.com/manubot/resources/main/test/vector.svg?sanitize=true" class="white" style="height:2.5in" alt="Figure 25: A vector .svg image loaded from GitHub. The parameter sanitize=true is necessary to properly load SVGs hosted via GitHub URLs. White background specified to serve as a backdrop for transparent sections of the image." /><figcaption aria-hidden="true"><span>Figure 25:</span> <strong>A vector <code>.svg</code> image loaded from GitHub.</strong>
 The parameter <code>sanitize=true</code> is necessary to properly load SVGs hosted via GitHub URLs.
 White background specified to serve as a backdrop for transparent sections of the image.</figcaption>
 </figure>
@@ -874,7 +827,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:c0389a06-92b1-43e0-a1da-9c923ca29281" class="tablenos">
+<div id="tbl:d9779523-cd59-4bff-b2d9-1d8aa802b6e3" class="tablenos">
 <table id="tbl:">
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
