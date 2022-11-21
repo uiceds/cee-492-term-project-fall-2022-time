@@ -4,10 +4,10 @@ Berkan
 berkanusta
 cde
 centre
-CSV
+csv
 curv
 cvolpebaridon
-dataset
+Dataset
 datastore
 dde
 Decription
@@ -60,6 +60,6 @@ timespan
 twotracks
 Underfitting
 Usta
-Versine
+versine
 versines
 Volpe
