@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0f6461404710d73f1e6bf782a429aabff275c0ed/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0f6461404710d73f1e6bf782a429aabff275c0ed/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0f6461404710d73f1e6bf782a429aabff275c0ed/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a3968bd7ed8c40a76f48fdb47d4923da8a431612/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a3968bd7ed8c40a76f48fdb47d4923da8a431612/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a3968bd7ed8c40a76f48fdb47d4923da8a431612/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0f6461404710d73f1e6bf782a429aabff275c0ed/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a3968bd7ed8c40a76f48fdb47d4923da8a431612/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@0f64614](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/0f6461404710d73f1e6bf782a429aabff275c0ed)
+from [uiceds/cee-492-term-project-fall-2022-time@a3968bd](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/a3968bd7ed8c40a76f48fdb47d4923da8a431612)
 on November 21, 2022.
 </em></small>
 
@@ -339,13 +339,13 @@ The results are displayed in more detail in Figure @fig:track27 to Figure @fig:t
 
 ![Kilometer 29 - Longituinal level (top) and trend of degradation over time (bottom)](images/track29.png){#fig:track29 width="5in"}
 
-![Kilometer 32 - Longituinal level (top) and trend of degradation over time (bottom)](images/track32.png){#fig:track27 width="5in"}
+![Kilometer 32 - Longituinal level (top) and trend of degradation over time (bottom)](images/track32.png){#fig:track32 width="5in"}
 
-![Kilometer 33 - Longituinal level (top) and trend of degradation over time (bottom)](images/track33.png){#fig:track27 width="5in"}
+![Kilometer 33 - Longituinal level (top) and trend of degradation over time (bottom)](images/track33.png){#fig:track33 width="5in"}
 
-![Kilometer 34 - Longituinal level (top) and trend of degradation over time (bottom)](images/track34.png){#fig:track27 width="5in"}
+![Kilometer 34 - Longituinal level (top) and trend of degradation over time (bottom)](images/track34.png){#fig:track34 width="5in"}
 
-![Kilometer 38 - Longituinal level (top) and trend of degradation over time (bottom)](images/track38.png){#fig:track27 width="5in"}
+![Kilometer 38 - Longituinal level (top) and trend of degradation over time (bottom)](images/track38.png){#fig:track38 width="5in"}
 
 ![Kilometer 7 - Longituinal level (top) and trend of degradation over time (bottom)](images/track7.png){#fig:track7 width="5in"}
 
