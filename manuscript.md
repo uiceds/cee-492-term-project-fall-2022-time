@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8223b6c7b90f6414324d01d63888e76c1a203d3e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8223b6c7b90f6414324d01d63888e76c1a203d3e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8223b6c7b90f6414324d01d63888e76c1a203d3e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c8d7c2548c6a304367a0274b78789953560633a9/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c8d7c2548c6a304367a0274b78789953560633a9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c8d7c2548c6a304367a0274b78789953560633a9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8223b6c7b90f6414324d01d63888e76c1a203d3e/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c8d7c2548c6a304367a0274b78789953560633a9/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@8223b6c](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/8223b6c7b90f6414324d01d63888e76c1a203d3e)
+from [uiceds/cee-492-term-project-fall-2022-time@c8d7c25](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/c8d7c2548c6a304367a0274b78789953560633a9)
 on November 21, 2022.
 </em></small>
 
@@ -300,7 +300,10 @@ Because of greater familiarity with the software, MATLAB was used for this part 
 3)	Match or synchronize the different measurement runs as explained in the Exploratory Analysis;
 
 4)	Find a reasonable method for detecting locations showing steady and significant degradation of longitudinal level;
+<<<<<<< HEAD
+=======
 
+>>>>>>> 8223b6c7b90f6414324d01d63888e76c1a203d3e
 5)	Aggregate those so that the person performing the analysis can judge the relevance of these locations.
 
 To address the first point, a starting idea was to use a loop of the “readtable” feature, importing one file at a time, and performing the desired operations on it. However, as a result of further research and speed concerns, the software uses the recent “datastore” feature of MATLAB, which can efficiently import, clean, and sort a very large amount of data, even beyond what can fit in memory. While Roslagsbanan data were still reasonable in size (60 files with a total size of approximately 1GB), this significantly increased the speed of the model compared to a more traditional “readtable” based loop and makes the method applicable to any size data set in the future. With this function, the desired columns (i.e., variables) can be selected and imported from the get-go, as opposed to bloating the memory with all the data and dropping large parts of it after the fact. 
@@ -313,7 +316,7 @@ After various adjustments to the parameters with a correlation threshold of 0.8 
 
 
 In general, the model fulfilled its role and did find locations of clear, steady degradation over time which would have taken a human weeks of going over graphs and data manually – even for a domain professional. However not all results were satisfactory. In particular the model struggled with two aspects:
--	Measurement on double track sections with each track having a different level of degradation, as shown on figure @fig:twotracks, tricked the model into seeing a trend which does not exist (as measurements were taken in both directions).
+-	Measurement on double track sections with each track having a different level of degradation, as shown on Figure @fig:twotracks, tricked the model into seeing a trend which does not exist (as measurements were taken in both directions).
 
 ![Example of a location with 2 separate tracks interfering with the predictive model](images/two_tracks.png){#fig:twotracks width="5in"}
 
@@ -338,6 +341,23 @@ In terms of accuracy, out of the hundred points picked up by the model, only eig
 
 The results are displayed in more detail in Figure @fig:track27 to Figure @fig:track8. For each figure, the upper graph shows the amplitude of the parameter along a short section of track, spanning approximately one hundred meters with the key location in the centre. The lower degradation graph shows the evolution of the parameter value at the key location, to judge its change over time. For clarity, the graphs are plotted only for the left side rail in the cases where the trend in level was identical for both the left and right side rails.
 
+<<<<<<< HEAD
+![Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 27](images/track27.png){#fig:track27 width="5in"}
+
+![Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 29](images/track29.png){#fig:track29 width="5in"}
+
+![Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 32](images/track32.png){#fig:track32 width="5in"}
+
+![Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 33](images/track33.png){#fig:track33 width="5in"}
+
+![Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 34](images/track34.png){#fig:track34 width="5in"}
+
+![Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 38](images/track38.png){#fig:track38 width="5in"}
+
+![Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 7](images/track7.png){#fig:track7 width="5in"}
+
+![Time vs Longitudinal Level Predictive Modeling for Ostra-Karsta line - Kilometer 8](images/track8.png){#fig:track8 width="5in"}
+=======
 ![Kilometer 27 - Longituinal level (top) and trend of degradation over time (bottom)](images/track27.png){#fig:track27 width="5in"}
 
 ![Kilometer 29 - Longituinal level (top) and trend of degradation over time (bottom)](images/track29.png){#fig:track29 width="5in"}
@@ -353,6 +373,7 @@ The results are displayed in more detail in Figure @fig:track27 to Figure @fig:t
 ![Kilometer 7 - Longituinal level (top) and trend of degradation over time (bottom)](images/track7.png){#fig:track7 width="5in"}
 
 ![Kilometer 8 - Longituinal level (top) and trend of degradation over time (bottom)](images/track8.png){#fig:track8 width="5in"}
+>>>>>>> 8223b6c7b90f6414324d01d63888e76c1a203d3e
 
 
 All in all, this model represents a serviceable tool for use in the track measurement industry. Its accuracy leaves somewhat to be desired, as a relatively portion of its output could be considered “incorrect” or “irrelevant” by an engineer looking to find critical degradation trends. The adjustment of inputs parameters may also affect the results significantly, but any kind of analysis is likely to require well-thought out input and critical thinking from the engineer. The problem at hand does not have an absolute truth or precise correct answer, and different engineers may judge the quality of this output differently themselves. Globally the model was successful in identifying key locations thousands of times faster than a human expert could, and the saying still seems to hold true: the quality of a machine depends largely on its user.   
