@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a3968bd7ed8c40a76f48fdb47d4923da8a431612/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a3968bd7ed8c40a76f48fdb47d4923da8a431612/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a3968bd7ed8c40a76f48fdb47d4923da8a431612/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8223b6c7b90f6414324d01d63888e76c1a203d3e/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8223b6c7b90f6414324d01d63888e76c1a203d3e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8223b6c7b90f6414324d01d63888e76c1a203d3e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a3968bd7ed8c40a76f48fdb47d4923da8a431612/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8223b6c7b90f6414324d01d63888e76c1a203d3e/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@a3968bd](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/a3968bd7ed8c40a76f48fdb47d4923da8a431612)
+from [uiceds/cee-492-term-project-fall-2022-time@8223b6c](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/8223b6c7b90f6414324d01d63888e76c1a203d3e)
 on November 21, 2022.
 </em></small>
 
@@ -218,6 +218,9 @@ Finally, another research path for a predictive model would be to investigate mo
 
 
 # Predictive Modeling
+## Predictive Model Decisions
+Following the reflexion of the Exploratory Analysis, specific decisions were taken for the modeling. It was found that obtaining reliable soil data usable for such a project was not practical, for that reason the link with soil mechanics was not explored at this stage. Moreover, it was decided that building a model to verify the link between mathematically related variables (e.g., curvature and cant) is not a relevant engineering problem to solve, and thus was not looked at. Finally the modeling performed at this stage focused on finding the most reliable link between curvature and gauge deformation in one part, and studying the degradation of longitudinal level over time in another part. 
+
 ## Gauge vs Curvature Predictive Modeling 
 As shown in Figure @fig:gauge-curve2, the Gauge and Curvature variables seem to be related. Since gauge measurements are not as easy to obtain as curvature measurements, finding the relationship between gauge and curvature could give technicians a way to measure gauge indirectly.
 

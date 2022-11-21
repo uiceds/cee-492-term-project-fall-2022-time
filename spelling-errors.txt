@@ -83,6 +83,7 @@ proident
 qui
 quis
 readtable
+reflexion
 relible
 reprehenderit
 RMSE
@@ -102,7 +103,7 @@ ullamco
 Usta
 velit
 veniam
-Versine
+versine
 versines
 Volpe
 voluptate
