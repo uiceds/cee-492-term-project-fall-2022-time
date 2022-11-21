@@ -19,6 +19,7 @@ Elie
 elieroudiere
 fileparts
 findpeaks
+Firgures
 fourty
 gaugecurv
 hardcoded

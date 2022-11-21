@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0e823419619b43dc5546f228ef04787578d20c5a/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0e823419619b43dc5546f228ef04787578d20c5a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0e823419619b43dc5546f228ef04787578d20c5a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c1d4633242a8333a67dc5afda831b2b95b2ae6fa/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c1d4633242a8333a67dc5afda831b2b95b2ae6fa/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c1d4633242a8333a67dc5afda831b2b95b2ae6fa/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/0e823419619b43dc5546f228ef04787578d20c5a/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c1d4633242a8333a67dc5afda831b2b95b2ae6fa/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@0e82341](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/0e823419619b43dc5546f228ef04787578d20c5a)
+from [uiceds/cee-492-term-project-fall-2022-time@c1d4633](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/c1d4633242a8333a67dc5afda831b2b95b2ae6fa)
 on November 21, 2022.
 </em></small>
 
@@ -289,6 +289,7 @@ Figure @fig:gaugecurv_abs_model shows the data for negative and positive curvatu
 
 ![Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.](images/gauge_curvature_abs_model.PNG){#fig:gaugecurv_abs_model width="5in"}
 
+
 ## Different Models for Gauge vs Curvature Predictive Modeling 
 
 Underfitting and overfitting can lead to models that do not match the available data; therefore, we must determine ways to recognize each issue and create models that do match the data. These notions can help you avoid big errors and build models that match the data pretty well; yet, there are an astonishing amount of models that suit this criteria. This implies that the following stage, after developing a model that fits adequately, is to determine which of the various models fits the data the best.
@@ -298,16 +299,21 @@ Validating models is the solution to this issue. Validation is the process of ut
 
 To minimize overfitting while learning a dependency from data, it is essential to divide the data into a training set and a testing set as mentioned abive. We first train our model on the training set, and then evaluate the accuracy of the final model using the testing set. The optimal results are produced by using 15% of the data for testing and the remaining 85% of the data for training, according to empirical research. Figure@fig:gaugecurv_abs_various_models shows the values obtained for various models.
 
-Figure@fig:gaugecurv_abs_predictive_model_comparison_table shows the various models we have tested apart from the linear regression done previously and here with different approach of training. We try analysing the data with other models which include include Linear regression, Support vector regression, Decision tree, k-nearest neighbors, eXtreme Gradient Boosting (XGB) and neural network with various levels of hidden layers Figure@fig:gaugecurv_abs_predictive_model_comparison_table also indicates how different models perform better than the linear regression and @fig:gaugecurv_abs_various_models shows how the predicted and measured values are distributed over the line of equality which indicates how well the model is doing prediction
+Figure @fig:gaugecurv_abs_predictive_model_comparison_table shows the various models we have tested apart from the linear regression done previously and here with different approach of training. We try analysing the data with other models which include include Linear regression, Support vector regression, Decision tree, k-nearest neighbors, eXtreme Gradient Boosting (XGB) and neural network with various levels of hidden layers Figure @fig:gaugecurv_abs_predictive_model_comparison_table also indicates how different models perform better than the linear regression and Firgures @fig:gaugecurv_abs_various_models, @fig:gaugecurv_abs_various_models2 and @fig:gaugecurv_abs_various_models3 show how the predicted and measured values are distributed over the line of equality which indicates how well the model is doing prediction.
 
 
 
-![Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.](images/predictive_analysischart1new.PNG)
-{#fig:gaugecurv_abs_various_models width=“5in”}
-![Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.](images/predictive_analysischart2new.PNG)
-{#fig:gaugecurv_abs_various_models width=“5in”}
-![Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.](images/predictive_analysischart3new.PNG){#fig:gaugecurv_abs_various_models width=“5in”}
-![Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.](images/Predictive_modelling_comperison.PNG){#fig:gaugecurv_abs_predictive_model_comparison_table add width=“5in”}
+![Ostra-Karsta line - Gauge vs Curvature Various Predictive Models.](images/predictive_analysischart1new.PNG)
+{#fig:gaugecurv_abs_various_models width="5in"}
+
+![Ostra-Karsta line - Gauge vs Curvature Neural Network Models.](images/predictive_analysischart2new.PNG)
+{#fig:gaugecurv_abs_various_models2 width="5in"}
+
+![Ostra-Karsta line - Gauge vs Curvature Neural Network Models.](images/predictive_analysischart3new.PNG){#fig:gaugecurv_abs_various_models3 width="5in"}
+
+![Ostra-Karsta line - Gauge vs Curvature Model Comparison Table.](images/Predictive_modelling_comperison.PNG){#fig:gaugecurv_abs_predictive_model_comparison_table add width="5in"}
+
+
 ## Time vs Longitudinal Level Predictive Modeling
 Because of greater familiarity with the software, MATLAB was used for this part of the predictive modelling. The main tasks to be addressed were:
 
