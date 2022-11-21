@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c244cb4ea36007c7e7e4e0f77b2d6c6d3b953b7b/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c244cb4ea36007c7e7e4e0f77b2d6c6d3b953b7b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c244cb4ea36007c7e7e4e0f77b2d6c6d3b953b7b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/77ad1d8887063665adfb4de7b841ee2a8c480bb3/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/77ad1d8887063665adfb4de7b841ee2a8c480bb3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/77ad1d8887063665adfb4de7b841ee2a8c480bb3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c244cb4ea36007c7e7e4e0f77b2d6c6d3b953b7b/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/77ad1d8887063665adfb4de7b841ee2a8c480bb3/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@c244cb4](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/c244cb4ea36007c7e7e4e0f77b2d6c6d3b953b7b)
+from [uiceds/cee-492-term-project-fall-2022-time@77ad1d8](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/77ad1d8887063665adfb4de7b841ee2a8c480bb3)
 on November 21, 2022.
 </em></small>
 
@@ -294,7 +294,7 @@ Underfitting and overfitting can lead to models that do not match the available 
 Fundamentally, you cannot rely on a model that fits the training data well simply because you created it. This is because you compelled the model to be a good match for the training data. If, after building a model, statistical analyses indicate that it matches the data well, it is feasible to compel a model to match the data well using mathematical procedures. This does not imply that the model captures actual patterns or can forecast future events.
 Validating models is the solution to this issue. Validation is the process of utilizing the model to forecast the output in additional contexts for which you have data, and then computing the same statistical measures of fit for the outcomes. This implies that your dataset must be split into two separate data files. The first is a training data set, which is utilized to create models. The second data set is a validation data set, which is used to evaluate the correctness of your model using data that was not used to train it.
 
-To minimize overfitting while learning a dependency from data, it is essential to divide the data into a training set and a testing set as mentioned abive. We first train our model on the training set, and then evaluate the accuracy of the final model using the testing set. The optimal results are produced by using 15% of the data for testing and the remaining 85% of the data for training, according to empirical research. 
+To minimize overfitting while learning a dependency from data, it is essential to divide the data into a training set and a testing set as mentioned abive. We first train our model on the training set, and then evaluate the accuracy of the final model using the testing set. The optimal results are produced by using 15% of the data for testing and the remaining 85% of the data for training, according to empirical research. Figure@fig:gaugecurv_abs_various_models shows the values obtained for various models.
 
 Figure@fig:gaugecurv_abs_predictive_model_comparison_table shows the various models we have tested apart from the linear regression done previously and here with different approach of training. We try analysing the data with other models which include include Linear regression, Support vector regression, Decision tree, k-nearest neighbors, eXtreme Gradient Boosting (XGB) and neural network with various levels of hidden layers Figure@fig:gaugecurv_abs_predictive_model_comparison_table also indicates how different models perform better than the linear regression and @fig:gaugecurv_abs_various_models shows how the predicted and measured values are distributed over the line of equality which indicates how well the model is doing prediction
 
