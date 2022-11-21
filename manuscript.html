@@ -67,9 +67,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/468389bdfe35c07ec5ea600ff3f6b2af938e2b46/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/468389bdfe35c07ec5ea600ff3f6b2af938e2b46/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/468389bdfe35c07ec5ea600ff3f6b2af938e2b46/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/9a45b09dbd4f0b7702f3354fa42cfe6d1300eb33/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/9a45b09dbd4f0b7702f3354fa42cfe6d1300eb33/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/9a45b09dbd4f0b7702f3354fa42cfe6d1300eb33/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -83,9 +83,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/468389bdfe35c07ec5ea600ff3f6b2af938e2b46/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/9a45b09dbd4f0b7702f3354fa42cfe6d1300eb33/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/468389bdfe35c07ec5ea600ff3f6b2af938e2b46">uiceds/cee-492-term-project-fall-2022-time@468389b</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/9a45b09dbd4f0b7702f3354fa42cfe6d1300eb33">uiceds/cee-492-term-project-fall-2022-time@9a45b09</a>
 on November 21, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -384,10 +384,11 @@ The two model structures used were,</p>
 <p>Fundamentally, you cannot rely on a model that fits the training data well simply because you created it. This is because you compelled the model to be a good match for the training data. If, after building a model, statistical analyses indicate that it matches the data well, it is feasible to compel a model to match the data well using mathematical procedures. This does not imply that the model captures actual patterns or can forecast future events.
 Validating models is the solution to this issue. Validation is the process of utilizing the model to forecast the output in additional contexts for which you have data, and then computing the same statistical measures of fit for the outcomes. This implies that your dataset must be split into two separate data files. The first is a training data set, which is utilized to create models. The second data set is a validation data set, which is used to evaluate the correctness of your model using data that was not used to train it.</p>
 <p>To minimize overfitting while learning a dependency from data, it is essential to divide the data into a training set and a testing set as mentioned abive. We first train our model on the training set, and then evaluate the accuracy of the final model using the testing set. The optimal results are produced by using 15% of the data for testing and the remaining 85% of the data for training, according to empirical research.</p>
+<p>Figure@fig:gaugecurv_abs_predictive_model_comparison_table shows the various models we have tested apart from the linear regression done previously and here with different approach of training. We try analysing the data with other models which include include Linear regression, Support vector regression, Decision tree, k-nearest neighbors, eXtreme Gradient Boosting (XGB) and neural network with various levels of hidden layers Figure@fig:gaugecurv_abs_predictive_model_comparison_table also indicates how different models perform better than the linear regression and ?? shows how the predicted and measured values are distributed over the line of equality which indicates how well the model is doing prediction</p>
 <p><img src="images/predictive_analysischart1new.PNG" alt="Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model." />
 <img src="images/predictive_analysischart2new.PNG" alt="Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model." />
-<img src="images/predictive_analysischart3new.PNG" id="fig:gaugecurv_abs_model" alt="Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model." />
-<img src="images/Predictive_modelling_comperison.PNG" id="fig:gaugecurv_abs_model" alt="Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model." />
+<img src="images/predictive_analysischart3new.PNG" id="fig:gaugecurv_abs_various_models" alt="Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model." />
+<img src="images/Predictive_modelling_comperison.PNG" id="fig:gaugecurv_abs_predictive_model_comparison_table" alt="Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model." />
 ## Time vs Longitudinal Level Predictive Modeling
 Because of greater familiarity with the software, MATLAB was used for this part of the predictive modelling. The main tasks to be addressed were:</p>
 <ol type="1">
