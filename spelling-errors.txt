@@ -7,7 +7,7 @@ centre
 csv
 curv
 cvolpebaridon
-dataset
+Dataset
 datastore
 Decription
 desync
@@ -19,7 +19,6 @@ Elie
 elieroudiere
 fileparts
 findpeaks
-Firgures
 fourty
 gaugecurv
 hardcoded
