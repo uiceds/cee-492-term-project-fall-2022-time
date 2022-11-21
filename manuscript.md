@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/101ded2e6f9e08a5f6746274b59583e9bc03c1e4/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/101ded2e6f9e08a5f6746274b59583e9bc03c1e4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/101ded2e6f9e08a5f6746274b59583e9bc03c1e4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8a025927ae375ae9eff412e501db0cfc767c065c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8a025927ae375ae9eff412e501db0cfc767c065c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8a025927ae375ae9eff412e501db0cfc767c065c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/101ded2e6f9e08a5f6746274b59583e9bc03c1e4/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8a025927ae375ae9eff412e501db0cfc767c065c/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@101ded2](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/101ded2e6f9e08a5f6746274b59583e9bc03c1e4)
+from [uiceds/cee-492-term-project-fall-2022-time@8a02592](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/8a025927ae375ae9eff412e501db0cfc767c065c)
 on November 21, 2022.
 </em></small>
 
@@ -208,9 +208,14 @@ Finally, Figure @fig:alignment shows the variation of the Alignment along the wh
 
 Here it is intersting to note the outliers at the start and end points. At these locations the train was starting and stopping respectively, thus with a speed close to 0. This leads to unrealistic values which will need to be removed when exploiting the data in a model. 
 
+<<<<<<< HEAD
+# Predictive model considerations
+There may be obstacles when developing a predictive model due to the relatively small number of independent variables already present in the measurement set. When developing the model, it will likely be necessary to conduct additional analysis of relationships between data variables. In spite of this, the first portion of the predictive model will attempt to identify locations where track deterioration exhibits a clear trend (typically a linear increase in a given direction) over time. The independent variable in this case is time. Based on an initial analysis of the dataset and a general understanding of railway track engineering, it is probable that this predictive model will produce results that can be utilized.
+=======
 # Predictive Model Considerations
 Due to the somewhat limited number of independent variables already present inside the measurement set, there may be challenges when making a predictive model. Further evaluation of links between variables in the data will likely be necessary when making the model. 
 Notwithstanding, the first part of the predictive model will try and find locations where the track degradation seems to form a clear trend (typically a linear increase in a given direction) over time. Here, time is the independent variable. From an initial analysis of the dataset and general knowledge of railway track engineering, it is likely this predictive model will yield exploitable results.
+>>>>>>> b9465a6a7c5eb9a0ab5ac4cde662b2ee444dde0d
 
 The second part of the predictive model could take into account external factors, in particular, temperature/weather changes and soil properties if obtainable. This could give us locations prone to developing trends in the short to medium term, which could be investigated by a maintenance team.  However we have envisioned some possible issues, namely that obtaining and translating soil data into something usable by the model may be a challenge, and no link is guaranteed to appear (what if all soils along the line are similar?). A possible approach could be to grade soils based on properties, for example, a very stable soil could get a score of 1, and a "worse" soil from the point of view of building a railway line could get a high score, with appropriate intermediate values. However, obtaining soil data reliably for these locations is proving to be a challenge and may not be an option
 

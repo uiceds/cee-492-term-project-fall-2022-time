@@ -55,6 +55,7 @@ content/04.exploratory.md:74:Karsta
 content/04.exploratory.md:74:Ostra
 content/04.exploratory.md:76:intersting
 content/04.exploratory.md:80:dataset
+content/04.exploratory.md:84:dataset
 content/05.Predictive modeling.md:3:reflexion
 content/05.Predictive modeling.md:10:Karsta
 content/05.Predictive modeling.md:10:Ostra
