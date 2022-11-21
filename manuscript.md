@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/f7e49d12706c391f2f7e8d131139d94e6aeb11b0/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/f7e49d12706c391f2f7e8d131139d94e6aeb11b0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/f7e49d12706c391f2f7e8d131139d94e6aeb11b0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/468389bdfe35c07ec5ea600ff3f6b2af938e2b46/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/468389bdfe35c07ec5ea600ff3f6b2af938e2b46/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/468389bdfe35c07ec5ea600ff3f6b2af938e2b46/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/f7e49d12706c391f2f7e8d131139d94e6aeb11b0/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/468389bdfe35c07ec5ea600ff3f6b2af938e2b46/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@f7e49d1](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/f7e49d12706c391f2f7e8d131139d94e6aeb11b0)
+from [uiceds/cee-492-term-project-fall-2022-time@468389b](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/468389bdfe35c07ec5ea600ff3f6b2af938e2b46)
 on November 21, 2022.
 </em></small>
 
@@ -296,7 +296,10 @@ Validating models is the solution to this issue. Validation is the process of ut
 
 To minimize overfitting while learning a dependency from data, it is essential to divide the data into a training set and a testing set as mentioned abive. We first train our model on the training set, and then evaluate the accuracy of the final model using the testing set. The optimal results are produced by using 15% of the data for testing and the remaining 85% of the data for training, according to empirical research.
 
-
+![Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.](images/predictive_analysischart1new.PNG)
+![Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.](images/predictive_analysischart2new.PNG)
+![Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.](images/predictive_analysischart3new.PNG){#fig:gaugecurv_abs_model various models}
+![Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.](images/Predictive_modelling_comperison.PNG){#fig:gaugecurv_abs_model predictive model comparison table}
 ## Time vs Longitudinal Level Predictive Modeling
 Because of greater familiarity with the software, MATLAB was used for this part of the predictive modelling. The main tasks to be addressed were:
 
