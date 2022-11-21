@@ -130,9 +130,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a3968bd7ed8c40a76f48fdb47d4923da8a431612/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a3968bd7ed8c40a76f48fdb47d4923da8a431612/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a3968bd7ed8c40a76f48fdb47d4923da8a431612/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8223b6c7b90f6414324d01d63888e76c1a203d3e/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8223b6c7b90f6414324d01d63888e76c1a203d3e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8223b6c7b90f6414324d01d63888e76c1a203d3e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -153,9 +153,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/a3968bd7ed8c40a76f48fdb47d4923da8a431612/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/8223b6c7b90f6414324d01d63888e76c1a203d3e/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/a3968bd7ed8c40a76f48fdb47d4923da8a431612">uiceds/cee-492-term-project-fall-2022-time@a3968bd</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/8223b6c7b90f6414324d01d63888e76c1a203d3e">uiceds/cee-492-term-project-fall-2022-time@8223b6c</a>
 on November 21, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -353,6 +353,8 @@ Notwithstanding, the first part of the predictive model will try and find locati
 <p>The second part of the predictive model could take into account external factors, in particular, temperature/weather changes and soil properties if obtainable. This could give us locations prone to developing trends in the short to medium term, which could be investigated by a maintenance team. However we have envisioned some possible issues, namely that obtaining and translating soil data into something usable by the model may be a challenge, and no link is guaranteed to appear (what if all soils along the line are similar?). A possible approach could be to grade soils based on properties, for example, a very stable soil could get a score of 1, and a “worse” soil from the point of view of building a railway line could get a high score, with appropriate intermediate values. However, obtaining soil data reliably for these locations is proving to be a challenge and may not be an option</p>
 <p>Finally, another research path for a predictive model would be to investigate more in depth the link between measured variables that are not mathematically correlated but seem to exhibit some kind of relationship, such as gauge and curvature earlier (although both are meant to be completely independent of a civil engineering point of view). The finality of this is being able to predict the state of certain properties of the track which are complex to measure, using knowledge of established properties that do not require special measuring gear. In this example, the curvature of the track is well-known and extremely stable, but small gauge variations necessitate state-of-the-art apparatus to measure hence the advantage of having a predictive model.</p>
 <h1 id="predictive-modeling">Predictive Modeling</h1>
+<h2 id="predictive-model-decisions">Predictive Model Decisions</h2>
+<p>Following the reflexion of the Exploratory Analysis, specific decisions were taken for the modeling. It was found that obtaining reliable soil data usable for such a project was not practical, for that reason the link with soil mechanics was not explored at this stage. Moreover, it was decided that building a model to verify the link between mathematically related variables (e.g., curvature and cant) is not a relevant engineering problem to solve, and thus was not looked at. Finally the modeling performed at this stage focused on finding the most reliable link between curvature and gauge deformation in one part, and studying the degradation of longitudinal level over time in another part.</p>
 <h2 id="gauge-vs-curvature-predictive-modeling">Gauge vs Curvature Predictive Modeling</h2>
 <p>As shown in Figure <a href="#fig:gauge-curve2">6</a>, the Gauge and Curvature variables seem to be related. Since gauge measurements are not as easy to obtain as curvature measurements, finding the relationship between gauge and curvature could give technicians a way to measure gauge indirectly.</p>
 <p>To start analyzing a model that fits the data, first, it can be observed that the data exhibit some symmetry around the curvature = 0 axis. Figure <a href="#fig:gaugecurv_abs">8</a> shows the absolute values of curvature, and reflects how the positive and negative values are close in shape.</p>
@@ -825,7 +827,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:328d16ef-607d-47c2-bbd8-6bcf930b2cdd" class="tablenos">
+<div id="tbl:85d3d301-a800-4aa3-a2cd-ec3546593310" class="tablenos">
 <table id="tbl:">
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
