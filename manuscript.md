@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/77ad1d8887063665adfb4de7b841ee2a8c480bb3/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/77ad1d8887063665adfb4de7b841ee2a8c480bb3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/77ad1d8887063665adfb4de7b841ee2a8c480bb3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/f785baf2a0cc14da4c149eeb2467355be8bc6ed4/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/f785baf2a0cc14da4c149eeb2467355be8bc6ed4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/f785baf2a0cc14da4c149eeb2467355be8bc6ed4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/77ad1d8887063665adfb4de7b841ee2a8c480bb3/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/f785baf2a0cc14da4c149eeb2467355be8bc6ed4/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@77ad1d8](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/77ad1d8887063665adfb4de7b841ee2a8c480bb3)
+from [uiceds/cee-492-term-project-fall-2022-time@f785baf](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/f785baf2a0cc14da4c149eeb2467355be8bc6ed4)
 on November 21, 2022.
 </em></small>
 
@@ -288,6 +288,8 @@ The RMSEs are very close, but linear model is bit more accurate than the exponen
 Figure @fig:gaugecurv_abs_model shows the data for negative and positive curvature values and the linear predicting model. Although the model is reliable and fits the data well as a whole, it seems to be rather difficult to capture the upper values. 
 
 ![Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.](images/gauge_curvature_abs_model.PNG){#fig:gaugecurv_abs_model width="5in"}
+
+## Different Models for Gauge vs Curvature Predictive Modeling 
 
 Underfitting and overfitting can lead to models that do not match the available data; therefore, we must determine ways to recognize each issue and create models that do match the data. These notions can help you avoid big errors and build models that match the data pretty well; yet, there are an astonishing amount of models that suit this criteria. This implies that the following stage, after developing a model that fits adequately, is to determine which of the various models fits the data the best.
 
