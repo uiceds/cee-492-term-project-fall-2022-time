@@ -5,7 +5,7 @@ keywords:
 - Transportation Safety
 - Track Degradation
 lang: en-US
-date-meta: '2022-11-20'
+date-meta: '2022-11-21'
 author-meta:
 - Cecilia Karina Volpe Baridon
 - Elie Roudiere
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
   <meta property="og:title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
   <meta property="twitter:title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
-  <meta name="dc.date" content="2022-11-20" />
-  <meta name="citation_publication_date" content="2022-11-20" />
+  <meta name="dc.date" content="2022-11-21" />
+  <meta name="citation_publication_date" content="2022-11-21" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b9465a6a7c5eb9a0ab5ac4cde662b2ee444dde0d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b9465a6a7c5eb9a0ab5ac4cde662b2ee444dde0d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b9465a6a7c5eb9a0ab5ac4cde662b2ee444dde0d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76478933cb5104f5604e00b01bbbd49f96a7ea3d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76478933cb5104f5604e00b01bbbd49f96a7ea3d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76478933cb5104f5604e00b01bbbd49f96a7ea3d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,10 +62,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b9465a6a7c5eb9a0ab5ac4cde662b2ee444dde0d/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76478933cb5104f5604e00b01bbbd49f96a7ea3d/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@b9465a6](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/b9465a6a7c5eb9a0ab5ac4cde662b2ee444dde0d)
-on November 20, 2022.
+from [uiceds/cee-492-term-project-fall-2022-time@7647893](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/76478933cb5104f5604e00b01bbbd49f96a7ea3d)
+on November 21, 2022.
 </em></small>
 
 ## Authors
@@ -273,7 +273,7 @@ $Gauge_{linear} = \left\lbrace\begin{array}{c} 1.309*Curvature + 1.201~~~~~~~~wh
 
 **Linear Exponential:**
 
-$Gauge_{exp} = \left\lbrace\begin{array}{c} 0.273*e^{Curvature} + 1.247~~~~~~~~when~ Curvature \geq 0\\ 0.273*e^{-Curvature} + 1.24~~~~~~~~when~ Curvature < 0 \end{array}\right.$
+$Gauge_{exp} = \left\lbrace\begin{array}{c} 0.273*e^{Curvature} + 1.247~~~~~~~~when~ Curvature \geq 0\\ 0.273*e^{-Curvature} + 1.247~~~~~~~~when~ Curvature < 0 \end{array}\right.$
 
 The RMSE found for each model were:
 
@@ -315,7 +315,7 @@ In general, the model fulfilled its role and did find locations of clear, steady
 
 In terms of accuracy, out of the hundred points picked up by the model, only eight of them could be considered to exhibit a trend necessitating urgent maintenance. This may seem catastrophic at first but it must be kept in mind that this is across fourty kilometers of line on sixty files, so narrowing down the result to just a hundred locations is already powerful. The locations highlighted are summed up in Table 4.
 
-**Table 4** Key locations as found by the model and sorted.
+**Table 4**: Key locations as found by the model and sorted.
 
 |     Figure    |     Position (km)    |     Trend (mm/month)    |     Measurement Period        |
 |---------------|-----------------|-------------------------|-------------------|
@@ -342,9 +342,9 @@ The results are displayed in more detail in Figure @fig:track27 to Figure @fig:t
 
 ![Kilometer 38](images/track38.png){#fig:track27 width="5in"}
 
-![Kilometer 7](images/track7.png){#fig:track27 width="5in"}
+![Kilometer 7](images/track7.png){#fig:track7 width="5in"}
 
-![Kilometer 8](images/track8.png){#fig:track27 width="5in"}
+![Kilometer 8](images/track8.png){#fig:track8 width="5in"}
 
 
 All in all, this model represents a serviceable tool for use in the track measurement industry. Its accuracy leaves somewhat to be desired, as a relatively portion of its output could be considered “incorrect” or “irrelevant” by an engineer looking to find critical degradation trends. The adjustment of inputs parameters may also affect the results significantly, but any kind of analysis is likely to require well-thought out input and critical thinking from the engineer. The problem at hand does not have an absolute truth or precise correct answer, and different engineers may judge the quality of this output differently themselves. Globally the model was successful in identifying key locations thousands of times faster than a human expert could, and the saying still seems to hold true: the quality of a machine depends largely on its user.   

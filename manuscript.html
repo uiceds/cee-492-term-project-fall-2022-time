@@ -7,7 +7,7 @@
   <meta name="author" content="Cecilia Karina Volpe Baridon" />
   <meta name="author" content="Elie Roudiere" />
   <meta name="author" content="Berkan Usta" />
-  <meta name="dcterms.date" content="2022-11-20" />
+  <meta name="dcterms.date" content="2022-11-21" />
   <meta name="keywords" content="Railroad Systems, Transportation Safety, Track Degradation" />
   <title>Safety Assessment of Roslagsbanan Rail System, 2021-2022</title>
   <style>
@@ -112,8 +112,8 @@
   <meta name="citation_title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
   <meta property="og:title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
   <meta property="twitter:title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
-  <meta name="dc.date" content="2022-11-20" />
-  <meta name="citation_publication_date" content="2022-11-20" />
+  <meta name="dc.date" content="2022-11-21" />
+  <meta name="citation_publication_date" content="2022-11-21" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -130,9 +130,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b9465a6a7c5eb9a0ab5ac4cde662b2ee444dde0d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b9465a6a7c5eb9a0ab5ac4cde662b2ee444dde0d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b9465a6a7c5eb9a0ab5ac4cde662b2ee444dde0d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76478933cb5104f5604e00b01bbbd49f96a7ea3d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76478933cb5104f5604e00b01bbbd49f96a7ea3d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76478933cb5104f5604e00b01bbbd49f96a7ea3d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -153,10 +153,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b9465a6a7c5eb9a0ab5ac4cde662b2ee444dde0d/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76478933cb5104f5604e00b01bbbd49f96a7ea3d/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/b9465a6a7c5eb9a0ab5ac4cde662b2ee444dde0d">uiceds/cee-492-term-project-fall-2022-time@b9465a6</a>
-on November 20, 2022.
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/76478933cb5104f5604e00b01bbbd49f96a7ea3d">uiceds/cee-492-term-project-fall-2022-time@7647893</a>
+on November 21, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -438,7 +438,7 @@ The two model structures used were,</p>
 <p><strong>Linear Model:</strong></p>
 <p><span class="math inline">\(Gauge_{linear} = \left\lbrace\begin{array}{c} 1.309*Curvature + 1.201~~~~~~~~when~ Curvature \geq 0\\ -1.309*Curvature + 1.201~~~~~~~~when~ Curvature &lt; 0 \end{array}\right.\)</span></p>
 <p><strong>Linear Exponential:</strong></p>
-<p><span class="math inline">\(Gauge_{exp} = \left\lbrace\begin{array}{c} 0.273*e^{Curvature} + 1.247~~~~~~~~when~ Curvature \geq 0\\ 0.273*e^{-Curvature} + 1.24~~~~~~~~when~ Curvature &lt; 0 \end{array}\right.\)</span></p>
+<p><span class="math inline">\(Gauge_{exp} = \left\lbrace\begin{array}{c} 0.273*e^{Curvature} + 1.247~~~~~~~~when~ Curvature \geq 0\\ 0.273*e^{-Curvature} + 1.247~~~~~~~~when~ Curvature &lt; 0 \end{array}\right.\)</span></p>
 <p>The RMSE found for each model were:</p>
 <p><span class="math inline">\(RMSE_{linear} = 1.379\)</span></p>
 <p><span class="math inline">\(RMSE_{exp} = 1.434\)</span></p>
@@ -477,7 +477,7 @@ After various adjustments to the parameters with a correlation threshold of 0.8 
 </figure>
 </div>
 <p>In terms of accuracy, out of the hundred points picked up by the model, only eight of them could be considered to exhibit a trend necessitating urgent maintenance. This may seem catastrophic at first but it must be kept in mind that this is across fourty kilometers of line on sixty files, so narrowing down the result to just a hundred locations is already powerful. The locations highlighted are summed up in Table 4.</p>
-<p><strong>Table 4</strong> Key locations as found by the model and sorted.</p>
+<p><strong>Table 4</strong>: Key locations as found by the model and sorted.</p>
 <table>
 <thead>
 <tr class="header">
@@ -489,7 +489,7 @@ After various adjustments to the parameters with a correlation threshold of 0.8 
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="#fig:track27">21</a></td>
+<td><a href="#fig:track27">19</a></td>
 <td>27+636</td>
 <td>+0.5</td>
 <td>03/01/22-10/05/22</td>
@@ -525,20 +525,20 @@ After various adjustments to the parameters with a correlation threshold of 0.8 
 <td>03/01/22-10/05/22</td>
 </tr>
 <tr class="odd">
-<td>??</td>
+<td><a href="#fig:track7">20</a></td>
 <td>7+968</td>
 <td>+0.8</td>
 <td>14/02/22-10/05/22</td>
 </tr>
 <tr class="even">
-<td>??</td>
+<td><a href="#fig:track8">21</a></td>
 <td>8+530</td>
 <td>-1.0</td>
 <td>14/02/22-10/05/22</td>
 </tr>
 </tbody>
 </table>
-<p>The results are displayed in more detail in Figure <a href="#fig:track27">21</a> to Figure ??. For each figure, the upper graph shows the amplitude of the parameter along a short section of track, spanning approximately one hundred meters with the key location in the centre. The lower degradation graph shows the evolution of the parameter value at the key location, to judge its change over time. For clarity, the graphs are plotted only for the left side rail in the cases where the trend in level was identical for both the left and right side rails.</p>
+<p>The results are displayed in more detail in Figure <a href="#fig:track27">19</a> to Figure <a href="#fig:track8">21</a>. For each figure, the upper graph shows the amplitude of the parameter along a short section of track, spanning approximately one hundred meters with the key location in the centre. The lower degradation graph shows the evolution of the parameter value at the key location, to judge its change over time. For clarity, the graphs are plotted only for the left side rail in the cases where the trend in level was identical for both the left and right side rails.</p>
 <div id="fig:track27" class="fignos">
 <figure>
 <img src="images/track27.png" style="width:5in" alt="Figure 14: Kilometer 27" /><figcaption aria-hidden="true"><span>Figure 14:</span> Kilometer 27</figcaption>
@@ -569,12 +569,12 @@ After various adjustments to the parameters with a correlation threshold of 0.8 
 <img src="images/track38.png" style="width:5in" alt="Figure 19: Kilometer 38" /><figcaption aria-hidden="true"><span>Figure 19:</span> Kilometer 38</figcaption>
 </figure>
 </div>
-<div id="fig:track27" class="fignos">
+<div id="fig:track7" class="fignos">
 <figure>
 <img src="images/track7.png" style="width:5in" alt="Figure 20: Kilometer 7" /><figcaption aria-hidden="true"><span>Figure 20:</span> Kilometer 7</figcaption>
 </figure>
 </div>
-<div id="fig:track27" class="fignos">
+<div id="fig:track8" class="fignos">
 <figure>
 <img src="images/track8.png" style="width:5in" alt="Figure 21: Kilometer 8" /><figcaption aria-hidden="true"><span>Figure 21:</span> Kilometer 8</figcaption>
 </figure>
@@ -823,7 +823,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:cdd25b0e-a96f-4665-abb1-531d2b3643fa" class="tablenos">
+<div id="tbl:3da8a16e-7a0e-4f77-9bac-df21f3c9a550" class="tablenos">
 <table id="tbl:">
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
