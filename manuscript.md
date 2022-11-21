@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/9a45b09dbd4f0b7702f3354fa42cfe6d1300eb33/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/9a45b09dbd4f0b7702f3354fa42cfe6d1300eb33/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/9a45b09dbd4f0b7702f3354fa42cfe6d1300eb33/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c244cb4ea36007c7e7e4e0f77b2d6c6d3b953b7b/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c244cb4ea36007c7e7e4e0f77b2d6c6d3b953b7b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c244cb4ea36007c7e7e4e0f77b2d6c6d3b953b7b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/9a45b09dbd4f0b7702f3354fa42cfe6d1300eb33/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/c244cb4ea36007c7e7e4e0f77b2d6c6d3b953b7b/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@9a45b09](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/9a45b09dbd4f0b7702f3354fa42cfe6d1300eb33)
+from [uiceds/cee-492-term-project-fall-2022-time@c244cb4](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/c244cb4ea36007c7e7e4e0f77b2d6c6d3b953b7b)
 on November 21, 2022.
 </em></small>
 
@@ -302,8 +302,8 @@ Figure@fig:gaugecurv_abs_predictive_model_comparison_table shows the various mod
 
 ![Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.](images/predictive_analysischart1new.PNG)
 ![Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.](images/predictive_analysischart2new.PNG)
-![Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.](images/predictive_analysischart3new.PNG){#fig:gaugecurv_abs_various_models}
-![Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.](images/Predictive_modelling_comperison.PNG){#fig:gaugecurv_abs_predictive_model_comparison_table}
+![Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.](images/predictive_analysischart3new.PNG){#fig:gaugecurv_abs_various_models width=“5in”}
+![Ostra-Karsta line - Gauge vs Curvature Absolute Values and the Linear Predictive Model.](images/Predictive_modelling_comperison.PNG){#fig:gaugecurv_abs_predictive_model_comparison_table add width=“5in”}
 ## Time vs Longitudinal Level Predictive Modeling
 Because of greater familiarity with the software, MATLAB was used for this part of the predictive modelling. The main tasks to be addressed were:
 
