@@ -58,6 +58,7 @@ LATGMS
 Latronix
 learnt
 localised
+Longituinal
 Lorem
 LTM
 magna
