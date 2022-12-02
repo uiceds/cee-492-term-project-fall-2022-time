@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/32fe282abb0aa957b1cc58daedae0d04b18d1a4e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/32fe282abb0aa957b1cc58daedae0d04b18d1a4e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/32fe282abb0aa957b1cc58daedae0d04b18d1a4e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d36c4d906d5dafd0338a00c66402513fdf4bce86/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d36c4d906d5dafd0338a00c66402513fdf4bce86/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d36c4d906d5dafd0338a00c66402513fdf4bce86/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/32fe282abb0aa957b1cc58daedae0d04b18d1a4e/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/d36c4d906d5dafd0338a00c66402513fdf4bce86/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@32fe282](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/32fe282abb0aa957b1cc58daedae0d04b18d1a4e)
+from [uiceds/cee-492-term-project-fall-2022-time@d36c4d9](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/d36c4d906d5dafd0338a00c66402513fdf4bce86)
 on December 2, 2022.
 </em></small>
 
@@ -414,11 +414,3 @@ In a distinct second part, longitudinal level was investigated for consistent, c
 
 All in all, the three models – regression, machine learning, and time predictions – proved their worth in the tasks they were attempting to solve. Regression methods showed that interesting results could be obtained with simpler mathematical tools but lacked the accuracy for extreme values that would be required on a professional application, at least within the bounds of the problem at hand. The use of machine learning approaches largely overcame this issue by capturing all values more accurately. That model now presents a convenient solution for a permanent way operator wishing to get a brief idea of locations susceptible to develop wide gauge without having to hire a team of track geometry experts and multi-million-dollar equipment for the task. Finally, it was shown in the time prediction model that the degradation in longitudinal level over time could be aggregated across large measurement sets which are complex to handle, to help an engineer radically. What could have taken weeks of going through graphs and statistics with a fine-toothed comb - with no guarantee of success - can now be performed in minutes, which shows strong potential for applications in the field. All these models could certainly be improved upon, but they are still compelling in their current form to validate the initial claims. 
 Hence, the objectives set out at the start of this study were achieved, demonstrating the ever-important role of a myriad of data science tools in solving an equally wide variety of engineering problems. 
-
-
-## References {.page_break_before}
-
-<!-- Explicitly insert bibliography here -->
-<div id="refs"></div>
-
-
