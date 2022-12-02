@@ -1,7 +1,7 @@
 abive
 analysing
 Baridon
-Berkan
+BERKAN
 berkanusta
 centre
 csv
@@ -48,7 +48,6 @@ paramenters
 Perceptron
 Pos
 Prericted
-Procedia
 readtable
 reflexion
 relible
@@ -65,7 +64,7 @@ twotracks
 Underfitting
 Usta
 vairous
-versine
+Versine
 versines
 Volpe
 XGB
