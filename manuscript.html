@@ -67,9 +67,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5549cad79f364dc1b9f06a882c2222b03dcea203/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5549cad79f364dc1b9f06a882c2222b03dcea203/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5549cad79f364dc1b9f06a882c2222b03dcea203/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3c02a48fcb63c8e65f2bb4845d07c410356ca78b/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3c02a48fcb63c8e65f2bb4845d07c410356ca78b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3c02a48fcb63c8e65f2bb4845d07c410356ca78b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -83,9 +83,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5549cad79f364dc1b9f06a882c2222b03dcea203/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3c02a48fcb63c8e65f2bb4845d07c410356ca78b/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/5549cad79f364dc1b9f06a882c2222b03dcea203">uiceds/cee-492-term-project-fall-2022-time@5549cad</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/3c02a48fcb63c8e65f2bb4845d07c410356ca78b">uiceds/cee-492-term-project-fall-2022-time@3c02a48</a>
 on December 2, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -108,7 +108,7 @@ Railway Group, KTH Royal Institute of Technology - Stockholm, Sweden
 </small></p></li>
 </ul>
 <h1 id="introduction">Introduction</h1>
-<p>Railroad constitutes an important mode for the transportation of cargo and passengers and it is widely used across the world. The continuous increase in demand has made transport companies redesign their trains to carry more loads and improve their speed considerably. As a result, these changes in the train design also lead to infrastructure degrading faster and requiring maintenance or redesign. Regular inspection of track geometry has a considerable impact on the cost of maintaining railways, their availability, and repair works [{https://doi.org/10.1061/JTEPBS.0000626}] and <span class="citation" data-cites="pSTBMZkK">[<a href="#ref-pSTBMZkK" role="doc-biblioref">1</a>]</span>. The literature reveals studies proposing models to optimize the work done in maintenance work and analysis. For example in [{https://doi.org/10.1061/JTEPBS.0000626}] study, a model was proposed to simulate the evolution of the track geometry in Sweden, identifying the most degraded potential critical points. {http://dx.doi.org/10.1016/j.proeng.2015.07.099}] also presents a method for evaluating the track geometry of the superstructure of unconventional railways in Slovakia. Although many efforts have been done in the field after a literature review <span class="citation" data-cites="isbn:20413017">[<a href="#ref-isbn:20413017" role="doc-biblioref"><strong>isbn:20413017?</strong></a>]</span> suggests that more studies should be done to compare the track geometry with track imperfections to incorporate them into safety analysis.
+<p>Railroad constitutes an important mode for the transportation of cargo and passengers and it is widely used across the world. The continuous increase in demand has made transport companies redesign their trains to carry more loads and improve their speed considerably. As a result, these changes in the train design also lead to infrastructure degrading faster and requiring maintenance or redesign. Regular inspection of track geometry has a considerable impact on the cost of maintaining railways, <span class="citation" data-cites="IhliSZDo">[<a href="#ref-IhliSZDo" role="doc-biblioref">1</a>]</span> their availability, and repair works <span class="citation" data-cites="I8BgXpXt">[<a href="#ref-I8BgXpXt" role="doc-biblioref">2</a>]</span> and <span class="citation" data-cites="pSTBMZkK">[<a href="#ref-pSTBMZkK" role="doc-biblioref">3</a>]</span>. The literature reveals studies proposing models to optimize the work done in maintenance work and analysis. For example in <span class="citation" data-cites="I8BgXpXt">[<a href="#ref-I8BgXpXt" role="doc-biblioref">2</a>]</span> study, a model was proposed to simulate the evolution of the track geometry in Sweden, identifying the most degraded potential critical points. <span class="citation" data-cites="pSTBMZkK">[<a href="#ref-pSTBMZkK" role="doc-biblioref">3</a>]</span> also presents a method for evaluating the track geometry of the superstructure of unconventional railways in Slovakia. Although many efforts have been done in the field after a literature review <span class="citation" data-cites="DHRe7IZU">[<a href="#ref-DHRe7IZU" role="doc-biblioref">4</a>]</span> suggests that more studies should be done to compare the track geometry with track imperfections to incorporate them into safety analysis.
 For the above reasons, the team found it particularly interesting to analyze how railroad geometry parameters are related to each other and how they change over time. I will help provide relevant information to predict system degradation. In particular, this study is focused on the Roslagsbanan railway system in Stockholm and the analysis of relevant measurements of the railroad parameters done in the area.</p>
 <h2 id="aims-of-the-project">Aims of the project</h2>
 <p>The main goal of this project is to identify patterns in the Roslagsbanan railway system data to help track the degradation of certain rail track sections and find correlations between geometric parameters. The analysis will include graphics of the parameters over time as well as comparing them over the sections to provide a better understanding of the data visually. After analyzing the parameters, we will identify the relationship between the parameters and propose a model that relates them. Secondly, we will define degradation trends and build a model to process the data that finds them automatically.</p>
@@ -247,9 +247,9 @@ Table 1 shows the general properties of the measurement files.</p>
 <h2 id="data-correlation">Data Correlation:</h2>
 <p>An important fact of the parameters considered is that some of them are directly related in a mathematical sense. For example, cant or superelevation is proportional to the curvature, which means that when the track is being built, the superelevation is calculated based on the curvature at a given location, as follows:</p>
 <p><span class="math display">\[E_e=\frac{G*V^2*R}{g}\]</span></p>
-<p>Where E_e is balancing superelevation or cant, G (track gauge), g (gravity), and V (line speed) are constants and R is curvature.<span class="citation" data-cites="IRGRwTBU">[<a href="#ref-IRGRwTBU" role="doc-biblioref">2</a>]</span></p>
+<p>Where E_e is balancing superelevation or cant, G (track gauge), g (gravity), and V (line speed) are constants and R is curvature.<span class="citation" data-cites="IRGRwTBU">[<a href="#ref-IRGRwTBU" role="doc-biblioref">5</a>]</span></p>
 <p>Similarly, twist describes the rate of change of cant over a certain distance, and thus a close link between them is expected.</p>
-<p>These parameters are summarised in Figure <a href="#fig:cant_diag_1">3</a> below, courtesy of Kawasaki Track Technology<span class="citation" data-cites="19S6gMYY7">[<a href="#ref-19S6gMYY7" role="doc-biblioref">3</a>]</span>:</p>
+<p>These parameters are summarised in Figure <a href="#fig:cant_diag_1">3</a> below, courtesy of Kawasaki Track Technology<span class="citation" data-cites="19S6gMYY7">[<a href="#ref-19S6gMYY7" role="doc-biblioref">6</a>]</span>:</p>
 <div id="fig:cant_diag_1" class="fignos">
 <figure>
 <img src="images/CantEtcDiagram.png" style="width:5in" alt="Figure 3: Summary diagram of the parameters studied in this report. Source: Kawasaki Track Technology LATGMS brochure." /><figcaption aria-hidden="true"><span>Figure 3:</span> Summary diagram of the parameters studied in this report. Source: Kawasaki Track Technology LATGMS brochure.</figcaption>
@@ -564,14 +564,23 @@ Overall, it can be concluded that despite an apparent simple relationship betwee
 <p>All in all, the three models – regression, machine learning, and time predictions – proved their worth in the tasks they were attempting to solve. Regression methods showed that interesting results could be obtained with simpler mathematical tools but lacked the accuracy for extreme values that would be required on a professional application, at least within the bounds of the problem at hand. The use of machine learning approaches largely overcame this issue by capturing all values more accurately. That model now presents a convenient solution for a permanent way operator wishing to get a brief idea of locations susceptible to develop wide gauge without having to hire a team of track geometry experts and multi-million-dollar equipment for the task. Finally, it was shown in the time prediction model that the degradation in longitudinal level over time could be aggregated across large measurement sets which are complex to handle, to help an engineer radically. What could have taken weeks of going through graphs and statistics with a fine-toothed comb - with no guarantee of success - can now be performed in minutes, which shows strong potential for applications in the field. All these models could certainly be improved upon, but they are still compelling in their current form to validate the initial claims.
 Hence, the objectives set out at the start of this study were achieved, demonstrating the ever-important role of a myriad of data science tools in solving an equally wide variety of engineering problems.</p>
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-IhliSZDo" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Sci-Hub provides access to nearly all scholarly literature</strong> <div class="csl-block">Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene</div> <em>eLife</em> (2018-03-01) <a href="https://doi.org/ckcj">https://doi.org/ckcj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7554/elife.32822">10.7554/elife.32822</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29424689">29424689</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5832410">PMC5832410</a></div></div>
+</div>
+<div id="ref-I8BgXpXt" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Advancing Railway Asset Management Using Track Geometry Deterioration Modeling Visualization</strong> <div class="csl-block">Mikko Sauni, Heikki Luomala, Pauli Kolisoja, Tapio Nummi</div> <em>Journal of Transportation Engineering, Part A: Systems</em> (2022-02) <a href="https://doi.org/grc3q9">https://doi.org/grc3q9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1061/jtepbs.0000626">10.1061/jtepbs.0000626</a></div></div>
+</div>
 <div id="ref-pSTBMZkK" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline"><a href="http://dx.doi.org/10.1016/j.proeng.2015.07.099">http://dx.doi.org/10.1016/j.proeng.2015.07.099</a></div>
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><a href="http://dx.doi.org/10.1016/j.proeng.2015.07.099">http://dx.doi.org/10.1016/j.proeng.2015.07.099</a></div>
+</div>
+<div id="ref-DHRe7IZU" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Modeling of track geometry degradation and decisions on safety and maintenance: A literature review and possible future research directions</strong> <div class="csl-block">Christian Higgins, Xiang Liu</div> <em>Proceedings of the Institution of Mechanical Engineers, Part F: Journal of Rail and Rapid Transit</em> (2018-05) <a href="https://doi.org/gdkhw7">https://doi.org/gdkhw7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1177/0954409717721870">10.1177/0954409717721870</a></div></div>
 </div>
 <div id="ref-IRGRwTBU" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline"><a href="https://railroads.dot.gov/sites/fra.dot.gov/files/2019-12/Superelevation-Guidance_pdfa.pdf">https://railroads.dot.gov/sites/fra.dot.gov/files/2019-12/Superelevation-Guidance_pdfa.pdf</a></div>
+<div class="csl-left-margin">5. </div><div class="csl-right-inline"><a href="https://railroads.dot.gov/sites/fra.dot.gov/files/2019-12/Superelevation-Guidance_pdfa.pdf">https://railroads.dot.gov/sites/fra.dot.gov/files/2019-12/Superelevation-Guidance_pdfa.pdf</a></div>
 </div>
 <div id="ref-19S6gMYY7" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">3. </div><div class="csl-right-inline"><a href="https://www.kawasaki-track.com/pdf/Kawasaki%20LATGMS%20Brochure.pdf">https://www.kawasaki-track.com/pdf/Kawasaki%20LATGMS%20Brochure.pdf</a></div>
+<div class="csl-left-margin">6. </div><div class="csl-right-inline"><a href="https://www.kawasaki-track.com/pdf/Kawasaki%20LATGMS%20Brochure.pdf">https://www.kawasaki-track.com/pdf/Kawasaki%20LATGMS%20Brochure.pdf</a></div>
 </div>
 </div>
 <!-- default theme -->

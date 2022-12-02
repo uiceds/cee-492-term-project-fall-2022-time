@@ -1,10 +1,10 @@
 abive
 analysing
 Baridon
-BERKAN
+Berkan
 berkanusta
 centre
-CSV
+csv
 curv
 cvolpebaridon
 dataset
