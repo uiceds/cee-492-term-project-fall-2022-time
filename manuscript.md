@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/e116c94b31905cccaf2b4932edffd9972657c9c3/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/e116c94b31905cccaf2b4932edffd9972657c9c3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/e116c94b31905cccaf2b4932edffd9972657c9c3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5549cad79f364dc1b9f06a882c2222b03dcea203/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5549cad79f364dc1b9f06a882c2222b03dcea203/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5549cad79f364dc1b9f06a882c2222b03dcea203/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/e116c94b31905cccaf2b4932edffd9972657c9c3/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/5549cad79f364dc1b9f06a882c2222b03dcea203/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@e116c94](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/e116c94b31905cccaf2b4932edffd9972657c9c3)
+from [uiceds/cee-492-term-project-fall-2022-time@5549cad](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/5549cad79f364dc1b9f06a882c2222b03dcea203)
 on December 2, 2022.
 </em></small>
 
@@ -94,8 +94,8 @@ on December 2, 2022.
 
 
 # Introduction
-Railroad constitutes an important mode for the transportation of cargo and passengers and it is widely used across the world. The continuous increase in demand has made transport companies redesign their trains to carry more loads and improve their speed considerably. As a result, these changes in the train design also lead to infrastructure degrading faster and requiring maintenance or redesign. Regular inspection of track geometry has a considerable impact on the cost of maintaining railways, their availability, and repair works [{https://doi.org/10.1061/JTEPBS.0000626}] and [@{http://dx.doi.org/10.1016/j.proeng.2015.07.099}]. The literature reveals studies proposing models to optimize the work done in maintenance work and analysis. For example (for a degree project), a model was proposed to simulate the evolution of the track geometry in Sweden, identifying the most degraded potential critical points. {http://dx.doi.org/10.1016/j.proeng.2015.07.099}] also presents a method for evaluating the track geometry of the superstructure of unconventional railways in Slovakia. Although many efforts have been done in the field after a literature review [@isbn:20413017] suggests that more studies should be done to compare the track geometry with track imperfections to incorporate them into safety analysis.
-For the above reasons, the team found it particularly interesting to analyze how railroad geometry parameters are related to each other and how they change over time to provide relevant information to predict system degradation. In particular, this study is focused on the Roslagsbanan railway system in Stockholm.
+Railroad constitutes an important mode for the transportation of cargo and passengers and it is widely used across the world. The continuous increase in demand has made transport companies redesign their trains to carry more loads and improve their speed considerably. As a result, these changes in the train design also lead to infrastructure degrading faster and requiring maintenance or redesign. Regular inspection of track geometry has a considerable impact on the cost of maintaining railways, their availability, and repair works [{https://doi.org/10.1061/JTEPBS.0000626}] and [@{http://dx.doi.org/10.1016/j.proeng.2015.07.099}]. The literature reveals studies proposing models to optimize the work done in maintenance work and analysis. For example in [{https://doi.org/10.1061/JTEPBS.0000626}] study, a model was proposed to simulate the evolution of the track geometry in Sweden, identifying the most degraded potential critical points. {http://dx.doi.org/10.1016/j.proeng.2015.07.099}] also presents a method for evaluating the track geometry of the superstructure of unconventional railways in Slovakia. Although many efforts have been done in the field after a literature review [@isbn:20413017] suggests that more studies should be done to compare the track geometry with track imperfections to incorporate them into safety analysis.
+For the above reasons, the team found it particularly interesting to analyze how railroad geometry parameters are related to each other and how they change over time. I will help provide relevant information to predict system degradation. In particular, this study is focused on the Roslagsbanan railway system in Stockholm and the analysis of relevant measurements of the railroad parameters done in the area.
 
 ## Aims of the project
 The main goal of this project is to identify patterns in the Roslagsbanan railway system data to help track the degradation of certain rail track sections and find correlations between geometric parameters. The analysis will include graphics of the parameters over time as well as comparing them over the sections to provide a better understanding of the data visually. After analyzing the parameters, we will identify the relationship between the parameters and propose a model that relates them. Secondly, we will define degradation trends and build a model to process the data that finds them automatically.

@@ -4,7 +4,7 @@ Baridon
 BERKAN
 berkanusta
 centre
-csv
+CSV
 curv
 cvolpebaridon
 dataset
@@ -64,7 +64,7 @@ twotracks
 Underfitting
 Usta
 vairous
-Versine
+versine
 versines
 Volpe
 XGB
