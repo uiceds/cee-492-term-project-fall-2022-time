@@ -1,15 +1,14 @@
 abive
 analysing
 Baridon
-BERKAN
+Berkan
 berkanusta
 centre
-CSV
+csv
 curv
 cvolpebaridon
 dataset
 datastore
-Decription
 desync
 diag
 dropna
@@ -49,6 +48,7 @@ paramenters
 Perceptron
 Pos
 Prericted
+Procedia
 readtable
 reflexion
 relible

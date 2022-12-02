@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/38ec17ea38600f24882072856ff62a2f68b55824/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/38ec17ea38600f24882072856ff62a2f68b55824/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/38ec17ea38600f24882072856ff62a2f68b55824/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76cf57f0c8bc555eb67701a31b12a75f7c5eb5da/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76cf57f0c8bc555eb67701a31b12a75f7c5eb5da/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76cf57f0c8bc555eb67701a31b12a75f7c5eb5da/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/38ec17ea38600f24882072856ff62a2f68b55824/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76cf57f0c8bc555eb67701a31b12a75f7c5eb5da/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@38ec17e](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/38ec17ea38600f24882072856ff62a2f68b55824)
+from [uiceds/cee-492-term-project-fall-2022-time@76cf57f](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/76cf57f0c8bc555eb67701a31b12a75f7c5eb5da)
 on December 2, 2022.
 </em></small>
 
@@ -93,7 +93,16 @@ on December 2, 2022.
 
 
 
-# Dataset Decription
+# Introduction
+Railroad constitutes an important mode for the transportation of cargo and passengers and it is widely used across the world. The continuous increase in demand has made transport companies redesign their trains to carry more loads and improve their speed considerably. As a result, these changes in the train design also lead to infrastructure degrading faster and requiring maintenance or redesign. Regular inspection of track geometry has a considerable impact on the cost of maintaining railways, their availability, and repair works (Degree project) and (Procedia Engineering). The literature reveals studies proposing models to optimize the work done in maintenance work and analysis. For example (for a degree project), a model was proposed to simulate the evolution of the track geometry in Sweden, identifying the most degraded potential critical points. (Procedia) also presents a method for evaluating the track geometry of the superstructure of unconventional railways in Slovakia. Although many efforts have been done in the field after a literature review (Mechanical Engineers) suggests that more studies should be done to compare the track geometry with track imperfections to incorporate them into safety analysis.
+For the above reasons, the team found it particularly interesting to analyze how railroad geometry parameters are related to each other and how they change over time to provide relevant information to predict system degradation. In particular, this study is focused on the Roslagsbanan railway system in Stockholm.
+
+## Aims of the project
+The main goal of this project is to identify patterns in the Roslagsbanan railway system data to help track the degradation of certain rail track sections and find correlations between geometric parameters. The analysis will include graphics of the parameters over time as well as comparing them over the sections to provide a better understanding of the data visually. After analyzing the parameters, we will identify the relationship between the parameters and propose a model that relates them. Secondly, we will define degradation trends and build a model to process the data that finds them automatically.
+
+This study will help assess system performance, identify possible maintenance schedules, and provide useful data for further research in this area. The research also falls within the scope of developing civil engineering and predictive maintenance for railways. Creating and improving analysis and predictive maintenance models such as this one can contribute to increasing the safety of rail networks and a higher quality of service for passengers. They will benefit from fewer unplanned service interruptions due to track maintenance and even fewer line closures due to unsafe tracks.
+
+## Dataset Description
 The Roslagsbanan is a railway system operating in Stockholm. As part of an improvement in the transportation system, Stockholm Municipality invested in a new fleet of trains switching from X10p trains to the new X15p. In order to analyze the safety of the new trains, brake tests were conducted. During these tests, the Latronix Track Measurement (LTM) system was mounted on the train. The LTM uses laser beams, and an onboard computer to perform measurements over a railroad track while the train drives on the track at normal speed. 
 
 The data that will be used in this study was collected using the LTM system affixed to a Roslagsbanan vehicle. While the train was running over the sections, the level of each rail, alignment, curvature, cant, gauge, and twist were measured every 256mm. The data was compiled in csv files and was collected between October 2021 and May 2022 with an approximate interval of one month. In other words, a given section of track typically has around six measurement files. The total amount of data is 60 CSV files of 30,000 to 80,000 rows each, for a total of 1.5GB of data.
@@ -125,11 +134,7 @@ In the CSV files the structure of columns is as follows:
 - Alignment_versine_left_10m, Alignment_versine_right_10m: Similarly to the versine level, this measure of alignment in mm uses versines over a 10m distance.
 
 Finally, Track_name, Track_class, Station_flag and Link_name,Pos_unfiltered	Pos_filtered, NTP_sync, Cant_D1, Std_level, Std_alignment, Std_cant, Quality_1 are mainly for internal use and not part of the analysis.
-			
-# Project Proposal
-The main goal of this project is to identify patterns in the data, especially the track degradation of certain sections, and thus to analyze the change in railway safety during this time. The first approach will be to define degradation trends and build a model to process the data that finds them automatically. Then, the study will attempt to find external factors which caused the observed trends. The analysis will include graphics of the parameters over time as well as comparing them over the sections to provide a better understanding of the data visually.
-
-This research will help assess system performance, identify possible maintenance schedules, and provide useful data for further research in this area. The study also falls within the scope of developing predictive maintenance in civil engineering and railways. Creating and improving analysis and predictive maintenance models such as this one can contribute to increase safety of rail networks and a higher quality of service for passengers. They will benefit from fewer unplanned service interruptions due to track maintenance and even fewer unsafe tracks causing line closures.
+	
 
 # Exploratory Analysis
 ## General Dataset Description: 
