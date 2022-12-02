@@ -112,3 +112,8 @@ content/05.Predictive modeling.md:153:Longituinal
 content/05.Predictive modeling.md:155:Longituinal
 content/05.Predictive modeling.md:157:Longituinal
 content/05.Predictive modeling.md:159:Longituinal
+content/06.discussion.md:11:BERKAN
+content/06.discussion.md:11:BERKAN
+content/06.discussion.md:11:XGB
+content/06.discussion.md:12:modelling
+content/06.discussion.md:14:heatmap

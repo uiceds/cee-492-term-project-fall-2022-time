@@ -5,7 +5,7 @@ keywords:
 - Transportation Safety
 - Track Degradation
 lang: en-US
-date-meta: '2022-11-21'
+date-meta: '2022-12-02'
 author-meta:
 - Cecilia Karina Volpe Baridon
 - Elie Roudiere
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
   <meta property="og:title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
   <meta property="twitter:title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
-  <meta name="dc.date" content="2022-11-21" />
-  <meta name="citation_publication_date" content="2022-11-21" />
+  <meta name="dc.date" content="2022-12-02" />
+  <meta name="citation_publication_date" content="2022-12-02" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ab357eae0640e4d03baca97f548a7412a101dbee/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ab357eae0640e4d03baca97f548a7412a101dbee/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ab357eae0640e4d03baca97f548a7412a101dbee/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/2291816717721fc28fd12372ed0be430dd097a77/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/2291816717721fc28fd12372ed0be430dd097a77/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/2291816717721fc28fd12372ed0be430dd097a77/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,10 +62,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/ab357eae0640e4d03baca97f548a7412a101dbee/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/2291816717721fc28fd12372ed0be430dd097a77/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@ab357ea](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/ab357eae0640e4d03baca97f548a7412a101dbee)
-on November 21, 2022.
+from [uiceds/cee-492-term-project-fall-2022-time@2291816](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/2291816717721fc28fd12372ed0be430dd097a77)
+on December 2, 2022.
 </em></small>
 
 ## Authors
@@ -378,6 +378,33 @@ The results are displayed in more detail in Figure @fig:track27 to Figure @fig:t
 
 
 All in all, this model represents a serviceable tool for use in the track measurement industry. Its accuracy leaves somewhat to be desired, as a relatively portion of its output could be considered “incorrect” or “irrelevant” by an engineer looking to find critical degradation trends. The adjustment of inputs parameters may also affect the results significantly, but any kind of analysis is likely to require well-thought out input and critical thinking from the engineer. The problem at hand does not have an absolute truth or precise correct answer, and different engineers may judge the quality of this output differently themselves. Globally the model was successful in identifying key locations thousands of times faster than a human expert could, and the saying still seems to hold true: the quality of a machine depends largely on its user.   
+
+## References {.page_break_before}
+
+<!-- Explicitly insert bibliography here -->
+<div id="refs"></div>
+
+
+
+
+# Discussion:
+
+Comparing the results of the three models gives insights both from a civil engineering and data science perspective.
+First, the quality of the answers to the initial questions will be discussed. In the first part, we set out to explore the link between track curvature and faults in track gauge, usually wide gauge, which was not necessarily anticipated before the study. Indeed, in an ideal scenario, gauge deviation would be zero throughout, and the graph would simply look like a horizontal line on the 0 axis (and this would be close to measurements taken on freshly installed, brand-new track). 
+Given the absolute value shape of the gauge vs. curvature plot, the first idea was to use a coordinate transform followed by a linear regression. The results showed that while this regression could approximate gauge with a reasonable accuracy overall (error of 1.3mm, with typical values of gauge between 5 and 10mm), the very high density of points with very low gauge deviation and low curvature somewhat skewed the model to give a better prediction of these low curvature/low gauge points. This happened at the expense of accuracy when predicting the high curve/high gauge points. This is not ideal, because to spot point failures, predicting the higher values more accurately is more representative as these points are the most likely to exceed alert limits. This linear model did not predict any points with negative gauge either. While relatively rare (as one can imagine, trains running on the track will have the opposite effect i.e., pushing the rails apart ever so slightly), this phenomenon is dangerous and has much lower tolerances than wide gauge (-3mm instead of +12mm), unlike tolerance for level which has the same magnitude in the negative and positive. Adjustments were attempted to give a higher weight to extreme values, but this was not effective at all in shifting the regression line. 
+
+Overall, the result of the linear regression model was somewhat disappointing. While it gave a generally good prediction of gauge based on curvature – which was not a given – it failed to predict high values with sufficient reliability and precision. A civil or railway engineer using this tool will only be informed reliably about safe locations, usually on straight track, but will have little insight on dangerous spots.
+
+Undeterred, a new model based on an exponential was developed. The idea of a coordinate transform was kept but exponential regression was used, instead of a simple linear regression. The idea was that the mathematical shape of an exponential would capture higher value points with more accuracy, possibly at the expense of lower values which present little of interest. Visually, this exponential regression seemingly fulfilled the role better than the linear model, as it looked like higher values were captured more reliably. But the error did not reflect this apparent improvement, increasing marginally from the linear model. This is due to the exponential being inferior in capturing lower values which massively outnumber larger values. In conclusion, using the exponential regression gives a more relevant result for the civil engineer. This is still far from perfect and compromises on lower values if they were ever required.
+
+To improve upon this two-part regression model, more advanced data science techniques had to be employed. This was achieved by using different tools such as neural networks, extreme gradient boosting [BERKAN PLEASE ADD SOME STUFF HERE]. After comparing the predicted and actual values for each method, it was found that the most accurate method is XGB [BERKAN CHECK THIS]. With a very minimal error and very high R squared value, this tool would be very useful for an engineer to use on their maintenance projects as it does not fall short when predicting certain values – unlike regression methods. In the future, more extensive testing (in terms of data variety and quantity, e.g., using standard gauge or high-speed track measurements) could well give this method some future railway engineering use in the case where high-tech measurements are not easy to perform. 
+Overall, it can be concluded that despite an apparent simple relationship between curvature and gauge, using mathematically simpler methods like different types of regression was not enough. Instead, looking into neural networks was the most effective. For future studies – possibly beyond the topic of track gauge, it shall be kept in mind that a link which appears clear or mathematically simple does not systematically justify using a simple predictive model. Assumptions must always be challenged in science and this modelling constitutes a prime example. 
+
+In a distinct second part, longitudinal level was investigated for consistent, concerning patterns overtime. Though different approaches could have been taken to accomplish this, the process revolved around extracting local maxima to limit the number of points to analyze. Using a correlation function, with a minimum number of time points, linear trends over time are found automatically. However, not all the locations output by the model can legitimately constitute relevant trends from an engineering point of view – in fact only about ten percent in this case. It should still be kept in mind that selecting a few dozen locations from millions of possible combinations is a monumental time gain for an engineer. Moreover, the model did achieve the initial objective and allowed us find certain key locations which would be of interest to an engineer looking to perform maintenance. This model then, while having certain engineering potential, can be improved from a data science perspective in the future. For example, finding a way to automatically detect double track sections causing confusion would eliminate many irrelevant points. Discarding locations with a trend considered too slow (the threshold of which would have to be determined on a case per case basis, depending on the alert limits on future projects) would also contribute to this goal. Finally, on a higher level, it could be interesting to change or extend the output of the model to key zones, spanning longer distances. The best way to present this would likely be some sort of heatmap. The engineering stake is that for more typical maintenance, as opposed to safety critical cases, entire sections allows for more efficient planning and maintenance since faults are grouped and can be treated at once. 
+
+All in all, the three models – regression, machine learning, and time predictions – proved their worth in the tasks they were attempting to solve. Regression methods showed that interesting results could be obtained with simpler mathematical tools but lacked the accuracy for extreme values that would be required on a professional application, at least within the bounds of the problem at hand. The use of machine learning approaches largely overcame this issue by capturing all values more accurately. That model now presents a convenient solution for a permanent way operator wishing to get a brief idea of locations susceptible to develop wide gauge without having to hire a team of track geometry experts and multi-million-dollar equipment for the task. Finally, it was shown in the time prediction model that the degradation in longitudinal level over time could be aggregated across large measurement sets which are complex to handle, to help an engineer radically. What could have taken weeks of going through graphs and statistics with a fine-toothed comb - with no guarantee of success - can now be performed in minutes, which shows strong potential for applications in the field. All these models could certainly be improved upon, but they are still compelling in their current form to validate the initial claims. 
+Hence, the objectives set out at the start of this study were achieved, demonstrating the ever-important role of a myriad of data science tools in solving an equally wide variety of engineering problems. 
+
 
 ## References {.page_break_before}
 

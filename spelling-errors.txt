@@ -1,13 +1,13 @@
 abive
 analysing
 Baridon
-Berkan
+BERKAN
 berkanusta
 centre
-csv
+CSV
 curv
 cvolpebaridon
-Dataset
+dataset
 datastore
 Decription
 desync
@@ -22,6 +22,7 @@ findpeaks
 fourty
 gaugecurv
 hardcoded
+heatmap
 hyperparameter
 intersting
 Karsta
@@ -57,7 +58,7 @@ timespan
 twotracks
 Underfitting
 Usta
-versine
+Versine
 versines
 Volpe
 XGB
