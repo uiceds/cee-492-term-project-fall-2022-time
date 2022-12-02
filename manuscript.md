@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76cf57f0c8bc555eb67701a31b12a75f7c5eb5da/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76cf57f0c8bc555eb67701a31b12a75f7c5eb5da/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76cf57f0c8bc555eb67701a31b12a75f7c5eb5da/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/32fe282abb0aa957b1cc58daedae0d04b18d1a4e/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/32fe282abb0aa957b1cc58daedae0d04b18d1a4e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/32fe282abb0aa957b1cc58daedae0d04b18d1a4e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,9 +62,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/76cf57f0c8bc555eb67701a31b12a75f7c5eb5da/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/32fe282abb0aa957b1cc58daedae0d04b18d1a4e/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@76cf57f](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/76cf57f0c8bc555eb67701a31b12a75f7c5eb5da)
+from [uiceds/cee-492-term-project-fall-2022-time@32fe282](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/32fe282abb0aa957b1cc58daedae0d04b18d1a4e)
 on December 2, 2022.
 </em></small>
 
@@ -397,15 +397,7 @@ The results are displayed in more detail in Figure @fig:track27 to Figure @fig:t
 
 All in all, this model represents a serviceable tool for use in the track measurement industry. Its accuracy leaves somewhat to be desired, as a relatively portion of its output could be considered “incorrect” or “irrelevant” by an engineer looking to find critical degradation trends. The adjustment of inputs parameters may also affect the results significantly, but any kind of analysis is likely to require well-thought out input and critical thinking from the engineer. The problem at hand does not have an absolute truth or precise correct answer, and different engineers may judge the quality of this output differently themselves. Globally the model was successful in identifying key locations thousands of times faster than a human expert could, and the saying still seems to hold true: the quality of a machine depends largely on its user.   
 
-## References {.page_break_before}
-
-<!-- Explicitly insert bibliography here -->
-<div id="refs"></div>
-
-
-
-
-# Discussion:
+# Discussion
 
 Comparing the results of the three models gives insights both from a civil engineering and data science perspective.
 First, the quality of the answers to the initial questions will be discussed. In the first part, we set out to explore the link between track curvature and faults in track gauge, usually wide gauge, which was not necessarily anticipated before the study. Indeed, in an ideal scenario, gauge deviation would be zero throughout, and the graph would simply look like a horizontal line on the 0 axis (and this would be close to measurements taken on freshly installed, brand-new track). 

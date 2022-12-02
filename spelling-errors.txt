@@ -1,13 +1,13 @@
 abive
 analysing
 Baridon
-Berkan
+BERKAN
 berkanusta
 centre
 csv
 curv
 cvolpebaridon
-dataset
+Dataset
 datastore
 desync
 diag
