@@ -5,7 +5,7 @@ keywords:
 - Transportation Safety
 - Track Degradation
 lang: en-US
-date-meta: '2022-12-02'
+date-meta: '2022-12-03'
 author-meta:
 - Cecilia Karina Volpe Baridon
 - Elie Roudiere
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
   <meta property="og:title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
   <meta property="twitter:title" content="Safety Assessment of Roslagsbanan Rail System, 2021-2022" />
-  <meta name="dc.date" content="2022-12-02" />
-  <meta name="citation_publication_date" content="2022-12-02" />
+  <meta name="dc.date" content="2022-12-03" />
+  <meta name="citation_publication_date" content="2022-12-03" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -38,9 +38,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3c02a48fcb63c8e65f2bb4845d07c410356ca78b/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3c02a48fcb63c8e65f2bb4845d07c410356ca78b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3c02a48fcb63c8e65f2bb4845d07c410356ca78b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/6db52bbe97752db409526e9f82f05fa73323ccda/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/6db52bbe97752db409526e9f82f05fa73323ccda/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/6db52bbe97752db409526e9f82f05fa73323ccda/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -62,10 +62,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/3c02a48fcb63c8e65f2bb4845d07c410356ca78b/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/6db52bbe97752db409526e9f82f05fa73323ccda/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-time@3c02a48](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/3c02a48fcb63c8e65f2bb4845d07c410356ca78b)
-on December 2, 2022.
+from [uiceds/cee-492-term-project-fall-2022-time@6db52bb](https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/6db52bbe97752db409526e9f82f05fa73323ccda)
+on December 3, 2022.
 </em></small>
 
 ## Authors
@@ -407,7 +407,7 @@ Overall, the result of the linear regression model was somewhat disappointing. W
 
 Undeterred, a new model based on an exponential was developed. The idea of a coordinate transform was kept but exponential regression was used, instead of a simple linear regression. The idea was that the mathematical shape of an exponential would capture higher value points with more accuracy, possibly at the expense of lower values which present little of interest. Visually, this exponential regression seemingly fulfilled the role better than the linear model, as it looked like higher values were captured more reliably. But the error did not reflect this apparent improvement, increasing marginally from the linear model. This is due to the exponential being inferior in capturing lower values which massively outnumber larger values. In conclusion, using the exponential regression gives a more relevant result for the civil engineer. This is still far from perfect and compromises on lower values if they were ever required.
 
-To improve upon this two-part regression model, more advanced data science techniques had to be employed. This was achieved by using different tools such as neural networks, extreme gradient boosting [BERKAN PLEASE ADD SOME STUFF HERE]. After comparing the predicted and actual values for each method, it was found that the most accurate method is XGB [BERKAN CHECK THIS]. With a very minimal error and very high R squared value, this tool would be very useful for an engineer to use on their maintenance projects as it does not fall short when predicting certain values – unlike regression methods. In the future, more extensive testing (in terms of data variety and quantity, e.g., using standard gauge or high-speed track measurements) could well give this method some future railway engineering use in the case where high-tech measurements are not easy to perform. 
+To improve upon this two-part regression model, more advanced data science techniques had to be employed. This was achieved by using different tools such as neural networks or extreme gradient boosting. After comparing the predicted and actual values for each method, it was found that the most accurate method is XGB. With a very minimal error and very high R squared value, this tool would be very useful for an engineer to use on their maintenance projects as it does not fall short when predicting certain values – unlike regression methods. In the future, more extensive testing (in terms of data variety and quantity, e.g., using standard gauge or high-speed track measurements) could well give this method some future railway engineering use in the case where high-tech measurements are not easy to perform. 
 Overall, it can be concluded that despite an apparent simple relationship between curvature and gauge, using mathematically simpler methods like different types of regression was not enough. Instead, looking into neural networks was the most effective. For future studies – possibly beyond the topic of track gauge, it shall be kept in mind that a link which appears clear or mathematically simple does not systematically justify using a simple predictive model. Assumptions must always be challenged in science and this modelling constitutes a prime example. 
 
 In a distinct second part, longitudinal level was investigated for consistent, concerning patterns overtime. Though different approaches could have been taken to accomplish this, the process revolved around extracting local maxima to limit the number of points to analyze. Using a correlation function, with a minimum number of time points, linear trends over time are found automatically. However, not all the locations output by the model can legitimately constitute relevant trends from an engineering point of view – in fact only about ten percent in this case. It should still be kept in mind that selecting a few dozen locations from millions of possible combinations is a monumental time gain for an engineer. Moreover, the model did achieve the initial objective and allowed us find certain key locations which would be of interest to an engineer looking to perform maintenance. This model then, while having certain engineering potential, can be improved from a data science perspective in the future. For example, finding a way to automatically detect double track sections causing confusion would eliminate many irrelevant points. Discarding locations with a trend considered too slow (the threshold of which would have to be determined on a case per case basis, depending on the alert limits on future projects) would also contribute to this goal. Finally, on a higher level, it could be interesting to change or extend the output of the model to key zones, spanning longer distances. The best way to present this would likely be some sort of heatmap. The engineering stake is that for more typical maintenance, as opposed to safety critical cases, entire sections allows for more efficient planning and maintenance since faults are grouped and can be treated at once. 
