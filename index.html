@@ -67,9 +67,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/799a157adab266bc32b13dcab62beccff050332a/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/799a157adab266bc32b13dcab62beccff050332a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/799a157adab266bc32b13dcab62beccff050332a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b0263be43b6e48249326041ea4e9b9fee0e60b2f/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b0263be43b6e48249326041ea4e9b9fee0e60b2f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b0263be43b6e48249326041ea4e9b9fee0e60b2f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -83,9 +83,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/799a157adab266bc32b13dcab62beccff050332a/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-time/v/b0263be43b6e48249326041ea4e9b9fee0e60b2f/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/799a157adab266bc32b13dcab62beccff050332a">uiceds/cee-492-term-project-fall-2022-time@799a157</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-time/tree/b0263be43b6e48249326041ea4e9b9fee0e60b2f">uiceds/cee-492-term-project-fall-2022-time@b0263be</a>
 on December 8, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -415,11 +415,11 @@ The number of layers and the number of nodes in each hidden layer are the two mo
 </div>
 <div id="fig:gaugecurv_abs_predictive_model_comparison_table" class="fignos">
 <figure>
-<img src="images/Predictive_modelling_comperison.PNG" style="width:5in" alt="Figure 15: Ostra-Karsta line - Gauge vs Curvature Model Comparison Table." /><figcaption aria-hidden="true"><span>Figure 15:</span> Ostra-Karsta line - Gauge vs Curvature Model Comparison Table.</figcaption>
+<img src="images/Predictive_modeling_comperison.PNG" style="width:5in" alt="Figure 15: Ostra-Karsta line - Gauge vs Curvature Model Comparison Table." /><figcaption aria-hidden="true"><span>Figure 15:</span> Ostra-Karsta line - Gauge vs Curvature Model Comparison Table.</figcaption>
 </figure>
 </div>
 <h2 id="time-vs-longitudinal-level-predictive-modeling">Time vs Longitudinal Level Predictive Modeling</h2>
-<p>Because of greater familiarity with the software, MATLAB was used for this part of the predictive modelling. The main tasks to be addressed were:</p>
+<p>Because of greater familiarity with the software, MATLAB was used for this part of the predictive modeling. The main tasks to be addressed were:</p>
 <ol type="1">
 <li><p>Find a way to import and manage the large quantity of .csv files;</p></li>
 <li><p>Clean the files of NA data as well as unrelated measurements, and associate them with a measurement date;</p></li>
@@ -429,7 +429,7 @@ The number of layers and the number of nodes in each hidden layer are the two mo
 </ol>
 <p>To address the first point, a starting idea was to use a loop of the “readtable” feature, importing one file at a time, and performing the desired operations on it. However, as a result of further research and speed concerns, the software uses the recent “datastore” feature of MATLAB, which can efficiently import, clean, and sort a very large amount of data, even beyond what can fit in memory. While Roslagsbanan data were still reasonable in size (60 files with a total size of approximately 1GB), this significantly increased the speed of the model compared to a more traditional “readtable” based loop and makes the method applicable to any size data set in the future. With this function, the desired columns (i.e., variables) can be selected and imported from the get-go, as opposed to bloating the memory with all the data and dropping large parts of it after the fact.</p>
 <p>This brings on the second point, where the dropna() function was used to delete rows with N/A values easily. Then, a short custom function using “fileparts()” is capable of extracting the date of measurements from the file name and convert it to a date value usable by matlab – which will have its importance.
-Then, for each data file, the software finds peaks in the rail longitudinal level so long as they exceed alert level A (4mm), and they are spaced by a set distance, by means of the findpeaks() function. The distance was tweaked during the modelling to reach a satisfactory result, in the manner of a hyperparameter. A smaller distance shows more points but potentially more unwanted peaks while a larger distance is more restrictive but also could lead to missed locations. This process aims to reduce the number of analyzed points to only keep significant spikes in the positive or negative.</p>
+Then, for each data file, the software finds peaks in the rail longitudinal level so long as they exceed alert level A (4mm), and they are spaced by a set distance, by means of the findpeaks() function. The distance was tweaked during the modeling to reach a satisfactory result, in the manner of a hyperparameter. A smaller distance shows more points but potentially more unwanted peaks while a larger distance is more restrictive but also could lead to missed locations. This process aims to reduce the number of analyzed points to only keep significant spikes in the positive or negative.</p>
 <p>All these peaks and their respective position and time of measurement are assembled in a table and compared through a correlation analysis. The correlation function of MATLAB is used to compare the maximum value of peaks at the same location over a certain timespan, to show any possible trends. Only the locations where a certain threshold of correlation (typically 0.75, but this parameter was also adjusted during the analysis) is exceeded across at least four points of data are kept by the model for user review. Finally, this allows the model to output a shortlist of locations which display a spike or a sag with a degradation trend. The model also outputs a R^2 value to reflect the goodness of linear fit, and a crude estimate of when Alert C (deviation of 16mm or more in the positive of negative) would be exceeded at this rate. While not absolute or perfect, these metrics these give a general idea of the rate of degradation and the criticality of the problem, and on a more macro level the relevance of the model output.
 After various adjustments to the parameters with a correlation threshold of 0.8 and peak spacing of 4m, the model output 100 points (including positive and negative trends). As could be expected from a physical perspective, twice as many negative (i.e., sinking) trends than positive trends appeared, possibly due to settlement and rail traffic. This gives some credibility to the algorithm.</p>
 <p>In general, the model fulfilled its role and did find locations of clear, steady degradation over time which would have taken a human weeks of going over graphs and data manually – even for a domain professional. However not all results were satisfactory. In particular the model struggled with two aspects:
@@ -512,42 +512,42 @@ After various adjustments to the parameters with a correlation threshold of 0.8 
 <p>The results are displayed in more detail in Figure <a href="#fig:track27">18</a> to Figure <a href="#fig:track8">25</a>. For each figure, the upper graph shows the amplitude of the parameter along a short section of track, spanning approximately one hundred meters with the key location in the centre. The lower degradation graph shows the evolution of the parameter value at the key location, to judge its change over time. For clarity, the graphs are plotted only for the left side rail in the cases where the trend in level was identical for both the left and right side rails.</p>
 <div id="fig:track27" class="fignos">
 <figure>
-<img src="images/track27.png" style="width:5in" alt="Figure 18: Kilometer 27 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 18:</span> Kilometer 27 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
+<img src="images/track27.png" style="width:5in" alt="Figure 18: Kilometer 27 - Longitudinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 18:</span> Kilometer 27 - Longitudinal level (top) and trend of degradation over time (bottom)</figcaption>
 </figure>
 </div>
 <div id="fig:track29" class="fignos">
 <figure>
-<img src="images/track29.png" style="width:5in" alt="Figure 19: Kilometer 29 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 19:</span> Kilometer 29 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
+<img src="images/track29.png" style="width:5in" alt="Figure 19: Kilometer 29 - Longitudinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 19:</span> Kilometer 29 - Longitudinal level (top) and trend of degradation over time (bottom)</figcaption>
 </figure>
 </div>
 <div id="fig:track32" class="fignos">
 <figure>
-<img src="images/track32.png" style="width:5in" alt="Figure 20: Kilometer 32 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 20:</span> Kilometer 32 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
+<img src="images/track32.png" style="width:5in" alt="Figure 20: Kilometer 32 - Longitudinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 20:</span> Kilometer 32 - Longitudinal level (top) and trend of degradation over time (bottom)</figcaption>
 </figure>
 </div>
 <div id="fig:track33" class="fignos">
 <figure>
-<img src="images/track33.png" style="width:5in" alt="Figure 21: Kilometer 33 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 21:</span> Kilometer 33 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
+<img src="images/track33.png" style="width:5in" alt="Figure 21: Kilometer 33 - Longitudinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 21:</span> Kilometer 33 - Longitudinal level (top) and trend of degradation over time (bottom)</figcaption>
 </figure>
 </div>
 <div id="fig:track34" class="fignos">
 <figure>
-<img src="images/track34.png" style="width:5in" alt="Figure 22: Kilometer 34 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 22:</span> Kilometer 34 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
+<img src="images/track34.png" style="width:5in" alt="Figure 22: Kilometer 34 - Longitudinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 22:</span> Kilometer 34 - Longitudinal level (top) and trend of degradation over time (bottom)</figcaption>
 </figure>
 </div>
 <div id="fig:track38" class="fignos">
 <figure>
-<img src="images/track38.png" style="width:5in" alt="Figure 23: Kilometer 38 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 23:</span> Kilometer 38 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
+<img src="images/track38.png" style="width:5in" alt="Figure 23: Kilometer 38 - Longitudinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 23:</span> Kilometer 38 - Longitudinal level (top) and trend of degradation over time (bottom)</figcaption>
 </figure>
 </div>
 <div id="fig:track7" class="fignos">
 <figure>
-<img src="images/track7.png" style="width:5in" alt="Figure 24: Kilometer 7 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 24:</span> Kilometer 7 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
+<img src="images/track7.png" style="width:5in" alt="Figure 24: Kilometer 7 - Longitudinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 24:</span> Kilometer 7 - Longitudinal level (top) and trend of degradation over time (bottom)</figcaption>
 </figure>
 </div>
 <div id="fig:track8" class="fignos">
 <figure>
-<img src="images/track8.png" style="width:5in" alt="Figure 25: Kilometer 8 - Longituinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 25:</span> Kilometer 8 - Longituinal level (top) and trend of degradation over time (bottom)</figcaption>
+<img src="images/track8.png" style="width:5in" alt="Figure 25: Kilometer 8 - Longitudinal level (top) and trend of degradation over time (bottom)" /><figcaption aria-hidden="true"><span>Figure 25:</span> Kilometer 8 - Longitudinal level (top) and trend of degradation over time (bottom)</figcaption>
 </figure>
 </div>
 <p>All in all, this model represents a serviceable tool for use in the track measurement industry. Its accuracy leaves somewhat to be desired, as a relatively portion of its output could be considered “incorrect” or “irrelevant” by an engineer looking to find critical degradation trends. The adjustment of inputs parameters may also affect the results significantly, but any kind of analysis is likely to require well-thought out input and critical thinking from the engineer. The problem at hand does not have an absolute truth or precise correct answer, and different engineers may judge the quality of this output differently themselves. Globally the model was successful in identifying key locations thousands of times faster than a human expert could, and the saying still seems to hold true: the quality of a machine depends largely on its user.</p>
