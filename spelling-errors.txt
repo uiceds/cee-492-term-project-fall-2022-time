@@ -3,7 +3,7 @@ Baridon
 Berkan
 berkanusta
 centre
-csv
+CSV
 curv
 cvolpebaridon
 dataset
@@ -32,7 +32,6 @@ LATGMS
 Latronix
 learnt
 localised
-Longituinal
 LTM
 modelling
 MSE

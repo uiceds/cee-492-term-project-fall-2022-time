@@ -97,7 +97,6 @@ content/05.Predictive modeling.md:104:Karsta
 content/05.Predictive modeling.md:104:Ostra
 content/05.Predictive modeling.md:106:Karsta
 content/05.Predictive modeling.md:106:Ostra
-content/05.Predictive modeling.md:110:modelling
 content/05.Predictive modeling.md:112:csv
 content/05.Predictive modeling.md:122:datastore
 content/05.Predictive modeling.md:122:readtable
@@ -107,20 +106,11 @@ content/05.Predictive modeling.md:124:dropna
 content/05.Predictive modeling.md:124:fileparts
 content/05.Predictive modeling.md:125:findpeaks
 content/05.Predictive modeling.md:125:hyperparameter
-content/05.Predictive modeling.md:125:modelling
 content/05.Predictive modeling.md:127:timespan
 content/05.Predictive modeling.md:132:twotracks
 content/05.Predictive modeling.md:134:twotracks
 content/05.Predictive modeling.md:140:fourty
 content/05.Predictive modeling.md:155:centre
-content/05.Predictive modeling.md:157:Longituinal
-content/05.Predictive modeling.md:159:Longituinal
-content/05.Predictive modeling.md:161:Longituinal
-content/05.Predictive modeling.md:163:Longituinal
-content/05.Predictive modeling.md:165:Longituinal
-content/05.Predictive modeling.md:167:Longituinal
-content/05.Predictive modeling.md:169:Longituinal
-content/05.Predictive modeling.md:171:Longituinal
 content/06.discussion.md:11:XGB
 content/06.discussion.md:12:modelling
 content/06.discussion.md:14:heatmap
