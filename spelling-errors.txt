@@ -1,4 +1,3 @@
-abive
 analysing
 Baridon
 Berkan
@@ -47,7 +46,6 @@ overfitting
 paramenters
 Perceptron
 Pos
-Prericted
 readtable
 reflexion
 relible
@@ -59,11 +57,9 @@ Stockholms
 summarised
 superelevation
 timespan
-traning
 twotracks
 Underfitting
 Usta
-vairous
 versine
 versines
 Volpe
